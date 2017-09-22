@@ -15,8 +15,6 @@
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/thirdparty/skrollr.min.js"></script>
-    <script src="../assets/js/thirdparty/skrollr.menu.min.js"></script>
     <script src="../assets/js/site.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -28,18 +26,12 @@
   </head>
   <body>
     <header class="header bg-grey ">
-        <nav class="navbar navbar-fixed-top bg-grey">
+        <nav class="navbar bg-grey">
           <div class="container">
-            <div class="row flex vertical-align-bottom">
+            <div class="row vertical-align-bottom">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="col-sm-3">
                 <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
                   <a class="navbar-brand brand-logo" href="#">
                     <img src="../assets/images/logo.png" alt="Taskit" />
                   </a>
@@ -48,20 +40,59 @@
 
               <div class="col-sm-9">
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="menu-navbar-collapse">
-                  <ul class="menu nav navbar-nav navbar-right">
-                    <li><a href="#" class="active">About Us</a></li>
-                    <li><a href="#">Silica Products</a></li>
-                    <li><a href="#">Environmental</a></li>
-                    <li><a href="#">Investor Login</a></li>
-                    <li><a href="#">Contact</a></li>
+                <div class="right-header">
+                  <ul class="menu nav navbar-nav">
+                    <li><a href="#" class="active">How it works</a></li>
+                    <li><a href="#">buy/sell</a></li>
+                    <li><a href="#">login/register</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
-            </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+                <ul class="menu nav navbar-nav">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                </ul>
+              </div>
             </div>
           </div><!-- /.container-fluid -->
         </nav>
     </header>
-
+    <div class="container-460">
+      <h1 class="page-title">Sign in</h1>
+      <div class="border-grey">
+        <div class="form-items">
+          <button class="btn btn-red">Sign in with google</button>
+          <button class="btn btn-blue">Sign in with facebook</button>
+        </div>
+        <span class="or-text">OR</span>
+        <div class="form-items">
+          <label>*Email Address</label>
+          <input type="text" name="">
+        </div>
+        <div class="form-items">
+          <label>*Password</label>
+          <input type="Password" name="">
+        </div>
+        <div class="form-items checkbox">
+          <label>
+            <input type="checkbox" name="">
+            Remember me
+          </label>
+          <a href="">Forgot your password?</a>
+        </div>
+        <div class="form-action">
+          <button class="btn btn-green">Login</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

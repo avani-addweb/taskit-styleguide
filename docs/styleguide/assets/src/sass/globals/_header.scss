@@ -4,3 +4,78 @@
  *
  * Header SCSS.
  */
+
+.header {
+  position: relative;
+}
+.navbar-brand {
+  float: none;
+  img {
+    max-height: 45px;
+  }
+}
+.navbar-toggle {
+  margin-right: 0;
+  background-color: $green;
+  @include border-radius(2px);
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+  .icon-bar {
+    background-color: $white;
+  }
+}
+.navbar-collapse {
+  display: none;
+  position: absolute;
+  top: 87px;
+  left: 0;
+  background-color: $grey;
+  width: 100%;
+  text-align: left;
+  &.collapse {
+    @media (min-width: 768px) {
+      display: none !important;
+    }
+  }
+  &.in {
+    @media (min-width: 768px) {
+      display: block !important;
+    }
+  }
+  ul {
+    width: 100%;
+    li {
+      width: 100%;
+      a {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.right-header {
+  display: inline-block;
+  @include calc('width', '100% - 44px');
+  text-align: right;
+  .navbar-nav {
+    float: none;
+    display: inline-block;
+  }
+}
+.menu {
+  li {
+    a {
+      color: $white;
+      font-size: 14px;
+      text-transform: uppercase;
+      @include border-radius(3px);
+      a {
+        &:hover {
+          background-color: $green;
+        }
+      }
+    }
+  }
+}
