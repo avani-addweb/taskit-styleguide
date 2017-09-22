@@ -3,6 +3,9 @@
 scss_files: "**/*.scss"
 
 exclude: 
+  - '../**/_variable.css'
+  - '../**/abstractions/_variable.scss'
+  - '../**/thirdparty/owl-carousel/*.css'
   - '../**/animate.css'
   - '../**/magic.css'
   - '../**/owl.carousel.css'

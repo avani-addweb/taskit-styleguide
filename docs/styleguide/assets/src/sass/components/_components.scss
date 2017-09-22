@@ -5,13 +5,11 @@
  * Components design.
  */
 
-// SCSS for & if condition
-@for $round_val from 1 through 100 {
-  @if $round_val == 8 or $round_val == 13 or $round_val == 24 {
-    .corner-rounded-#{$round_val} {
-      border-radius: (#{$round_val}#{px});
-    }
-  } @else {
-    // code
-  }
+/* Background color */
+.bg-white {
+  background-color: $white;
+}
+
+.bg-grey {
+  background-color: $grey;
 }
