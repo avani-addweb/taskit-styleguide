@@ -13,3 +13,57 @@
 .bg-grey {
   background-color: $grey;
 }
+
+/* Container width */
+.container-460 {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.border-grey {
+  border: 1px solid $grey-b6;
+}
+
+/* Border radius */
+.corner-rounded-4 {
+  @include border-radius(4px);
+}
+
+.social-share-button {
+  button {
+    float: left;
+    margin-right: 20px;
+    font-size: $font-size-14;
+    text-transform: none;
+    @include calc('width', '50% - 10px');
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.or-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: $font-size-14;
+  text-align: center;
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: $grey-b6;
+    content: '';
+  }
+  span {
+    display: inline-block;
+    width: 45px;
+    background-color: $white;
+  }
+}

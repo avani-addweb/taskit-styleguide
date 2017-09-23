@@ -14,24 +14,91 @@ input[type='tel'],
 textarea,
 select,
 .form-control {
-  /*height: 30px;
+  height: 40px;
   padding: 4px 12px;
-  border-color: $black;
-  background-color: $white;
-  @include border-radius(0);
+  border: 1px solid $grey-b6;
+  background-color: $grey-e7;
+  @include border-radius(4px);
   @include box-shadow(none);
-  &.throbbing {
-    background-repeat: no-repeat;
-  }*/
+  &:focus {
+    outline: none;
+  }
 }
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='number']:focus,
-input[type='tel']:focus,
-textarea:focus,
-select:focus,
-.form-control:focus {
-  /*border-color: $black;
-  @include box-shadow(0 1px 2px rgba(0, 0, 0, .2));*/
+
+/* Custom Checkbox and Radio button design */
+.input-rc {
+  position: relative;
+  display: inline-block;
+  input[type='checkbox'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0;
+    + .input-rc-span {
+      float: left;
+      display: inline-block;
+      height: 21px;
+      width: 21px;
+      margin-top: -2px;
+      margin-right: 8px;
+      background-image: url('../images/checkbox.png');
+      background-position: center right -1px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      content: '';
+    }
+    &:checked {
+      + .input-rc-span {
+        background-position: center left;
+      }
+    }
+  }
 }
+
+/* User form design */
+.user-form {
+  display: inline-block;
+  width: 100%;
+  padding: 25px;
+  .form-items {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    label {
+      display: inline-block;
+      /*width: 100%;*/
+      margin-bottom: 10px;
+      padding-left: 0;
+      color: $grey-62;
+      font-size: $font-size-15;
+      text-transform: uppercase;
+    }
+    input[type="text"],
+    input[type="Password"] {
+      width: 100%;
+    }
+  }
+  .remeber-me,
+  .forgot-link {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    font-size: $font-size-14;
+  }
+  .forgot-link {
+    color: $grey-79;
+    text-align: right;
+  }
+  .form-action {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+

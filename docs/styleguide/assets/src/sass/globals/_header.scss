@@ -26,12 +26,12 @@
   }
 }
 .navbar-collapse {
-  display: none;
   position: absolute;
   top: 87px;
   left: 0;
-  background-color: $grey;
+  display: none;
   width: 100%;
+  background-color: $grey;
   text-align: left;
   &.collapse {
     @media (min-width: 768px) {

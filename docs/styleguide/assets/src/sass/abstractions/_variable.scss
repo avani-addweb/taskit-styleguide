@@ -20,9 +20,24 @@ $white: #FFF;
 $black: #000;
 
 $grey: #303135;
+$grey-b6: #B6B6B6;
+$grey-e7: #E7E7E7;
+$grey-62: #626262;
+$grey-79: #797979;
 
 $green: #94C34F;
 
+$red: #FF0049;
+
+$blue: #3F4C99;
+
+/* Font size*/
+$font-size-base: 18px;
+$font-size-14: ceil(($font-size-base *  0.75)); //14px
+$font-size-15: ceil(($font-size-base *  0.833)); //15px
+$font-size-16: floor(($font-size-base *  0.9)); //16px
+$font-size-18: $font-size-base; //18px
+$font-size-25: floor(($font-size-base *  1.4)); //25px
 
 /**
  * Media query ( for responsive design )
