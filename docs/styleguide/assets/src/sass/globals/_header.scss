@@ -79,3 +79,19 @@
     }
   }
 }
+
+/* User Menu design */
+.user-menu {
+  display: inline-block;
+  width: 100%;
+  ul {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
