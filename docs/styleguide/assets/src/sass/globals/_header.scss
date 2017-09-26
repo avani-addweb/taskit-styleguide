@@ -7,6 +7,9 @@
 
 .header {
   position: relative;
+  .navbar {
+    margin-bottom: 0;
+  }
 }
 .navbar-brand {
   float: none;
@@ -84,13 +87,25 @@
 .user-menu {
   display: inline-block;
   width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid $grey-b6;
   ul {
+    float: left;
     display: inline-block;
     width: 100%;
     margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
     li {
+      float: left;
       display: inline-block;
+      margin-right: 40px;
+      a {
+        float: left;
+        display: inline-block;
+        color: $grey-79;
+        font-size: $font-size-14;
+      }
     }
   }
 }
