@@ -4,3 +4,61 @@
  *
  * Footer SCSS.
  */
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+.footer-content {
+  @include flexbox();
+  color: $grey-6b;
+  font-size: 14px;
+  a {
+    color: $grey-6b;
+  }
+  .footer-col {
+    float: left;
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.about-link,
+.support {
+  width: 15%;
+}
+.category {
+  width: 22%;
+}
+.testimonial {
+  width: 25%;
+  p {
+    font-size: 14px;
+  }
+  a {
+    color: $blue-53;
+  }
+  span {
+    display: inline-block;
+    width: 100%;
+  }
+}
+.social-wrap {
+  width: 30%;
+}
+.footer-title {
+  margin: 0 0 20px;
+  color: $black-2a;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.footer-link {
+  li {
+    margin-bottom: 10px;
+  }
+}

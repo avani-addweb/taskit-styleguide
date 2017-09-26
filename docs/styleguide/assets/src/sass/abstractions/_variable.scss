@@ -16,21 +16,23 @@
 
 
 /* Color code */
-$white: #FFF;
-$black: #000;
+$white:    #FFF;
+$black:    #000;
+$black-2a: #2A2A2A;
 
-$grey: #303135;
+$grey:    #303135;
 $grey-b6: #B6B6B6;
 $grey-e7: #E7E7E7;
 $grey-62: #626262;
 $grey-79: #797979;
+$grey-6b: #6B6B6B;
 
 $green: #94C34F;
 
 $red: #FF0049;
 
-$blue: #3F4C99;
-
+$blue:    #3F4C99;
+$blue-53: #53C4F9;
 /* Font size*/
 $font-size-base: 18px;
 $font-size-14: ceil(($font-size-base *  0.75)); //14px
