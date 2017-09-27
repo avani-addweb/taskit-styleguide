@@ -18,10 +18,30 @@ select,
   padding: 4px 12px;
   border: 1px solid $grey-b6;
   background-color: $grey-e7;
+  color: $grey-b6;
   @include border-radius(4px);
   @include box-shadow(none);
-  &:focus {
+  &:focus,
+  &:hover {
+    border-color: $grey-b6;
     outline: none;
+    box-shadow: none;
+  }
+}
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid $grey-b6;
+  color: $grey-b6;
+  font-size: 14px;
+  resize: none;
+  @include border-radius(4px);
+  &:focus,
+  &:hover {
+    border-color: $grey-b6;
+    outline: none;
+    box-shadow: none;
   }
 }
 
@@ -113,4 +133,68 @@ select,
     }
   }
 }
+
+/* Input file design */
+.form-managed-file {
+  display: inline-block;
+  width: 100%;
+  .input-file {
+    display: inline-block;
+    max-width: 400px;
+    margin-right: 12px;
+    .input-file-name {
+      position: relative;
+      float: left;
+      height: 40px;
+      width: 200px;
+      padding: 8px 20px;
+      border: 1px solid $grey-b6;
+      cursor: pointer;
+      @include border-radius(3px 0 0 3px);
+    }
+    .input-file-sub {
+      position: relative;
+      float: left;
+      height: 40px;
+      width: 110px;
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        height: 100%;
+        width: 110px;
+        margin-left: -5px;
+        padding: 10px 0;
+        font-size: 10px;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+        content: 'Upload';
+        @extend .btn;
+        @extend .btn-grey;
+        /*@extend .btn-gradient-blue;*/
+        @include border-radius(0 3px 3px 0);
+      }
+      input {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0;
+      }
+    }
+  }
+}
+.input-group-btn {
+  display: inline-block;
+  &:last-child > .btn {
+    padding: 10px 40px;
+    font-size: 13px;
+    text-transform: capitalize;
+    @include border-radius(3px);
+    @extend .btn;
+    @extend .btn-gradient-blue;
+  }
+}
+
 

@@ -23,7 +23,6 @@
   font-weight: 700;
 }
 
-
 .page-title {
   display: inline-block;
   width: 100%;
@@ -51,6 +50,45 @@
     width: 90px;
     background-color: $grey-87;
     content: '';
+  }
+}
+
+.block-title {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  color: $blue-6e;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.block-sub-title {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: $blue-6e;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* List style add task design */
+.info-wrap {
+  display: inline-block;
+  width: 100%;
+  li {
+    display: inline-block;
+    width: 100%;
+    color: $grey-67;
+    font-size: 16px;
+    line-height: 25px;
+    &::before {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      font-style: 20px;
+      font-family: 'Fontawesome';
+      content: '\f00c';
+    }
   }
 }
 
