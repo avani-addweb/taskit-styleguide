@@ -95,3 +95,11 @@
   background:         linear-gradient(to bottom, $top 0%, $bottom 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom',GradientType=0);
 }*/
+
+@mixin background-75-angle ($value1, $value2, $value3, $value4) {
+  background: $value1;
+  background: -moz-linear-gradient(75deg, $value1 0%, $value2 70%, $value3 70%, $value4 100%);
+  background: -webkit-linear-gradient(75deg, $value1 0%, $value2 70%, $value3 70%, $value4 100%);
+  background: linear-gradient(75deg, $value1 0%, $value2 70%, $value3 70%, $value4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$value1', endColorstr='$value4',GradientType=1 );
+}

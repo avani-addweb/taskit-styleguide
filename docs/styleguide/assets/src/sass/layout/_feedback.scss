@@ -1,0 +1,25 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Feedback page SCSS
+ */
+
+.feedback-wrap {
+  .radio-group {
+    label {
+      margin-bottom: 15px;
+      color: $grey-79;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    input {
+      margin: 0 20px 0 0;
+    }
+  }
+  .feedback-form {
+    > label {
+      margin-bottom: 20px;
+    }
+  }
+}

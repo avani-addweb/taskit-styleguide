@@ -1,0 +1,26 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Components design.
+ */
+
+/* Page layout with sidebar */
+.sidebar {
+  float: left;
+  width: 210px;
+  margin-right: 70px;
+}
+.content-area {
+  float: left;
+  @include calc('width', '100% - 280px');
+}
+/* End */
+
+/* 2 Column grid design */
+.grid-50 {
+  float: left;
+  display: inline-block;
+  width: 50%;
+}
+/* End */

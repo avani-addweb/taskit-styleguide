@@ -21,8 +21,8 @@
   &:active:focus {
     color: $white;
     text-decoration: none;
-    outline: none;
     opacity: .9;
+    outline: none;
     @include box-shadow(none);
   }
 }
@@ -34,4 +34,8 @@
 .btn-blue {
   border-color: $blue;
   background-color: $blue;
+}
+
+.btn-gradient-blue {
+  @include background-75-angle(rgba(105,153,251,1), rgba(105,153,251,1), rgba(93,134,220,1), rgba(93,134,220,1));
 }

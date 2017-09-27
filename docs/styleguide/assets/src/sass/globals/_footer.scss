@@ -39,13 +39,17 @@ ul {
   width: 25%;
   p {
     font-size: 14px;
+    font-style: italic;
   }
   a {
+    display: inline-block;
+    margin-bottom: 10px;
     color: $blue-53;
   }
   span {
     display: inline-block;
     width: 100%;
+    color: $black-2a;
   }
 }
 .social-wrap {
