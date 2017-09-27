@@ -1,0 +1,55 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Card design.
+ */
+
+.card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid $grey-b6;
+}
+
+.card-bottom-border {
+  position: relative;
+  border-right: none;
+  border-bottom: none;
+  background-color: $white;
+  @include border-radius(3px);
+  &::before {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    height: 8px;
+    width: 100%;
+    margin-bottom: -8px;
+    background-color: #00D6BE;
+    content: '';
+    @include border-radius(2px);
+  }
+  &.card-bottom-border-yellow {
+    &::before {
+      background-color: $yellow;
+    }
+  }
+  &.card-bottom-border-blue {
+    &::before {
+      background-color: $blue-33;
+    }
+  }
+  &.card-bottom-border-purple {
+    &::before {
+      background-color: $purple;
+    }
+  }
+  &.card-bottom-border-red {
+    &::before {
+      background-color: $red-ff;
+    }
+  }
+}

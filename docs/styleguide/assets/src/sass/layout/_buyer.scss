@@ -1,0 +1,26 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Buyer page SCSS
+ */
+
+.order-status-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    float: left;
+    margin-right: 50px;
+    @include calc('width', '20% - 40px');
+    &:last-child {
+      margin-right: 0;
+    }
+    .number {
+      margin-bottom: 10px;
+      font-size: $font-size-30;
+    }
+    .status {
+      font-size: $font-size-14;
+    }
+  }
+}
