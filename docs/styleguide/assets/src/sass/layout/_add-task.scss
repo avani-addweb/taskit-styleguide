@@ -1,0 +1,47 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Add task page SCSS
+ */
+
+.add-task-wrapper {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+  .form-wrap {
+    float: left;
+    margin-right: 90px;
+    @include calc('width', '40% - 90px');
+    form {
+      padding-bottom: 25px;
+      border-bottom: 1px solid $grey-b6;
+      .form-group {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 40px;
+        label {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 10px;
+          color: $black-33;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .form-control {
+          background-color: $white;
+        }
+      }
+      .serach-icon {
+        background-image: url('../images/search-icon.png');
+        background-position: right 12px center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+      }
+    }
+  }
+  .detail-wrapper {
+    float: right;
+    width: 60%;
+  }
+}
