@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Login page</title>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/site.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header bg-grey">
+        <nav class="navbar bg-grey">
+          <div class="container">
+            <div class="row vertical-align-bottom">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="col-sm-3">
+                <div class="navbar-header">
+                  <a class="navbar-brand brand-logo" href="#">
+                    <img src="../assets/images/logo.png" alt="Taskit" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-9">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="right-header">
+                  <ul class="menu nav navbar-nav">
+                    <li><a href="#" class="active">How it works</a></li>
+                    <li><a href="#">buy/sell</a></li>
+                    <li><a href="#">login/register</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+                <ul class="menu nav navbar-nav">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="container">
+
+      <div class="sidebar">
+        <div class="sidebar-box bg-grey-light">
+          <h2>Dashboard</h2>
+          <div class="user-info">
+            <img src="../assets/images/user-img.png">
+            <div class="user-name">Johnny Harper</div>
+            <div>Web developer</div>
+            <div class="star-rating"></div>
+          </div>
+        </div>
+        <div class="sidebar-box bg-grey-light">
+          <ul class="list-style">
+            <li class="active icon-star"><a href="#">View my favorites</a></li>
+            <li class="icon-profile-setting"><a href="#">Public profile setting</a></li>
+            <li class="icon-user"><a href="#">Account setting</a></li>
+            <li><a href="icon-lock">Security setting</a></li>
+            <li><a href="icon-paypal">Paypal account</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-area">
+        <form>
+          <div class="title-border">Personal Information</div>
+          <div class="left-form-part">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Location</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="right-form-part">
+            <label>Profile photo</label>
+          </div>
+          <div class="title-border">Qualification Information</div>
+          <div class="form-group">
+            <label>Education</label>
+            <input type="text" class="form-control">
+            <button>Add more</button>
+          </div>
+          <div class="form-group">
+            <label>Education</label>
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+            <button>Add more</button>
+          </div>
+          <div class="title-border">Personal Information</div>
+          <div class="form-group">
+            <label>Skill</label>
+            <input type="text" class="form-control">
+            <button>Add more</button>
+          </div>
+          <div class="form-group">
+            <label>Skill</label>
+            <input type="text" class="form-control">
+            <button>Add more Skill</button>
+          </div>
+          <div class="form-group">
+            <label>Portfolio</label>
+            <button>Add more Skill</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
