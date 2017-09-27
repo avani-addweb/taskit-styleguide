@@ -26,20 +26,31 @@ $grey-e7: #E7E7E7;
 $grey-62: #626262;
 $grey-79: #797979;
 $grey-6b: #6B6B6B;
+$grey-87: #878787;
+$grey-99: #999;
 
 $green: #94C34F;
 
 $red: #FF0049;
+$red-ff: #FF285F;
 
 $blue:    #3F4C99;
 $blue-53: #53C4F9;
+$blue-33: #339BEE;
+
+$purple: #C400E9;
+
+$yellow: #FF9E00;
+
 /* Font size*/
 $font-size-base: 18px;
 $font-size-14: ceil(($font-size-base *  0.75)); //14px
 $font-size-15: ceil(($font-size-base *  0.833)); //15px
 $font-size-16: floor(($font-size-base *  0.9)); //16px
 $font-size-18: $font-size-base; //18px
+$font-size-20: ceil(($font-size-base *  1.1)); //20px
 $font-size-25: floor(($font-size-base *  1.4)); //25px
+$font-size-30: floor(($font-size-base *  1.67)); //30px
 
 /**
  * Media query ( for responsive design )

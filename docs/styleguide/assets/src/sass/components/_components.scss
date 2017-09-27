@@ -68,3 +68,28 @@
     background-color: $white;
   }
 }
+
+
+.user-detail-wrap {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+  .user-image {
+    float: left;
+    width: 50px;
+    margin-right: 20px;
+  }
+  .user-detail {
+    float: left;
+    @include calc('width', '100% - 70px');
+    .user-title {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    .user-desc {
+      color: $grey-79;
+      font-size: $font-size-14;
+    }
+  }
+}

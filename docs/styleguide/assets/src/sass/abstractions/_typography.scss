@@ -15,3 +15,10 @@
   text-transform: uppercase;
 }
 
+.title-small {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $font-size-20;
+  font-weight: 700;
+}
