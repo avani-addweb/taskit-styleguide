@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Add page </title>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/site.min.js"></script>
+  </head>
+  <body>
+    <header class="header bg-grey ">
+        <nav class="navbar bg-grey">
+          <div class="container">
+            <div class="row vertical-align-bottom">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="col-sm-3">
+                <div class="navbar-header">
+                  <a class="navbar-brand brand-logo" href="#">
+                    <img src="../assets/images/Logo.png" alt="Taskit" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-9">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="right-header">
+                  <ul class="menu nav navbar-nav">
+                    <li><a href="#" class="active">How it works</a></li>
+                    <li><a href="#">buy/sell</a></li>
+                    <li><a href="#">login/register</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+                <ul class="menu nav navbar-nav">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">About us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="user-menu">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="text-icon dashboard-icon">Dashboard</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon activity-icon">Activity</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon contact-icon">Contact</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon inbox-icon">Inbox</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon setting-icon">Setting</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon payment-icon">Payment Receipts</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon recommended-icon">Recommended Task</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon logout-icon">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="order-status">
+        <div class="page-heading">Order Complete</div>
+        <table>
+          <tr>
+            <th>Task</th>
+            <th>Price</th>
+            <th>Date of Order</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>I will do 2 graphics logo with 3d effect and Will do Automation Task</td>
+            <td>Rs. 1522.52</td>
+            <td>10/26/2016</td>
+            <td>Pending</td>
+          </tr>
+        </table>
+      </div>
+      <div class="task-list">
+        <div class="page-heading">All Task List</div>
+        <div class="dropdown-filter">
+          <select>
+            <option>Relevance</option>
+            <option>Low to High</option>
+            <option>High to low</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="left-filter col-sm-12 col-md-3">
+            <div class="range">
+              <div class="filter-heading">SHOW TASKS FROM</div>
+              <div class="scroller">
+                <input id="ex2" type="text" class="span2" value="" data-slider-min="500" data-slider-max="8000" data-slider-step="10" data-slider-value="[250,450]"/>
+              </div>
+            </div>
+            <div class="rating">
+              <div class="filter-heading">SHOW TASKS BY RATING</div>
+              <div class="star-rating">
+                <div class="star-each">
+                  <div class="rating-image">
+                    <img src="../assets/images/5star.png">
+                  </div>
+                  <input type="checkbox" name="" value="5star">
+                </div>
+                <div class="star-each">
+                  <div class="rating-image">
+                    <img src="../assets/images/4star.png">
+                  </div>
+                  <input type="checkbox" name="" value="4star">
+                </div>
+                <div class="star-each">
+                  <div class="rating-image">
+                    <img src="../assets/images/3star.png">
+                  </div>
+                  <input type="checkbox" name="" value="3star">
+                </div>
+                <div class="star-each">
+                  <div class="rating-image">
+                    <img src="../assets/images/2star.png">
+                  </div>
+                  <input type="checkbox" name="" value="2star">
+                </div>
+                <div class="star-each">
+                  <div class="rating-image">
+                    <img src="../assets/images/1star.png">
+                  </div>
+                  <input type="checkbox" name="" value="1star">
+                </div>
+              </div>
+            </div>
+            <div class="timing-filter">
+              <div class="filter-heading">TURN AROUND TIME</div>
+              <div class="timing-radio">
+                <input type="radio" name="" value="upto 24hrs"> Up to 24 hours
+                <input type="radio" name="" value="upto 3 days"> Up to 3 days
+                <input type="radio" name="" value="upto 5 days"> Up to 5 days
+                <input type="radio" name="" value="upto 7 days"> Up to 7 days
+                <input type="radio" name="" value="Any"> Any
+              </div>
+            </div>
+            <div class="categories">
+              <div class="filter-heading">ALL CATEGORIES</div>
+              <div class="category-filter">
+                <ul>
+                  <li><a href="">Logo Design</a></li>
+                  <li><a href="">Intros & Animated Logos</a></li>
+                  <li><a href="">Vector Tracing</a></li>
+                  <li><a href="">Promotional Videos</a></li>
+                  <li><a href="">Outdoor Advertising</a></li>
+                  <li><a href="">Photoshop Editing</a></li>
+                  <li><a href="">Illustration</a></li>
+                  <li><a href="">Other</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-content col-sm-12 col-md-9">
+            <div class="row">
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/card.jpg">
+                  </div>
+                  <div class="price">&#8377 1500</div>
+                  <div class="card-detail">
+                    <p> i will design and develop fully responsive website</p>
+                    <p>by design_logix</p>
+                    <div class="rating">
+                      <img src="../assets/images/card-image.png">
+                      (4.1)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/card.jpg">
+                  </div>
+                  <div class="price">&#8377 1500</div>
+                  <div class="card-detail">
+                    <p> i will design and develop fully responsive website</p>
+                    <p>by design_logix</p>
+                    <div class="rating">
+                      <img src="../assets/images/card-image.png">
+                      (4.1)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/card.jpg">
+                  </div>
+                  <div class="price">&#8377 1500</div>
+                  <div class="card-detail">
+                    <p> i will design and develop fully responsive website</p>
+                    <p>by design_logix</p>
+                    <div class="rating">
+                      <img src="../assets/images/card-image.png">
+                      (4.1)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/card.jpg">
+                  </div>
+                  <div class="price">&#8377 1500</div>
+                  <div class="card-detail">
+                    <p> i will design and develop fully responsive website</p>
+                    <p>by design_logix</p>
+                    <div class="rating">
+                      <img src="../assets/images/card-image.png">
+                      (4.1)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/card.jpg">
+                  </div>
+                  <div class="price">&#8377 1500</div>
+                  <div class="card-detail">
+                    <p> i will design and develop fully responsive website</p>
+                    <p>by design_logix</p>
+                    <div class="rating">
+                      <img src="../assets/images/card-image.png">
+                      (4.1)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message">
+        <img src="#">
+      </div>
+    </div>
+  </body>
