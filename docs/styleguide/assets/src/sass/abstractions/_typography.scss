@@ -5,6 +5,18 @@
  * Design of Typography.
  */
 
+.flex {
+  @include flexbox();
+}
+
+.flex-wrap {
+  @include flex-wrap(wrap);
+}
+
+.flex-wrap {
+  @include flex-wrap(wrap);
+}
+
 .green-title {
   display: inline-block;
   margin-top: 0;
@@ -19,6 +31,7 @@
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 15px 0;
   font-size: $font-size-20;
   font-weight: 700;
 }
@@ -146,3 +159,61 @@ ul {
   }
 }
 /* End */
+
+/* Add task list design */
+ul.task-list {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 15px;
+  li {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px dashed $grey-58;
+    &:first-child {
+      border-top: 1px dashed $grey-58;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    span {
+      float: left;
+      color: $grey-59;
+      font-size: 12px;
+    }
+    .task-edit-section {
+      float: right;
+      .true-img-wrap {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin-right: 20px;
+        img {
+          height: 15px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .add-list {
+    position: relative;
+    color: $black;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: none;
+    &::before {
+      position: absolute;
+      float: left;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-left: -20px;
+      background-image: url('../images/plus.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+    }
+  }
+}

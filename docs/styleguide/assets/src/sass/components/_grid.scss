@@ -28,11 +28,60 @@
 /* 3 Column grid design */
 .grid-33 {
   float: left;
-  display: inline-block;
-  margin-right: 70px;
-  @include calc('width', '33.33% - 70px');
+  margin: 0 125px 45px 0;
+  @include calc('width', '33.33% - 84px');
   &:nth-child(3n) {
     margin-right: 0;
   }
 }
 /* End */
+
+/* Add task 2 page */
+.plan-block-section {
+  display: inline-block;
+  width: 100%;
+  /*border: 1px solid $grey-b6;*/
+  @include border-radius(4px);
+  .title-small,
+  .task-price-wrap {
+    &::after {
+      float: right;
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-right: 15px;
+      background-image: url('../images/edit.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+    }
+  }
+  .title-small {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .task-price-wrap {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    span {
+      padding: 0 8px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    &::after {
+      margin-top: 5px;
+    }
+  }
+  .plan-link {
+    box-shadow: inset 0 0 10px $grey-c7;
+    &::after {
+      display: none;
+    }
+  }
+}

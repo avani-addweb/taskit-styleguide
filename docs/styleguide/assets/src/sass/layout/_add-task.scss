@@ -54,19 +54,36 @@
       text-transform: capitalize;
     }
   }
-  .btn-group {
-    display: inline-block;
-    width: 100%;
-    .btn:first-child {
-      @include border-radius(4px);
-    }
-    .btn-green:last-child {
-      float: right;
-      @include border-radius(4px);
-    }
-  }
 }
 .detail-wrapper {
   float: right;
   width: 58%;
 }
+
+/* Chat icon design */
+.chat-wrap {
+  position: fixed;
+  float: right;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin-right: 72px;
+  padding: 12px 0 0 7px;
+  background-color: $pink;
+  @include border-radius(100px);
+}
+
+.plan-grid-wrapper {
+  display: inline-block;
+  width: 100%;
+  .plan-wrap {
+    max-width: 296px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+

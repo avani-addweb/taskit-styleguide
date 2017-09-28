@@ -56,3 +56,16 @@
 .btn-gradient-green {
   @include background-75-angle(#009928, #009928, #008624, #008624);
 }
+
+/* Buttons group for add task page */
+.btn-group {
+  display: inline-block;
+  width: 100%;
+  .btn:first-child {
+    @include border-radius(4px);
+  }
+  .btn-green:last-child {
+    float: right;
+    @include border-radius(4px);
+  }
+}
