@@ -140,15 +140,17 @@ select {
   width: 100%;
   .input-file {
     display: inline-block;
-    max-width: 400px;
-    margin-right: 12px;
+    max-width: 280px;
+    margin-right: 8px;
     .input-file-name {
       position: relative;
       float: left;
       height: 40px;
-      width: 200px;
-      padding: 8px 20px;
+      width: 185px;
+      padding: 10px 12px;
       border: 1px solid $grey-b6;
+      color: $grey-b6;
+      font-size: $font-size-14;
       cursor: pointer;
       @include border-radius(3px 0 0 3px);
     }
@@ -156,22 +158,23 @@ select {
       position: relative;
       float: left;
       height: 40px;
-      width: 110px;
+      width: 95px;
       cursor: pointer;
       &::before {
         position: absolute;
         height: 100%;
-        width: 110px;
+        width: 100px;
         margin-left: -5px;
-        padding: 10px 0;
-        font-size: 10px;
+        padding: 12px 0;
+        color: $white;
+        font-size: $font-size-14;
         font-weight: 700;
         text-align: center;
+        text-transform: capitalize;
         cursor: pointer;
         content: 'Upload';
-        @extend .btn;
         @extend .btn-grey;
-        /*@extend .btn-gradient-blue;*/
+        @extend .btn-gradient-grey;
         @include border-radius(0 3px 3px 0);
       }
       input {
@@ -188,11 +191,11 @@ select {
 .input-group-btn {
   display: inline-block;
   &:last-child > .btn {
-    padding: 10px 40px;
-    font-size: 13px;
-    text-transform: capitalize;
-    @include border-radius(3px);
-    @extend .btn;
+    padding: 10px 21px;
+    font-size: $font-size-14;
+    font-weight: 700;
+    text-transform: lowercase;
+    @include border-radius(4px);
     @extend .btn-gradient-blue;
   }
 }

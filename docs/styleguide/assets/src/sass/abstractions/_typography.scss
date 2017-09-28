@@ -37,7 +37,8 @@
   width: 100%;
   margin-bottom: 20px;
   padding: 15px 0;
-  border-bottom: 1px solid #AFAFAF;
+  /*border-bottom: 1px solid #AFAFAF;*/
+  border-bottom: 2px solid #D8D8D8;
   color: $grey-6b;
   font-size: 14px;
   text-transform: uppercase;
@@ -56,9 +57,9 @@
 .block-title {
   display: inline-block;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: $blue-6e;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -67,7 +68,7 @@
   width: 100%;
   margin-bottom: 20px;
   color: $blue-6e;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 

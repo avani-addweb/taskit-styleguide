@@ -24,3 +24,15 @@
   width: 50%;
 }
 /* End */
+
+/* 3 Column grid design */
+.grid-33 {
+  float: left;
+  display: inline-block;
+  margin-right: 70px;
+  @include calc('width', '33.33% - 70px');
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+/* End */

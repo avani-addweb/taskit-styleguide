@@ -7,11 +7,12 @@
 
 .btn {
   display: inline-block;
-  padding: 10px 12px;
+  padding: 10px 20px;
   border: 1px solid $white;
   background-color: $green;
   color: $white;
-  font-size: $font-size-16;
+  font-size: $font-size-14;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -39,8 +40,19 @@
   border-color: $grey-58;
   background-color: $grey-58;
 }
-
+.btn-green {
+  border-color: $green;
+  background-color: $green;
+}
 
 .btn-gradient-blue {
   @include background-75-angle(rgba(105, 153, 251, 1), rgba(105, 153, 251, 1), rgba(93, 134, 220, 1), rgba(93, 134, 220, 1));
+}
+
+.btn-gradient-grey {
+  @include background-75-angle(#586176, #586176, #4D5668, #4D5668);
+}
+
+.btn-gradient-green {
+  @include background-75-angle(#009928, #009928, #008624, #008624);
 }

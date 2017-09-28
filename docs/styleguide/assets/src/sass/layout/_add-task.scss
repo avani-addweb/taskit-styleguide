@@ -8,40 +8,65 @@
 .add-task-wrapper {
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
-  .form-wrap {
-    float: left;
-    margin-right: 90px;
-    @include calc('width', '40% - 90px');
-    form {
-      padding-bottom: 25px;
-      border-bottom: 1px solid $grey-b6;
-      .form-group {
+  padding: 25px 0 100px;
+}
+
+.form-wrap {
+  float: left;
+  margin-right: 90px;
+  @include calc('width', '42% - 90px');
+  form {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $grey-b6;
+    .form-group {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 40px;
+      label {
         display: inline-block;
         width: 100%;
-        margin-bottom: 40px;
-        label {
-          display: inline-block;
-          width: 100%;
-          margin-bottom: 10px;
-          color: $black-33;
-          font-size: 16px;
-          font-weight: 600;
-        }
-        .form-control {
-          background-color: $white;
-        }
+        margin-bottom: 10px;
+        color: $black-33;
+        font-size: 16px;
+        font-weight: 600;
       }
-      .serach-icon {
-        background-image: url('../images/search-icon.png');
-        background-position: right 12px center;
-        background-repeat: no-repeat;
-        background-size: 20px;
+      .form-control {
+        background-color: $white;
+      }
+      textarea {
+        height: auto;
+        background-color: $white;
       }
     }
+    .serach-icon {
+      background-image: url('../images/search-icon.png');
+      background-position: right 12px center;
+      background-repeat: no-repeat;
+      background-size: 20px;
+    }
   }
-  .detail-wrapper {
-    float: right;
-    width: 60%;
+  .add-btn-class {
+    display: inline-block;
+    width: 100%;
+    margin: 25px 0 60px;
+    text-align: right;
+    .btn {
+      text-transform: capitalize;
+    }
   }
+  .btn-group {
+    display: inline-block;
+    width: 100%;
+    .btn:first-child {
+      @include border-radius(4px);
+    }
+    .btn-green:last-child {
+      float: right;
+      @include border-radius(4px);
+    }
+  }
+}
+.detail-wrapper {
+  float: right;
+  width: 58%;
 }
