@@ -5,6 +5,7 @@
  * Components design.
  */
 
+
 /* Background color */
 .bg-white {
   background-color: $white;
@@ -12,6 +13,15 @@
 
 .bg-grey {
   background-color: $grey;
+  color: $white;
+}
+
+.bg-black {
+  background-color: $black-42;
+  color: $white;
+}
+.bg-blue {
+  background-color: $blue-7f;
   color: $white;
 }
 
