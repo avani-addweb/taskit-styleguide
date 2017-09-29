@@ -76,12 +76,14 @@
 }
 
 .plan-grid-wrapper {
-  display: inline-block;
   width: 100%;
+  margin-bottom: 40px;
+  justify-content: space-between;
   .plan-wrap {
+    display: inline-block;
     max-width: 296px;
     width: 100%;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   }
 }
 
