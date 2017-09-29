@@ -4,4 +4,120 @@
  *
  * Component-2 design.
  */
+$grey-f9:         #F9F9F7;
+$green-00:          #00D6BE;
+$font-size-base: 18px;
+$font-size-10: ceil(($font-size-base *  0.55)); //10px
 
+.color-black-42 {
+  color: $black-42;
+}
+.color-gray-99 {
+  color: $grey-99;
+}
+.border-half-right-radius {
+  @include border-radius(0 5px 5px 0);
+}
+/*Card price design*/
+.price {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+/*End*/
+.bold-text {
+  font-weight: 600;
+}
+/* page-heading tag design */
+.page-heading {
+  display: inline-block;
+  font-weight: 600;
+}
+/* END */
+/*Border design of page header section*/
+.title-border-bottom {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  &::after {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    height: 2px;
+    width: 90px;
+    background-color: $grey-87;
+    content: '';
+  }
+}
+/* END */
+/*Right-dropdrown section design*/
+.dropdown-filter {
+  float: right;
+  display: inline-block;
+  max-width: 240px;
+  width: 100%;
+  p {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  select {
+    display: inline-block;
+    max-width: 170px;
+    width: 100%;
+    background-color: $white;
+    vertical-align: middle;
+  }
+}
+/*End*/
+/*Order section design*/
+.order-status {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 70px;
+  .order-complete {
+    table {
+      width: 100%;
+      tr {
+        th {
+          padding: 15px;
+          background-color: $grey-f9;
+        }
+        td {
+          padding: 25px 20px;
+        }
+        .table-img {
+          &::before {
+            float: left;
+            display: inline-block;
+            width: 110px;
+            height: 90px;
+            background-image: url('../images/html-icon.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: '';
+          }
+        }
+      }
+      .table-detail {
+        td {
+          vertical-align: middle;
+          h4 {
+            display: inline-block;
+            max-width: 300px;
+            width: 100%;
+            margin-top: 20px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+/* End */

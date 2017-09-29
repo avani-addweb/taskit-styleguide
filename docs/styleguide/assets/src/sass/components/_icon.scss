@@ -22,3 +22,43 @@
     content: '';
   }
 }
+.dashboard-icon {
+  &::before {
+    background-image: url('../images/clock-icon.png');
+  }
+}
+.activity-icon {
+  &::before {
+    background-image: url('../images/activity.png');
+  }
+}
+.contact-icon {
+  &::before {
+    background-image: url('../images/contact.png');
+  }
+}
+.inbox-icon {
+  &::before {
+    background-image: url('../images/inbox-icon.png');
+  }
+}
+.setting-icon {
+  &::before {
+    background-image: url('../images/setting.png');
+  }
+}
+.payment-icon {
+  &::before {
+    background-image: url('../images/payment.png');
+  }
+}
+.recommended-icon {
+  &::before {
+    background-image: url('../images/recommended.png');
+  }
+}
+.logout-icon {
+  &::before {
+    background-image: url('../images/logout.png');
+  }
+}

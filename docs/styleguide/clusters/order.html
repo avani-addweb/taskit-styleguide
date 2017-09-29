@@ -90,26 +90,29 @@
       </div>
     </div>
     <div class="container">
-      <div class="order-status">
-        <div class="page-heading">Order Complete</div>
-        <table>
-          <tr>
-            <th>Task</th>
-            <th>Price</th>
-            <th>Date of Order</th>
-            <th>Status</th>
-          </tr>
-          <tr>
-            <td>I will do 2 graphics logo with 3d effect and Will do Automation Task</td>
-            <td>Rs. 1522.52</td>
-            <td>10/26/2016</td>
-            <td>Pending</td>
-          </tr>
-        </table>
+      <div class="order-status ">
+        <div class="page-heading title-border-bottom">Order Complete</div>
+        <div class="order-complete">
+          <table>
+            <tr class="border-grey">
+              <th>Task</th>
+              <th>Price</th>
+              <th>Date of Order</th>
+              <th>Status</th>
+            </tr>
+            <tr class="border-grey table-detail">
+              <td class="table-img"><h4>I will do 2 graphics logo with 3d effect and Will do Automation Task</h4></td>
+              <td>Rs. 1522.52</td>
+              <td>10/26/2016</td>
+              <td>Pending</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="task-list">
-        <div class="page-heading">All Task List</div>
+        <div class="page-heading title-border-bottom">All Task List</div>
         <div class="dropdown-filter">
+          <p>Sort by:</p>
           <select>
             <option>Relevance</option>
             <option>Low to High</option>
@@ -127,76 +130,95 @@
             <div class="rating border-grey">
               <h2 class="side-heading bg-black">SHOW TASKS BY RATING</h2>
               <div class="star-rating">
-                <div class="star-each">
-                  <div class="rating-image">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
+                <form>
+                  <div class="star-each">
+                    <div class="rating-image">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                    </div>
+                    <div class="rating-checkbox">
+                      <input type="checkbox" name="" value="5star">
+                    </div>
                   </div>
-                  <div class="rating-checkbox">
-                    <input type="checkbox" name="" value="5star">
+                  <div class="star-each">
+                    <div class="rating-image">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                    </div>
+                    <div class="rating-checkbox">
+                      <input type="checkbox" name="" value="4star">
+                    </div>
                   </div>
-                </div>
-                <div class="star-each">
-                  <div class="rating-image">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
+                  <div class="star-each">
+                    <div class="rating-image">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                    </div>
+                    <div class="rating-checkbox">
+                      <input type="checkbox" name="" value="3star">
+                    </div>
                   </div>
-                  <div class="rating-checkbox">
-                    <input type="checkbox" name="" value="4star">
+                  <div class="star-each">
+                    <div class="rating-image">
+                      <img src="../assets/images/star-black.png">
+                      <img src="../assets/images/star-black.png">
+                    </div>
+                    <div class="rating-checkbox">
+                      <input type="checkbox" name="" value="2star">
+                    </div>
                   </div>
-                </div>
-                <div class="star-each">
-                  <div class="rating-image">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
+                  <div class="star-each">
+                    <div class="rating-image">
+                      <img src="../assets/images/star-black.png">
+                    </div>
+                    <div class="rating-checkbox">
+                      <input type="checkbox" name="" value="1star">
+                    </div>
                   </div>
-                  <div class="rating-checkbox">
-                    <input type="checkbox" name="" value="3star">
-                  </div>
-                </div>
-                <div class="star-each">
-                  <div class="rating-image">
-                    <img src="../assets/images/1star.png">
-                    <img src="../assets/images/1star.png">
-                  </div>
-                  <div class="rating-checkbox">
-                    <input type="checkbox" name="" value="2star">
-                  </div>
-                </div>
-                <div class="star-each">
-                  <div class="rating-image">
-                    <img src="../assets/images/1star.png">
-                  </div>
-                  <div class="rating-checkbox">
-                    <input type="checkbox" name="" value="1star">
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
             <div class="timing-filter border-grey">
               <h2 class="side-heading bg-blue">TURN AROUND TIME</h2>
               <div class="timing-radio">
-                <label>
-                  <input type="radio" name="" value="upto 24hrs"> Up to 24 hours
-                </label>
-                <label>
-                  <input type="radio" name="" value="upto 3 days"> Up to 3 days
-                </label>
-                <label>
-                  <input type="radio" name="" value="upto 5 days"> Up to 5 days
-                </label>
-                <label>
-                  <input type="radio" name="" value="upto 7 days"> Up to 7 days
-                </label>
-                <label>
-                  <input type="radio" name="" value="Any"> Any
-                </label>
+                <form>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Up to 24 hours
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                       Up to 3 days
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+                        Up to 5 days
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked>
+                        Up to 7 days
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked>
+                        Any
+                    </label>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="categories border-grey">
@@ -219,80 +241,105 @@
             <div class="row">
               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card">
-                  <div class="card-image">
+                  <div class="card-image-price">
                     <img src="../assets/images/card.jpg">
+                    <div class="price bg-black border-half-right-radius">&#8377 1500</div>
                   </div>
-                  <div class="price">&#8377 1500</div>
-                  <div class="card-detail">
-                    <p> i will design and develop fully responsive website</p>
-                    <p>by design_logix</p>
-                    <div class="rating">
-                      <img src="../assets/images/card-image.png">
-                      (4.1)
+                  <div class="card-detail color-black-42">
+                    <div class="card-caption"> i will design and develop fully responsive website</div>
+                    <div class="card-owner-rating color-gray-99">
+                      <p>by <span class="bold-text color-black-42">design_logix</span></p>
+                      <div class="owner-rating">
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star"></div>(4.1)
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card">
-                  <div class="card-image">
+                  <div class="card-image-price">
                     <img src="../assets/images/card.jpg">
+                    <div class="price bg-black border-half-right-radius">&#8377 1500</div>
                   </div>
-                  <div class="price">&#8377 1500</div>
-                  <div class="card-detail">
-                    <p> i will design and develop fully responsive website</p>
-                    <p>by design_logix</p>
-                    <div class="rating">
-                      <img src="../assets/images/card-image.png">
-                      (4.1)
+                  <div class="card-detail color-black-42">
+                    <div class="card-caption"> i will design and develop fully responsive website</div>
+                    <div class="card-owner-rating color-gray-99">
+                      <p>by <span class="bold-text color-black-42">design_logix</span></p>
+                      <div class="owner-rating">
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star"></div>(4.1)
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card">
-                  <div class="card-image">
+                  <div class="card-image-price">
                     <img src="../assets/images/card.jpg">
+                    <div class="price bg-black border-half-right-radius">&#8377 1500</div>
                   </div>
-                  <div class="price">&#8377 1500</div>
-                  <div class="card-detail">
-                    <p> i will design and develop fully responsive website</p>
-                    <p>by design_logix</p>
-                    <div class="rating">
-                      <img src="../assets/images/card-image.png">
-                      (4.1)
+                  <div class="card-detail color-black-42">
+                    <div class="card-caption"> i will design and develop fully responsive website</div>
+                    <div class="card-owner-rating color-gray-99">
+                      <p>by <span class="bold-text color-black-42">design_logix</span></p>
+                      <div class="owner-rating">
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star"></div>(4.1)
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card">
-                  <div class="card-image">
+                  <div class="card-image-price">
                     <img src="../assets/images/card.jpg">
+                    <div class="price bg-black border-half-right-radius">&#8377 1500</div>
                   </div>
-                  <div class="price">&#8377 1500</div>
-                  <div class="card-detail">
-                    <p> i will design and develop fully responsive website</p>
-                    <p>by design_logix</p>
-                    <div class="rating">
-                      <img src="../assets/images/card-image.png">
-                      (4.1)
+                  <div class="card-detail color-black-42">
+                    <div class="card-caption"> i will design and develop fully responsive website</div>
+                    <div class="card-owner-rating color-gray-99">
+                      <p>by <span class="bold-text color-black-42">design_logix</span></p>
+                      <div class="owner-rating">
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star"></div>(4.1)
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="card">
-                  <div class="card-image">
+                  <div class="card-image-price">
                     <img src="../assets/images/card.jpg">
+                    <div class="price bg-black">&#8377 1500</div>
                   </div>
-                  <div class="price">&#8377 1500</div>
-                  <div class="card-detail">
-                    <p> i will design and develop fully responsive website</p>
-                    <p>by design_logix</p>
-                    <div class="rating">
-                      <img src="../assets/images/card-image.png">
-                      (4.1)
+                  <div class="card-detail color-black-42">
+                    <div class="card-caption"> i will design and develop fully responsive website</div>
+                    <div class="card-owner-rating color-gray-99">
+                      <p>by <span class="bold-text color-black-42">design_logix</span></p>
+                      <div class="owner-rating">
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star light-gray-star"></div>
+                        <div class="dark-gray-star"></div>(4.1)
+                      </div>
                     </div>
                   </div>
                 </div>
