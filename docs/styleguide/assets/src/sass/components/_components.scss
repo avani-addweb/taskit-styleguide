@@ -127,3 +127,165 @@
   }
 }
 
+/** Variable **/
+$sky-blue-a6:     #A6C4FE;
+$black-48:        #484848;
+$black-88:        #888;
+$grey-dd:         #DDD;
+$grey-f9:         #F9F9F7;
+$sky-66:          #669CFE;
+$black-43:        #434343;
+
+/** Taypography **/
+.card-top-heading {
+  margin: 9px 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.small-tilte {
+  display: inline-block;
+  margin: 0;
+  color: $black-88;
+  font-size: 14px;
+}
+.small-bold-title {
+  display: block;
+  margin: 5px 0;
+  color: $black-48;
+  font-size: 12px;
+  font-weight: 600;
+}
+/** Tab view **/
+.nav-tabs {
+  margin-bottom: 32px;
+  border-top: 1px solid $grey-dd;
+  li {
+    a {
+      padding: 13px 24px;
+      border: none;
+      color: $black-48;
+      font-size: 14px;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+      }
+    }
+  }
+  li.active {
+    a {
+      border: none;
+      background-color: $sky-blue-a6;
+      color: $white;
+      @include border-radius(0);
+      &:hover,
+      &:focus,
+      &:active {
+        border: none;
+        background-color: $sky-blue-a6;
+        color: $white;
+      }
+    }
+  }
+}
+.border-radius-5 {
+  border: 1px solid $grey-b6;
+  @include border-radius(5px);
+}
+.border-bottom {
+  border-bottom: 1px solid $grey-dd;
+}
+.bg-grey-f9 {
+  background-color: $grey-f9;
+}
+.bg-sky-66 {
+  background-color: $sky-66;
+}
+.main-content {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.left-content {
+  float: left;
+  display: inline-block;
+  margin-right: 55px;
+  @include calc(width, '70% - 56px');
+}
+.view-item {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+}
+.top-heading {
+  display: inline-block;
+  width: 100%;
+  padding-left: 24px;
+}
+.right-content {
+  float: left;
+  width: 30%;
+}
+.rating-star {
+  float: left;
+}
+.orders-queue {
+  margin-left: 15px;
+}
+.real-estate-img {
+  img {
+    width: 100%;
+  }
+}
+.brand-img {
+  display: inline-block;
+  padding: 0;
+}
+.degignation-title {
+  float: right;
+  .right-graphic-design {
+    float: right;
+    display: inline-block;
+  }
+}
+.title-space {
+  width: 100%;
+  margin-bottom: 26px;
+}
+.prerequisites-doc {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.doc-img {
+  position: relative;
+  padding: 12px 0 0 50px;
+  &::before {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 38px;
+    width: 38px;
+    background-image: url('../images/file-upload.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: '';
+  }
+}
+.portfolio {
+  display: inline-block;
+  width: 100%;
+  h2 {
+    margin-bottom: 23px;
+  }
+}
+/** button **/
+.contact-btn {
+  display: inline-block;
+  width: 100%;
+  a {
+    width: 100%;
+    background-color: $sky-66;
+  }
+}
