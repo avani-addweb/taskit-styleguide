@@ -27,12 +27,7 @@
     @include box-shadow(none);
   }
 }
-.btn-sm {
-  padding: 1px 15px;
-  font-size: $font-size-12;
-  font-weight: 100;
-  text-transform: capitalize;
-}
+
 .btn-red {
   border-color: $red;
   background-color: $red;
@@ -53,9 +48,7 @@
 .btn-gradient-blue {
   @include background-75-angle(rgba(105, 153, 251, 1), rgba(105, 153, 251, 1), rgba(93, 134, 220, 1), rgba(93, 134, 220, 1));
 }
-.btn-gradient-lightblue {
-  @include background-75-angle(#5EBAFF, #5EBAFF, #56A7E5, #56A7E5);
-}
+
 .btn-gradient-grey {
   @include background-75-angle(#586176, #586176, #4D5668, #4D5668);
 }
