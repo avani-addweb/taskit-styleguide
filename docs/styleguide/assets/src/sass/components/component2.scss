@@ -1,16 +1,17 @@
-/**
+ /*
  * @file
  * SCSS file to generate CSS.
  *
  * Component-2 design.
  */
+
 $grey-f9:         #F9F9F7;
 $green-00:          #00D6BE;
 $font-size-base: 18px;
 $font-size-10: ceil(($font-size-base *  0.55)); //10px
 
 .color-black-42 {
-  color: $black-42;
+  /*color: $black-42;*/ /
 }
 .color-gray-99 {
   color: $grey-99;

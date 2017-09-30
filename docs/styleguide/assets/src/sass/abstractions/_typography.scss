@@ -76,6 +76,16 @@
   font-weight: 700;
 }
 
+.block-heading {
+  display: inline-block;
+  width: 100%;
+  color: $grey-72;
+  font-size: $font-size-16;
+  p {
+    display: inline-block;
+  }
+}
+
 .block-sub-title {
   display: inline-block;
   width: 100%;
