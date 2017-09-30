@@ -12,17 +12,24 @@ ul {
   }
 }
 .footer-content {
-  @include flexbox();
+  padding: 35px 0;
   color: $grey-6b;
   font-size: 14px;
-  a {
-    color: $grey-6b;
+  @include flexbox();
+  @media (max-width: $mobile) {
+    display: inline-block;
   }
   .footer-col {
     float: left;
     display: inline-block;
     padding-right: 10px;
-    vertical-align: top;
+    @media (max-width: $mobile) {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+    }
     &:last-child {
       padding-right: 0;
     }
@@ -33,13 +40,14 @@ ul {
   width: 15%;
 }
 .category {
-  width: 22%;
+  width: 20%;
 }
 .testimonial {
   width: 25%;
   p {
     font-size: 14px;
     font-style: italic;
+    line-height: 18px;
   }
   a {
     display: inline-block;
@@ -53,7 +61,14 @@ ul {
   }
 }
 .social-wrap {
-  width: 30%;
+  width: 25%;
+  .logo,
+  .copy-right-wrap {
+    margin-bottom: 20px;
+  }
+  @media (max-width: $mobile) {
+    clear: left;
+  }
 }
 .footer-title {
   margin: 0 0 20px;
@@ -64,5 +79,39 @@ ul {
 .footer-link {
   li {
     margin-bottom: 10px;
+  }
+}
+.social-media {
+  display: inline-block;
+  li {
+    display: inline-block;
+  }
+  .social-icon {
+    &::before {
+      display: inline-block;
+      content: '';
+      height: 45px;
+      width: 45px;
+      margin-right: 5px;
+      background-image: url('../images/social-icons.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .twitter {
+    &::before {
+      background-position: -60px 0;
+    }
+  }
+  .instagram {
+    &::before {
+      background-position: -120px 0;
+    }
+  }
+  .googleplus {
+    &::before {
+      background-position: -175px 0;
+      margin-right: 0;
+    }
   }
 }
