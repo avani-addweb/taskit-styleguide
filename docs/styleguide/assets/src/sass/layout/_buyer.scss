@@ -4,7 +4,19 @@
  *
  * Buyer page SCSS
  */
-
+.user-detail-wrap {
+  .user-title {
+    .title-small {
+      padding: 0;
+    }
+    .user-type {
+      text-transform: capitalize;
+    }
+  }
+  .user-desc {
+    margin-bottom: 10px;
+  }
+}
 .order-status-wrap {
   display: flex;
   flex-wrap: wrap;
