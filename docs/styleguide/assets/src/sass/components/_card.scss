@@ -16,6 +16,11 @@
   position: relative;
   display: inline-block;
   width: 100%;
+  .task-image {
+    img {
+      width: 100%;
+    }
+  }
 }
 .task-title {
   display: inline-block;

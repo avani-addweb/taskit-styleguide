@@ -17,9 +17,90 @@
     margin-bottom: 10px;
   }
 }
+.section-title {
+  display: inline-block;
+  width: 100%;
+  /*padding-left: 50px;*/
+  .section-main-heading {
+    display: inline-block;
+    width: 100%;
+  }
+  .title-small {
+    padding-bottom: 10px;
+  }
+  &.icon-large {
+    padding-left: 50px;
+    &::before {
+      height: 35px;
+      width: 40px;
+      content: '';
+      background-image: url('../images/message.png');
+      background-size: cover;
+    }
+  }
+  &.recommended-title {
+    margin-bottom: 50px;
+    &::before {
+      background-image: url('../images/gray-star.png');
+    }
+  }
+}
+.comment-section-wrap {
+  display: inline-block;
+  max-width: 760px;
+  width: 100%;
+  margin-bottom: 120px;
+  .comment-section {
+    display: inline-block;
+    width: 100%;
+    margin-top: 35px;
+    .title-small {
+      padding-bottom: 10px;
+      font-size: $font-size-14;
+    }
+    .user-image,
+    .user-comment-details,
+    .user-message-button {
+      float: left;
+      display: inline-block;
+      max-width: 50px;
+      width: 100%;
+      margin-right: 20px;
+    }
+    .user-comment-details {
+      max-width: 180px;
+      .title-small-grey {
+        color: $grey-99;
+      }
+    }
+    .user-message-detail {
+      float: left;
+      display: inline-block;
+      @include calc('width','100% - 370px');
+      .title-small {
+        font-weight: 600;
+      }
+      .reply-detail {
+        display: inline-block;
+        max-width: 300px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+    }
+    .user-message-button {
+      max-width: 100px;
+      margin-right: 0;
+    }
+
+  }
+}
 .order-status-wrap {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 80px;
   .card {
     float: left;
     margin-right: 50px;

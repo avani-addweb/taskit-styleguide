@@ -31,7 +31,7 @@
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 15px 0;
+  padding: 0 0 15px;
   font-size: $font-size-20;
   font-weight: 700;
 }
@@ -74,6 +74,16 @@
   color: $blue-6e;
   font-size: 20px;
   font-weight: 700;
+}
+
+.block-heading {
+  display: inline-block;
+  width: 100%;
+  color: $grey-72;
+  font-size: $font-size-16;
+  p {
+    display: inline-block;
+  }
 }
 
 .block-sub-title {
