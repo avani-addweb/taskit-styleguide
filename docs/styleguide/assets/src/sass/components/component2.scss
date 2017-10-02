@@ -100,28 +100,35 @@ $font-size-10: ceil(($font-size-base *  0.55)); //10px
         td {
           padding: 25px 20px;
         }
-        .table-img {
-          &::before {
-            float: left;
-            display: inline-block;
-            width: 110px;
-            height: 90px;
-            background-image: url('../images/html-icon.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            content: '';
-          }
-        }
       }
       .table-detail {
         td {
+          width: 220px;
           vertical-align: middle;
-          h4 {
-            display: inline-block;
-            max-width: 300px;
-            width: 100%;
-            margin-top: 20px;
-            line-height: 25px;
+          /*@media (max-width: $small-desktop) {
+            width: 150px;
+          }
+          @media (max-width: $ipad-portrait) {
+            width: 120px;
+          }*/
+          &.table-img {
+            @include calc('width','100% - 660px');
+            /*@media (max-width: $small-desktop) {
+              @include calc('width','100% - 450px');
+            }
+            @media (max-width: $ipad-portrait) {
+              @include calc('width','100% - 360px');
+            }*/
+            img {
+              float: left;
+              width: 110px;
+            }
+            h4 {
+              display: inline-block;
+              margin-top: 20px;
+              line-height: 25px;
+              @include calc('width','100% - 110px');
+            }
           }
         }
       }

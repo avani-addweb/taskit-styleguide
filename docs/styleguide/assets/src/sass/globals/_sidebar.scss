@@ -14,6 +14,13 @@
   width: 100%;
   margin-bottom: 15px;
 }
+.range {
+  .scroller {
+    input {
+      width: 100%;
+    }
+  }
+}
 .star-rating,
 .timing-radio,
 .category-filter {

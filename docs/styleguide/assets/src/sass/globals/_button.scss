@@ -17,6 +17,9 @@
   text-transform: uppercase;
   cursor: pointer;
   @include border-radius(4px);
+  @media (max-width: $mobile) {
+    padding: 5px 15px;
+  }
   &:hover,
   &:focus,
   &:active:focus {
