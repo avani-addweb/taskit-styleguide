@@ -85,3 +85,51 @@
     }
   }
 }
+
+/* Box design for add task 3 page */
+.gallery-inner-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  .box {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    @include border-radius(4px);
+  }
+  .box-img {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+.publish-task-wrap {
+  display: inline-block;
+  width: 100%;
+  .pubilsh-inner-wrap {
+    float: left;
+    max-width: 385px;
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+    @include border-radius(4px);
+    .title-wrap {
+      display: inline-block;
+      max-width: 270px;
+      width: 100%;
+      color: $grey-71;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+  .btn-group {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+}

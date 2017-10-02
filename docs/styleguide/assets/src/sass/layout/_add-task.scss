@@ -87,5 +87,19 @@
   }
 }
 
-
-
+/* Block title design */
+.block-heading {
+  display: inline-block;
+  width: 100%;
+  color: $grey-72;
+  font-size: 14px;
+  span {
+    display: inline-block;
+    padding: 0 5px;
+    color: $grey-b3;
+  }
+  p {
+    display: inline-block;
+    color: $grey-71;
+  }
+}
