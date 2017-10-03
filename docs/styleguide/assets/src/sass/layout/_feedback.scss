@@ -4,9 +4,19 @@
  *
  * Feedback page SCSS
  */
-
+.sidebar-box {
+  .list-spacing {
+    margin-top: 20px;
+  }
+}
+.getting-start-wrap {
+  .list-items {
+    margin-bottom: 100px;
+  }
+}
 .feedback-wrap {
   .radio-group {
+    margin: 10px 0 80px;
     label {
       margin-bottom: 15px;
       color: $grey-79;
@@ -18,6 +28,7 @@
     }
   }
   .feedback-form {
+    margin-top: 25px;
     > label {
       margin-bottom: 20px;
     }

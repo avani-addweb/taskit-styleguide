@@ -12,45 +12,70 @@
   padding: 5px;
   border: 1px solid $grey-b6;
 }
-.task-header {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  .task-image {
-    img {
-      width: 100%;
+.card-task {
+  .task-header {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    .task-image {
+      img {
+        width: 100%;
+      }
     }
   }
-}
-.task-title {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 10px;
-  font-style: italic;
-  font-size: $font-size-14;
-  font-weight: 600;
-}
-.task-by-rate {
-  display: inline-block;
-  width: 100%;
-  font-size: $font-size-10;
-  .task-by {
+  .task-title {
     display: inline-block;
-    @media (max-width: $small-desktop) {
-      width: 100%;
-      margin-bottom: 10px;
-    }
+    width: 100%;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: $font-size-14;
+    font-weight: 600;
   }
-  .task-rating {
-    float: right;
+  .task-by-rate {
     display: inline-block;
-    p {
+    width: 100%;
+    font-size: $font-size-10;
+    .task-by {
       display: inline-block;
+      @media (max-width: $small-desktop) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .task-rating {
+      float: right;
+      display: inline-block;
+      p {
+        display: inline-block;
+      }
     }
   }
 }
-
-
+.card-progress {
+  float: left;
+  margin-right: 50px;
+  @include calc('width', '20% - 40px');
+  @media (max-width: $ipad-portrait) {
+    @include calc('width', '33.33% - 34px');
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: $mobile-portrait) {
+    width: 100%;
+    margin-right: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  .number {
+    margin-bottom: 10px;
+    font-size: $font-size-30;
+  }
+  .status {
+    font-size: $font-size-14;
+  }
+}
 .card-bottom-border {
   position: relative;
   border-right: none;

@@ -127,29 +127,4 @@
   @media (max-width: $mobile-portrait) {
     margin-bottom: 30px;
   }
-  .card {
-    float: left;
-    margin-right: 50px;
-    @include calc('width', '20% - 40px');
-    @media (max-width: $ipad-portrait) {
-      @include calc('width', '33.33% - 34px');
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-    }
-    @media (max-width: $mobile-portrait) {
-      width: 100%;
-      margin-right: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-    .number {
-      margin-bottom: 10px;
-      font-size: $font-size-30;
-    }
-    .status {
-      font-size: $font-size-14;
-    }
-  }
 }

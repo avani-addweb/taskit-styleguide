@@ -175,4 +175,15 @@ $font-size-10: ceil(($font-size-base *  0.55)); //10px
   color: $grey-72;
   font-size: $font-size-14;
 }
-/*End
+/*End */
+/*List spacing*/
+.list-spacing {
+  margin: 10px 0;
+  li {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+/* End */
