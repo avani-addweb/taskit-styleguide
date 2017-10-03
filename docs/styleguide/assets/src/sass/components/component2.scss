@@ -1,4 +1,4 @@
-/**
+/*
  * @file
  * SCSS file to generate CSS.
  *
@@ -113,10 +113,10 @@ $font-size-10: ceil(($font-size-base *  0.55)); //10px
           }*/
           &.table-img {
             @include calc('width','100% - 660px');
-            /*@media (max-width: $small-desktop) {
-              @include calc('width','100% - 450px');
+            @media (max-width: $small-desktop) {
+              min-width: 600px;
             }
-            @media (max-width: $ipad-portrait) {
+/*            @media (max-width: $ipad-portrait) {
               @include calc('width','100% - 360px');
             }*/
             img {
@@ -175,4 +175,4 @@ $font-size-10: ceil(($font-size-base *  0.55)); //10px
   color: $grey-72;
   font-size: $font-size-14;
 }
-/*End*/
+/*End
