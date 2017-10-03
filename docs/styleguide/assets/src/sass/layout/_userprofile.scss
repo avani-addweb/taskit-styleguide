@@ -1,0 +1,26 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * User profile SCSS
+ */
+.left-form-part,
+.right-form-part {
+  float: left;
+  display: inline-block;
+  width: 60%;
+}
+.right-form-part {
+  width: 40%;
+  .profile-photo {
+    margin-bottom: 50px;
+    .set-profile {
+      margin: 10px 0;
+      .btn {
+        margin-left: 10px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  
+}

@@ -212,3 +212,16 @@ select {
   }
 }
 /* End */
+.user-info-form {
+  label {
+    width: 100%;
+  }
+  input,
+  textarea {
+    display: inline-block;
+    max-width: 415px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: $white;
+  }
+}

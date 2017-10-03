@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Login page</title>
+    <title>User profile</title>
 
     <!-- Bootstrap -->
     <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -66,31 +66,69 @@
           </div><!-- /.container-fluid -->
         </nav>
     </header>
+    <div class="user-menu">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" class="text-icon dashboard-icon">Dashboard</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon activity-icon">Activity</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon contact-icon">Contact</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon inbox-icon">Inbox</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon setting-icon">Setting</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon payment-icon">Payment Receipts</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon recommended-icon">Recommended Task</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="text-icon logout-icon">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="container">
-
       <div class="sidebar">
-        <div class="sidebar-box bg-grey-light">
-          <h2>Dashboard</h2>
-          <div class="user-info">
-            <img src="../assets/images/user-img.png">
-            <div class="user-name">Johnny Harper</div>
-            <div>Web developer</div>
-            <div class="star-rating"></div>
+        <div class="sidebar-box border-grey">
+          <div class="sidebar-body">
+            <h2 class="title-small">Dashboard</h2>
+            <div class="user-info">
+              <img src="../assets/images/user-img.png">
+              <div class="user-name">Johnny Harper</div>
+              <div>Web developer</div>
+              <div class="star-rating task-star-rating">
+                <div class="dark-gray-star light-gray-star"></div>
+                <div class="dark-gray-star light-gray-star"></div>
+                <div class="dark-gray-star light-gray-star"></div>
+                <div class="dark-gray-star light-gray-star"></div>
+                <div class="dark-gray-star"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="sidebar-box bg-grey-light">
-          <ul class="list-style">
-            <li class="active icon-star"><a href="#">View my favorites</a></li>
-            <li class="icon-profile-setting"><a href="#">Public profile setting</a></li>
-            <li class="icon-user"><a href="#">Account setting</a></li>
-            <li><a href="icon-lock">Security setting</a></li>
-            <li><a href="icon-paypal">Paypal account</a></li>
-          </ul>
+        <div class="sidebar-box bg-grey-f9 border-grey">
+          <div class="sidebar-body">
+            <ul class="list-style list-spacing">
+              <li class="active icon-star"><a href="#">View my favorites</a></li>
+              <li class="icon-profile-setting"><a href="#">Public profile setting</a></li>
+              <li class="icon-user"><a href="#">Account setting</a></li>
+              <li><a href="icon-lock">Security setting</a></li>
+              <li><a href="icon-paypal">Paypal account</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-
       <div class="content-area">
-        <form>
+        <form class="user-info-form">
           <div class="title-border">Personal Information</div>
           <div class="left-form-part">
             <div class="form-group">
@@ -107,35 +145,53 @@
             </div>
           </div>
           <div class="right-form-part">
-            <label>Profile photo</label>
+            <div class="profile-photo">
+              <label>Profile photo</label>
+              <div class="set-profile">
+                <img src="../assets/images/user-img.png">
+                <button class="btn btn-gradient-grey">Choose photo</button>
+              </div>
+              <div class="note-mesagge title-small-grey">
+                Max.3MB size & Dimension min. 300px x 300px
+              </div>
+            </div>
+            <div class="Member-info">
+              <div class="title-small">
+                Member Since
+              </div>
+              <div class="bold-text">
+                13th of August 2015
+              </div>
+            </div>
+
           </div>
           <div class="title-border">Qualification Information</div>
           <div class="form-group">
             <label>Education</label>
             <input type="text" class="form-control">
-            <button>Add more</button>
+            <button class="btn btn-gradient-blue">Add more</button>
           </div>
           <div class="form-group">
             <label>Education</label>
             <input type="text" class="form-control">
             <input type="text" class="form-control">
             <input type="text" class="form-control">
-            <button>Add more</button>
+            <button class="btn btn-gradient-blue">Add more</button>
           </div>
           <div class="title-border">Personal Information</div>
           <div class="form-group">
             <label>Skill</label>
             <input type="text" class="form-control">
-            <button>Add more</button>
+            <button class="btn btn-gradient-blue">Add more</button>
           </div>
           <div class="form-group">
             <label>Skill</label>
             <input type="text" class="form-control">
-            <button>Add more Skill</button>
+            <button class="btn btn-gradient-blue">Add more Skill</button>
           </div>
           <div class="form-group">
             <label>Portfolio</label>
-            <button>Add more Skill</button>
+            <button class="btn btn-gradient-blue">Add more Skill</button>
           </div>
         </form>
       </div>
