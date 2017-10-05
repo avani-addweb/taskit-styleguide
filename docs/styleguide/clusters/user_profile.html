@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>User profile</title>
-
+    <link rel="stylesheet" type="text/css" href="../assets/font-awesome\css\font-awesome.min.css">
     <!-- Bootstrap -->
     <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
@@ -70,28 +70,28 @@
       <div class="container">
         <ul>
           <li>
-            <a href="javascript:void(0);" class="text-icon dashboard-icon">Dashboard</a>
+            <a href="javascript:void(0);" class="icon icon-dashboard">Dashboard</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon activity-icon">Activity</a>
+            <a href="javascript:void(0);" class="icon icon-activity">Activity</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon contact-icon">Contact</a>
+            <a href="javascript:void(0);" class="icon icon-contact">Contact</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon inbox-icon">Inbox</a>
+            <a href="javascript:void(0);" class="icon icon-inbox">Inbox</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon setting-icon">Setting</a>
+            <a href="javascript:void(0);" class="icon icon-setting">Setting</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon payment-icon">Payment Receipts</a>
+            <a href="javascript:void(0);" class="icon icon-payment">Payment Receipts</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon recommended-icon">Recommended Task</a>
+            <a href="javascript:void(0);" class="icon icon-recommended">Recommended Task</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="text-icon logout-icon">Logout</a>
+            <a href="javascript:void(0);" class="icon icon-logout">Logout</a>
           </li>
         </ul>
       </div>
@@ -129,70 +129,147 @@
       </div>
       <div class="content-area">
         <form class="user-info-form">
-          <div class="title-border">Personal Information</div>
-          <div class="left-form-part">
+          <div class="form-section">
+            <div class="title-border">Personal Information</div>
+            <div class="left-form-part">
+              <div class="form-group">
+                <label class="title-smaller">Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="title-smaller">Location</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="title-smaller">Description</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="right-form-part">
+              <div class="profile-photo">
+                <label class="title-smaller">Profile photo</label>
+                <div class="set-profile">
+                  <img src="../assets/images/user-img.png">
+                  <button class="icon upload-btn btn btn-gradient-grey">Choose photo</button>
+                </div>
+                <div class="note-mesagge title-small-grey">
+                  Max.3MB size & Dimension min. 300px x 300px
+                </div>
+              </div>
+              <div class="Member-info">
+                <div class="title-smaller">
+                  Member Since
+                </div>
+                <div class="bold-text color-gray-99">
+                  13th of August 2015
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="title-border">Qualification Information</div>
             <div class="form-group">
-              <label>Name</label>
+              <label class="title-smaller">Education</label>
               <input type="text" class="form-control">
+              <button class="icon add-btn btn btn-gradient-blue">Add more</button>
             </div>
             <div class="form-group">
-              <label>Location</label>
+              <label class="title-smaller">Certification</label>
               <input type="text" class="form-control">
+              <input type="text" class="form-control">
+              <input type="text" class="form-control">
+              <button class="icon add-btn btn btn-gradient-blue">Add more</button>
             </div>
+          </div>
+          <div class="form-section">
+            <div class="title-border">Professional Information</div>
             <div class="form-group">
-              <label>Description</label>
-              <textarea></textarea>
-            </div>
-          </div>
-          <div class="right-form-part">
-            <div class="profile-photo">
-              <label>Profile photo</label>
-              <div class="set-profile">
-                <img src="../assets/images/user-img.png">
-                <button class="btn btn-gradient-grey">Choose photo</button>
-              </div>
-              <div class="note-mesagge title-small-grey">
-                Max.3MB size & Dimension min. 300px x 300px
+              <label class="title-smaller">Skill</label>
+              <input type="text" name="">
+              <div class="skills">
+                <input type="text" class="form-control">
+                <button class="icon add-btn btn btn-gradient-blue">Add more Skill</button>
               </div>
             </div>
-            <div class="Member-info">
-              <div class="title-small">
-                Member Since
+          </div>
+          
+          <div class="form-group">
+            <label class="title-smaller" >Portfolio</label>
+            <div class="portfolio-btn">
+              <button class="icon add-btn btn btn-gradient-blue">Add New Item</button>
+            </div>
+            <div class="each-portfolio">
+              <div class="portfolio-heading bg-grey-f9">
+                <div class="portfolio-title">
+                  Portfolio 1
+                </div>
+                <div class="options">
+                  <div class="edit icon">Edit</div>
+                  <div class="delete icon">
+                    Delete
+                  </div>
+                </div>
               </div>
-              <div class="bold-text">
-                13th of August 2015
+              <div class="portfolio-detail">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+                <a href="" class="bold-text color-gray-99 italic-link">https://goo.gl/xETT3G</a>
               </div>
             </div>
-
-          </div>
-          <div class="title-border">Qualification Information</div>
-          <div class="form-group">
-            <label>Education</label>
-            <input type="text" class="form-control">
-            <button class="btn btn-gradient-blue">Add more</button>
-          </div>
-          <div class="form-group">
-            <label>Education</label>
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <button class="btn btn-gradient-blue">Add more</button>
-          </div>
-          <div class="title-border">Personal Information</div>
-          <div class="form-group">
-            <label>Skill</label>
-            <input type="text" class="form-control">
-            <button class="btn btn-gradient-blue">Add more</button>
-          </div>
-          <div class="form-group">
-            <label>Skill</label>
-            <input type="text" class="form-control">
-            <button class="btn btn-gradient-blue">Add more Skill</button>
+            <div class="each-portfolio">
+              <div class="portfolio-heading bg-grey-f9">
+                <div class="portfolio-title">
+                  Portfolio 2
+                </div>
+                <div class="options">
+                  <div class="edit icon">Edit</div>
+                  <div class="delete icon">
+                    Delete
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-detail">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+                <a href="" class="bold-text color-gray-99 italic-link">https://goo.gl/xETT3G</a>
+              </div>
+            </div>
           </div>
           <div class="form-group">
-            <label>Portfolio</label>
-            <button class="btn btn-gradient-blue">Add more Skill</button>
+            <div class="title-smaller">You are connected with</div>
+            <ul class="connected-socially">
+              <li class="facebook icon italic-link">
+                <span class="title-smaller">Connected</span> <a href="" class="bold-text color-gray-99 italic-link">https://www.facebook.com/mytesdemo</a>
+                <div class="right-form">
+                  <input type="checkbox" name="">
+                </div>
+              </li>
+              <li class="twitter icon italic-link">
+                <div class="right-form">
+                  <span class="title-smaller">Not Connected</span>
+                  <input type="checkbox" name="">
+                </div>
+              </li>
+              <li class="googleplus icon italic-link">
+                <div class="right-form">
+                  <span class="title-smaller">Not Connected</span>
+                  <input type="checkbox" name="">
+                </div>
+              </li>
+              <li class="linkedin icon italic-link">
+                <div class="right-form">
+                  <span class="title-smaller">Not Connected</span>
+                  <input type="checkbox" name="">
+                </div>
+              </li>
+            </ul>
+            <button class="icon add-btn btn btn-gradient-blue">Add Account</button>
           </div>
+          <button class="submit btn btn-gradient-blue">Save</button>
         </form>
       </div>
 

@@ -5,7 +5,7 @@
  * Social media icons design.
  */
 
-.text-icon {
+.icon {
   position: relative;
   display: inline-block;
   padding-left: 30px;
@@ -22,42 +22,42 @@
     content: '';
   }
 }
-.dashboard-icon {
+.icon-dashboard {
   &::before {
     background-image: url('../images/clock-icon.png');
   }
 }
-.activity-icon {
+.icon-activity {
   &::before {
     background-image: url('../images/activity.png');
   }
 }
-.contact-icon {
+.icon-contact {
   &::before {
     background-image: url('../images/contact.png');
   }
 }
-.inbox-icon {
+.icon-inbox {
   &::before {
     background-image: url('../images/inbox-icon.png');
   }
 }
-.setting-icon {
+.icon-setting {
   &::before {
     background-image: url('../images/setting.png');
   }
 }
-.payment-icon {
+.icon-payment {
   &::before {
     background-image: url('../images/payment.png');
   }
 }
-.recommended-icon {
+.icon-recommended {
   &::before {
     background-image: url('../images/recommended.png');
   }
 }
-.logout-icon {
+.icon-logout {
   &::before {
     background-image: url('../images/logout.png');
   }

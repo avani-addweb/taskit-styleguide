@@ -64,7 +64,39 @@
 .btn-gradient-green {
   @include background-75-angle(#009928, #009928, #008624, #008624);
 }
-
+/* Upload button design */
+.upload-btn {
+  margin-left: 10px;
+  text-transform: capitalize;
+  &::before {
+    display: none;
+  }
+  &::after {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'FontAwesome';
+    font-size: $font-size-12;
+    content: '\f139';
+  }
+}
+/* End */
+/* Add button design*/
+.add-btn {
+  padding-left: 35px;
+  text-transform: capitalize;
+  &::before {
+    display: inline-block;
+    margin: 5px 10px;
+    background-image: none;
+    font-family: 'FontAwesome';
+    font-size: $font-size-20;
+    content: '\f067';
+  }
+  &::after {
+    display: none;
+  }
+}
+/* End */
 /* Buttons group for add task page */
 .btn-group {
   display: inline-block;
@@ -77,3 +109,9 @@
     @include border-radius(4px);
   }
 }
+/* End */
+/* Portfolio btn design */
+.portfolio-btn {
+  margin: 10px 0 50px;
+}
+/* End */

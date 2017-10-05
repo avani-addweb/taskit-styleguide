@@ -4,11 +4,17 @@
  *
  * User profile SCSS
  */
+.form-section {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
 .left-form-part,
 .right-form-part {
   float: left;
   display: inline-block;
   width: 60%;
+
 }
 .right-form-part {
   width: 40%;
@@ -16,11 +22,94 @@
     margin-bottom: 50px;
     .set-profile {
       margin: 10px 0;
-      .btn {
-        margin-left: 10px;
-        text-transform: capitalize;
+      
+    }
+  }
+}
+.each-portfolio {
+  .portfolio-heading {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 5px 20px;
+    .portfolio-title {
+      float: left;
+      display: inline-block;
+    }
+    .options {
+      float: right;
+      display: inline-block;
+      .edit,
+      .delete {
+        margin-right: 30px;
+        &::before {
+          display: inline-block;
+          background-image: none;
+          font-family: 'FontAwesome';
+          content: '\f044';
+        }
+      }
+      .delete {
+        &::before {
+          content: '\f014';
+        }
       }
     }
   }
-  
+  .portfolio-detail {
+    margin-bottom: 50px;
+    p {
+      margin: 15px 5px;
+      font-size: $font-size-14;
+      line-height: 20px;
+    }
+
+  }
+}
+.connected-socially {
+  li {
+    display: inline-block;
+    width: 100%;
+    padding-left: 55px;
+    .right-form {
+      float: right;
+      display: inline-block;
+    }
+    &::before {
+      height: 35px;
+      width: 35px;
+      padding: 7px;
+      color: $white;
+      background-image: none;
+      text-align: center;
+      font-size: 22px;
+      font-style: normal;
+      font-family: 'FontAwesome';
+      content: '';
+      @include border-radius(50%);
+    }
+  }
+  .facebook {
+    &::before {
+      background-color: $blue-37;
+      content: '\f09a';
+    }
+  }
+  .twitter {
+    &::before {
+      background-color: $blue-44;
+      content: '\f099';
+    }
+  }
+  .googleplus {
+    &::before {
+      background-color: $red;
+      content: '\f0d5';
+    }
+  }
+  .linkedin {
+    &::before {
+      background-color: $blue-00;
+      content: '\f0e1';
+    }
+  }
 }

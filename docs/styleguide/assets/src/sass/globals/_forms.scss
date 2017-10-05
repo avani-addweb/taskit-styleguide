@@ -213,6 +213,9 @@ select {
 }
 /* End */
 .user-info-form {
+  .form-group {
+    margin-bottom: 0;
+  }
   label {
     width: 100%;
   }
@@ -221,7 +224,23 @@ select {
     display: inline-block;
     max-width: 415px;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 0 20px 35px 0;
     background-color: $white;
   }
 }
+/* User profile skill section design */
+.skills {
+  max-width: 415px;
+  input {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    @include calc('width','60% - 5px');
+  }
+  .btn {
+    float: left;
+    margin-right: 0;
+    @include calc('width','40% - 5px');
+  }
+}
+/* End */
