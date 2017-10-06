@@ -65,51 +65,61 @@
 
   }
 }
-.connected-socially {
-  li {
-    display: inline-block;
-    width: 100%;
-    padding-left: 55px;
-    .right-form {
-      float: right;
+.portfolio-section {
+  padding-bottom: 50px;
+  .connected-socially {
+    li {
       display: inline-block;
+      width: 100%;
+      margin: 10px 0;
+      padding:8px 0 35px 55px;
+      .right-form {
+        float: right;
+        display: inline-block;
+        .title-smaller {
+          margin-right: 20px;
+        }
+      }
+      &::before {
+        height: 35px;
+        width: 35px;
+        padding: 7px;
+        color: $white;
+        background-image: none;
+        text-align: center;
+        font-size: 22px;
+        font-style: normal;
+        font-family: 'FontAwesome';
+        content: '';
+        @include border-radius(50%);
+      }
     }
-    &::before {
-      height: 35px;
-      width: 35px;
-      padding: 7px;
-      color: $white;
-      background-image: none;
-      text-align: center;
-      font-size: 22px;
-      font-style: normal;
-      font-family: 'FontAwesome';
-      content: '';
-      @include border-radius(50%);
+    .facebook {
+      &::before {
+        background-color: $blue-37;
+        content: '\f09a';
+      }
+    }
+    .twitter {
+      &::before {
+        background-color: $blue-44;
+        content: '\f099';
+      }
+    }
+    .googleplus {
+      &::before {
+        background-color: $red;
+        content: '\f0d5';
+      }
+    }
+    .linkedin {
+      &::before {
+        background-color: $blue-00;
+        content: '\f0e1';
+      }
     }
   }
-  .facebook {
-    &::before {
-      background-color: $blue-37;
-      content: '\f09a';
-    }
-  }
-  .twitter {
-    &::before {
-      background-color: $blue-44;
-      content: '\f099';
-    }
-  }
-  .googleplus {
-    &::before {
-      background-color: $red;
-      content: '\f0d5';
-    }
-  }
-  .linkedin {
-    &::before {
-      background-color: $blue-00;
-      content: '\f0e1';
-    }
-  }
+}
+.form-button {
+  margin-top: 50px;
 }

@@ -24,6 +24,7 @@
   .section-main-heading {
     display: inline-block;
     width: 100%;
+    margin-bottom: 25px;
   }
   .title-small {
     padding-bottom: 10px;
@@ -52,7 +53,7 @@
   .comment-section {
     display: inline-block;
     width: 100%;
-    margin-top: 35px;
+    margin:10px 0 25px;
     @media (max-width: $mobile-portrait) {
       margin-top: 10px;
     }
@@ -118,9 +119,15 @@
 }
 .order-status-wrap {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   margin-bottom: 80px;
+  justify-content: space-between;
   @media (max-width: $mobile-portrait) {
     margin-bottom: 30px;
+  }
+  &.wrap-six {
+    .card-progress {
+      margin-right: 15px;
+    }
   }
 }

@@ -13,6 +13,7 @@
   border: 1px solid $grey-b6;
 }
 .card-task {
+  padding-bottom: 20px;
   .task-header {
     position: relative;
     display: inline-block;
@@ -52,9 +53,12 @@
   }
 }
 .card-progress {
-  float: left;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*float: left;*/
   margin-right: 50px;
-  @include calc('width', '20% - 40px');
+  /*@include calc('width', '20% - 40px');*/
   @media (max-width: $ipad-portrait) {
     @include calc('width', '33.33% - 34px');
     &:nth-child(3n) {
@@ -69,10 +73,14 @@
     margin-right: 0;
   }
   .number {
+    display: inline-block;
+    width: 100%;
     margin-bottom: 10px;
     font-size: $font-size-30;
   }
   .status {
+    display: inline-block;
+    width: 100%;
     font-size: $font-size-14;
   }
 }
@@ -113,6 +121,11 @@
   &.card-bottom-border-red {
     &::before {
       background-color: $red-ff;
+    }
+  }
+  &.card-bottom-border-grey {
+    &::before {
+      background-color: $grey-b6;
     }
   }
 }

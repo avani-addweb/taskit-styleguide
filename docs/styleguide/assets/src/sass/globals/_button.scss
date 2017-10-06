@@ -64,6 +64,9 @@
 .btn-gradient-green {
   @include background-75-angle(#009928, #009928, #008624, #008624);
 }
+.btn-capitalize {
+  text-transform: capitalize;
+}
 /* Upload button design */
 .upload-btn {
   margin-left: 10px;
@@ -115,3 +118,6 @@
   margin: 10px 0 50px;
 }
 /* End */
+.service-btn {
+  margin-left: 25px;
+}

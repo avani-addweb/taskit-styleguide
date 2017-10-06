@@ -196,7 +196,7 @@ select {
     font-weight: 700;
     text-transform: lowercase;
     @include border-radius(4px);
-    /*@extend .btn-gradient-blue;*/
+    @extend .btn-gradient-blue;
   }
 }
 
@@ -219,7 +219,7 @@ select {
   label {
     width: 100%;
   }
-  input,
+  input[type='text'],
   textarea {
     display: inline-block;
     max-width: 415px;

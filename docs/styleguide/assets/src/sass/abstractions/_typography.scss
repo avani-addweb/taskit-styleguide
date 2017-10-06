@@ -141,9 +141,10 @@
 /* List style design */
 ul {
   li {
+    font-size: $font-size-15;
     a {
       color: $grey-99;
-      font-size: 15px;
+      font-size: $font-size-15;
       &:hover {
         color: $grey-99;
       }

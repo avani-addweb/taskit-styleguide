@@ -98,23 +98,40 @@
     </div>
     <div class="container">
       <div class="sidebar">
-        <div class="sidebar-box border-grey">
-          <div class="sidebar-body">
-            <h2 class="title-small">Dashboard</h2>
-            <div class="user-info">
-              <img src="../assets/images/user-img.png">
-              <div class="user-name">Johnny Harper</div>
-              <div>Web developer</div>
-              <div class="star-rating task-star-rating">
+        <div class="profile-view border-radius-5">
+          <div class="title-small">DashBoard</div>
+          <div class="user-profile-img">
+            <img src="../assets/images/user-img.png" alt="profile image">
+          </div>
+          <div class="profile-detail">
+            <h2 class="card-top-heading">Julia Mortie</h2>
+            <p class="small-tilte">Web Developer</p>
+            <div class="rating-star task-star-rating">
                 <div class="dark-gray-star light-gray-star"></div>
                 <div class="dark-gray-star light-gray-star"></div>
                 <div class="dark-gray-star light-gray-star"></div>
                 <div class="dark-gray-star light-gray-star"></div>
                 <div class="dark-gray-star"></div>
-              </div>
             </div>
           </div>
         </div>
+          <!-- <div class="sidebar-box border-grey">
+            <div class="sidebar-body">
+              <h2 class="title-small">Dashboard</h2>
+              <div class="user-info">
+                <img src="../assets/images/user-img.png">
+                <div class="user-name">Johnny Harper</div>
+                <div>Web developer</div>
+                <div class="star-rating task-star-rating">
+                  <div class="dark-gray-star light-gray-star"></div>
+                  <div class="dark-gray-star light-gray-star"></div>
+                  <div class="dark-gray-star light-gray-star"></div>
+                  <div class="dark-gray-star light-gray-star"></div>
+                  <div class="dark-gray-star"></div>
+                </div>
+              </div>
+            </div>
+          </div> -->
         <div class="sidebar-box bg-grey-f9 border-grey">
           <div class="sidebar-body">
             <ul class="list-style list-spacing">
@@ -150,7 +167,7 @@
                 <label class="title-smaller">Profile photo</label>
                 <div class="set-profile">
                   <img src="../assets/images/user-img.png">
-                  <button class="icon upload-btn btn btn-gradient-grey">Choose photo</button>
+                  <button class="icon upload-btn btn btn-gradient-grey btn-capitalize">Choose photo</button>
                 </div>
                 <div class="note-mesagge title-small-grey">
                   Max.3MB size & Dimension min. 300px x 300px
@@ -171,14 +188,14 @@
             <div class="form-group">
               <label class="title-smaller">Education</label>
               <input type="text" class="form-control">
-              <button class="icon add-btn btn btn-gradient-blue">Add more</button>
+              <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add more</button>
             </div>
             <div class="form-group">
               <label class="title-smaller">Certification</label>
               <input type="text" class="form-control">
               <input type="text" class="form-control">
               <input type="text" class="form-control">
-              <button class="icon add-btn btn btn-gradient-blue">Add more</button>
+              <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add more</button>
             </div>
           </div>
           <div class="form-section">
@@ -188,7 +205,7 @@
               <input type="text" name="">
               <div class="skills">
                 <input type="text" class="form-control">
-                <button class="icon add-btn btn btn-gradient-blue">Add more Skill</button>
+                <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add more Skill</button>
               </div>
             </div>
           </div>
@@ -196,7 +213,7 @@
           <div class="form-group">
             <label class="title-smaller" >Portfolio</label>
             <div class="portfolio-btn">
-              <button class="icon add-btn btn btn-gradient-blue">Add New Item</button>
+              <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add New Item</button>
             </div>
             <div class="each-portfolio">
               <div class="portfolio-heading bg-grey-f9">
@@ -239,10 +256,10 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group portfolio-section border-bottom">
             <div class="title-smaller">You are connected with</div>
             <ul class="connected-socially">
-              <li class="facebook icon italic-link">
+              <li class="facebook icon italic-link border-bottom">
                 <span class="title-smaller">Connected</span> <a href="" class="bold-text color-gray-99 italic-link">https://www.facebook.com/mytesdemo</a>
                 <div class="right-form">
                   <input type="checkbox" name="">
@@ -267,9 +284,11 @@
                 </div>
               </li>
             </ul>
-            <button class="icon add-btn btn btn-gradient-blue">Add Account</button>
+            <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add Account</button>
           </div>
-          <button class="submit btn btn-gradient-blue">Save</button>
+          <div class="form-button">
+            <button class="submit btn btn-gradient-blue">Save</button>
+          </div>
         </form>
       </div>
 
