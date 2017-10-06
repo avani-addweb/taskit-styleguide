@@ -196,7 +196,7 @@ select {
     font-weight: 700;
     text-transform: lowercase;
     @include border-radius(4px);
-    @extend .btn-gradient-blue;
+    /*@extend .btn-gradient-blue;*/
   }
 }
 
