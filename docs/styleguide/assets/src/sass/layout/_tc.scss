@@ -1,0 +1,32 @@
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Terms & Condition page SCSS
+ */
+.conditions-info {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0 10px;
+  .condition-numbers {
+    span {
+      vertical-align: middle;
+    }
+  }
+  .list-diamond {
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+      &::before {
+        display: inline-block;
+        background-image: url('../images/diamond.png');
+        background-size: contain;
+        content: '';
+      }
+    }
+  }
+}
