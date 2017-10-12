@@ -22,7 +22,7 @@ $font-size-10: ceil(($font-size-base *  0.55)); //10px
 }
 .italic-link {
   font-style: italic;
-  font-size: 15px;
+  /*font-size: 15px;*/
 }
 .border-half-right-radius {
   @include border-radius(0 5px 5px 0);

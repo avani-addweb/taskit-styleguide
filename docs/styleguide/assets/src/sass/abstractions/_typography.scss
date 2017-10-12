@@ -113,10 +113,11 @@
   font-size: $font-size-16;
 }
 
-/*h2 {
+.orange-header {
+  margin: 0;
   color: $orange;
-  font-size: 32px;
-}*/
+  font-size: $font-size-24;
+}
 
 /* List style add task design */
 .info-wrap {

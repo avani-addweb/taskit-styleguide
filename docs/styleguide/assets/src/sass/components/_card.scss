@@ -13,6 +13,9 @@
   border: 1px solid $grey-b6;
 }
 .card-task {
+  display: block;
+  max-width: 215px;
+  margin: 0 auto;
   padding-bottom: 20px;
   .task-header {
     position: relative;
