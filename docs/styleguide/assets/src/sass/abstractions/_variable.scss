@@ -21,6 +21,9 @@ $black:       #000;
 $black-2a:    #2A2A2A;
 $black-33:    #333;
 $black-42:    #424242;
+$black-48:    #484848;
+$black-88:    #888;
+$black-43:    #434343;
 
 
 $grey:        #303135;
@@ -38,8 +41,13 @@ $grey-c7:     #C7D6D6;
 $grey-72:     #727272;
 $grey-71:     #717171;
 $grey-b3:     #B3B3B3;
+$grey-f9:     #F9F9F7;
+$grey-72:     #727272;
+$grey-dd:     #DDD;
 
 $green:       #94C34F;
+$green-00:    #009928;
+$green-90:    #90C54D;
 
 $red:         #FF0049;
 $red-ff:      #FF285F;
@@ -51,11 +59,16 @@ $blue-33:     #339BEE;
 $blue-6e:     #6E95E4;
 $blue-7f:     #7F9CE9;
 $blue-37:     #375695;
-$skyblue:     #00CFE5;
 $blue-44:     #44AAEC;
 $blue-00:     #0076B6;
-$green:       #009928;
+
+$sky-66:      #669CFE;
+$skyblue:     #00CFE5;
+$sky-blue-a6: #A6C4FE;
+$sky-blue-90: #90B1FF;
+
 $red:         #E64443;
+$red-f5:      #FF4D55;
 $purple:      #C400E9;
 
 $yellow:      #FF9E00;
@@ -65,9 +78,12 @@ $pink:        #FF443B;
 
 $orange:      #FF4E21;
 
+
+
 /* Font size*/
 $font-size-base: 18px;
 $font-size-12: ceil(($font-size-base *  0.66)); //12px
+$font-size-10: ceil(($font-size-base *  0.55)); //10px
 $font-size-14: ceil(($font-size-base *  0.75)); //14px
 $font-size-15: ceil(($font-size-base *  0.833)); //15px
 $font-size-16: floor(($font-size-base *  0.9)); //16px

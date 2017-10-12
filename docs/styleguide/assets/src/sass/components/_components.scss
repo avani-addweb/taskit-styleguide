@@ -4,36 +4,6 @@
  *
  * Components design.
  */
-/* Background color */
-.bg-white {
-  background-color: $white;
-}
-
-.bg-grey {
-  background-color: $grey;
-  color: $white;
-}
-
-.bg-black-42 {
-  background-color: $black-42;
-  color: $white;
-}
-.bg-blue {
-  background-color: $blue-7f;
-  color: $white;
-}
-
-.bg-skyblue {
-  background-color: $skyblue;
-}
-
-.bg-red {
-  background-color: $red-ff5;
-}
-
-.bg-yellow {
-  background-color: $yellow-ff;
-}
 
 /* Container width */
 .container-460 {
@@ -43,16 +13,98 @@
   padding: 0 15px;
 }
 
+/* Background color */
+.bg-white {
+  background-color: $white;
+}
+.bg-grey-f9 {
+  background-color: $grey-f9;
+}
+.bg-sky-66 {
+  background-color: $sky-66;
+}
+.bg-black {
+  background-color: $black;
+}
+.bg-grey {
+  background-color: $grey;
+  color: $white;
+}
+.bg-black-42 {
+  background-color: $black-42;
+  color: $white;
+}
+.bg-blue {
+  background-color: $blue-7f;
+  color: $white;
+}
+.bg-skyblue {
+  background-color: $skyblue;
+}
+.bg-red {
+  background-color: $red-ff5;
+}
+.bg-yellow {
+  background-color: $yellow-ff;
+}
+/* End Background color */
+
+/* Border design */
 .border-grey {
   border: 1px solid $grey-b6;
 }
 .border-bottom-dotted {
   border-bottom: 2px dotted $grey-b6;
 }
+.border-top-green-10 {
+  border-top: 10px solid $green-90;
+}
+.border-top {
+  border-top: 1px solid $grey-dd;
+}
+.border-bottom {
+  border-bottom: 1px solid $grey-dd;
+}
+/* End Border design */
+
 /* Border radius */
 .corner-rounded-4 {
   @include border-radius(4px);
 }
+.border-radius-5 {
+  border: 1px solid $grey-b6;
+  @include border-radius(5px);
+}
+/* End Border radius */
+
+/* Star rating design */
+.task-star-rating {
+  font-size: $font-size-10;
+  p {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: $font-size-10;
+  }
+  .dark-gray-star {
+    display: inline-block;
+    &::before {
+      float: left;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      background-image: url('../images/stars-grey.png');
+      background-position: right;
+      content: '';
+    }
+  }
+  .light-gray-star {
+    display: inline-block;
+    &::before {
+      background-position: left;
+    }
+  }
+}
+/* End Star rating design */
 
 .social-share-button {
   button {
@@ -78,6 +130,7 @@
   }
 }
 
+/* -OR- text design */
 .or-text {
   position: relative;
   display: inline-block;
@@ -101,7 +154,7 @@
     background-color: $white;
   }
 }
-
+/* End -OR- text design*/
 
 .user-detail-wrap {
   display: inline-block;
@@ -138,16 +191,6 @@
   }
 }
 
-/** Variable **/
-$sky-blue-a6:     #A6C4FE;
-$sky-blue-90:     #90B1FF;
-$black-48:        #484848;
-$black-88:        #888;
-$grey-dd:         #DDD;
-$grey-f9:         #F9F9F7;
-$sky-66:          #669CFE;
-$black-43:        #434343;
-$red-f5:          #FF4D55;
 
 /** Taypography **/
 .card-top-heading {
@@ -184,7 +227,8 @@ $red-f5:          #FF4D55;
   font-size: 16px;
   line-height: 30px;
 }
-/** Tab view **/
+
+/* Tab view */
 .nav-tabs {
   border-top: 1px solid $grey-dd;
   li {
@@ -223,28 +267,8 @@ $red-f5:          #FF4D55;
     }
   }
 }
-.border-radius-5 {
-  border: 1px solid $grey-b6;
-  @include border-radius(5px);
-}
-.border-top {
-  border-top: 1px solid $grey-dd;
-}
-.border-bottom {
-  border-bottom: 1px solid $grey-dd;
-}
-.bg-grey-f9 {
-  background-color: $grey-f9;
-}
-.bg-sky-66 {
-  background-color: $sky-66;
-}
-.bg-black {
-  background-color: $black;
-}
-.bg-white {
-  background-color: $white;
-}
+/* End Tab view */
+
 .main-content {
   display: inline-block;
   width: 100%;
@@ -457,7 +481,7 @@ ul.plan-list {
 }
 .hide-img {
   &::after {
-    display: none !important;
+    display: none;
     content: '';
   }
 }
@@ -495,7 +519,7 @@ ul.plan-list {
 .payment-form {
   display: inline-block;
   width: 100%;
-  margin: 15px 0 44px;
+  margin: 15px 0 45px;
   .form-group {
     margin-bottom: 18px;
     label {
@@ -536,7 +560,7 @@ ul.plan-list {
     float: none;
   }
   .make-payment-btn {
-    margin-right: 26px;
+    margin-right: 25px;
   }
 }
 .date-form {
@@ -624,7 +648,6 @@ ul.plan-list {
     list-style: none;
     li {
       width: 100%;
-      /*border-top: 1px solid $grey-dd;*/
       border-right: 1px solid $grey-dd;
       border-bottom: 1px solid $grey-dd;
       &:hover,
@@ -734,7 +757,7 @@ ul.plan-list {
   }
 }
 .payment-history-title {
-  width: auto !important;
+  width: auto;
   margin-top: 6px;
   padding: 0 0 0 50px;
 }
@@ -756,16 +779,14 @@ ul.plan-list {
       background-color: #F9F9F9;
     }
     tr:nth-of-type(odd) {
-      background-color: #FFF;
+      background-color: $white;
     }
   }
 }
 .connected-socially {
-  /*padding-bottom: 50px;*/
   ul {
     li {
       display: inline-block;
-      /*width: 100%;*/
       margin: 10px 0;
       padding:8px 0 35px 55px;
       .right-form {
