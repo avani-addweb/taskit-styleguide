@@ -463,14 +463,8 @@
 .task-main-content {
   display: inline-block;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 8  0px;
   padding: 0 30px;
-  .task-other-title {
-    width: 100%;
-    margin-bottom: 30px;
-    color: $black-48;
-    font-weight: 600;
-  }
 }
 ul.plan-list {
   li {
@@ -479,10 +473,12 @@ ul.plan-list {
     }
   }
 }
-.hide-img {
-  &::after {
-    display: none;
-    content: '';
+.plan-block-section {
+  .hide-img {
+    &::after {
+      display: none;
+      content: '';
+    }
   }
 }
 .view-caption {
@@ -581,6 +577,9 @@ ul.plan-list {
 .apply-btn-class {
   display: inline-block;
   margin-left: 15px;
+  .btn {
+    padding: 8px 20px;
+  }
 }
 
 /** Checkout Payment info page **/
@@ -776,7 +775,7 @@ ul.plan-list {
 .recent-payment {
   tbody {
     tr:nth-of-type(even) {
-      background-color: #F9F9F9;
+      background-color: $white-f9;
     }
     tr:nth-of-type(odd) {
       background-color: $white;

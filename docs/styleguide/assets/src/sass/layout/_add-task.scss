@@ -14,7 +14,7 @@
 .form-wrap {
   float: left;
   margin-right: 90px;
-  @include calc('width', '42% - 90px');
+  @include calc('width', '42% - 65px');
   form {
     padding-bottom: 25px;
     border-bottom: 1px solid $grey-b6;
@@ -57,7 +57,8 @@
 }
 .detail-wrapper {
   float: right;
-  width: 58%;
+  width: 55%;
+  margin-top: 22px;
 }
 
 /* Chat icon design */
