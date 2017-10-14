@@ -5,7 +5,7 @@
  * Design of Typography.
  */
 
-.flex {
+/*.flex {
   @include flexbox();
 }
 
@@ -15,7 +15,7 @@
 
 .flex-wrap {
   @include flex-wrap(wrap);
-}
+}*/
 
 .green-title {
   display: inline-block;
@@ -63,7 +63,7 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 18px 0;
-  border-bottom: 2px solid #D8D8D8;
+  border-bottom: 2px solid $gray-d8;
   color: $grey-6b;
   font-size: 14px;
   text-transform: uppercase;
@@ -124,7 +124,6 @@
 }
 
 .orange-header {
-  margin: 0;
   color: $orange;
   font-size: $font-size-24;
 }
@@ -157,6 +156,7 @@
   }
 }
 /* End List style add task design */
+
 /* List style design */
 ul {
   li {
@@ -229,62 +229,3 @@ ul {
   }
 }
 /* End List spacing */
-
-/* Add task list design */
-ul.task-list {
-  display: inline-block;
-  width: 100%;
-  padding: 20px 15px;
-  li {
-    display: inline-block;
-    width: 100%;
-    padding: 8px 0 8px 20px;
-    border-bottom: 1px dashed $grey-58;
-    &:first-child {
-      border-top: 1px dashed $grey-58;
-    }
-    &:last-child {
-      border-bottom: none;
-    }
-    span {
-      float: left;
-      color: $grey-59;
-      font-size: 12px;
-    }
-    .task-edit-section {
-      float: right;
-      .true-img-wrap {
-        display: inline-block;
-        height: 15px;
-        width: 15px;
-        margin-right: 20px;
-        img {
-          height: 15px;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .add-list {
-    position: relative;
-    color: $black;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: none;
-    &::before {
-      position: absolute;
-      float: left;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      height: 15px;
-      width: 15px;
-      margin-left: -20px;
-      background-image: url('../images/plus.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: '';
-    }
-  }
-}
-/* End Add task list design */

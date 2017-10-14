@@ -72,7 +72,7 @@
   @include border-radius(4px);
 }
 .border-radius-5 {
-  border: 1px solid $grey-b6;
+  /*border: 1px solid $grey-b6;*/
   @include border-radius(5px);
 }
 /* End Border radius */
@@ -103,6 +103,10 @@
       background-position: left;
     }
   }
+  &.task-detail-reting {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 /* End Star rating design */
 
@@ -115,17 +119,14 @@
     @include calc('width', '50% - 10px');
     &:last-child {
       margin-right: 0;
+      @media (max-width: 480px) {
+        margin-bottom: 0;
+      }
     }
     @media (max-width: 480px) {
       width: 100%;
       margin-right: 0;
       margin-bottom: 10px;
-    }
-    &:last-child {
-      margin-right: 0;
-      @media (max-width: 480px) {
-        margin-bottom: 0;
-      }
     }
   }
 }
@@ -191,7 +192,6 @@
   }
 }
 
-
 /** Taypography **/
 .card-top-heading {
   margin: 9px 0 15px;
@@ -219,14 +219,10 @@
   font-size: 16px;
   font-weight: 600;
 }
-.amount-title {
-  font-size: 26px;
-  font-weight: 600;
-}
-.content-font {
+/*.content-font {
   font-size: 16px;
   line-height: 30px;
-}
+}*/
 
 /* Tab view */
 .nav-tabs {
@@ -269,12 +265,12 @@
 }
 /* End Tab view */
 
-.main-content {
+.card-main-content {
   display: inline-block;
   width: 100%;
   padding: 40px 0;
 }
-.left-content {
+.top-side-view {
   float: left;
   display: inline-block;
   margin-right: 55px;
@@ -284,7 +280,7 @@
     margin: 0 0 20px;
   }
 }
-.view-item {
+.top-task-heading {
   display: inline-block;
   width: 100%;
   padding: 15px;
@@ -293,109 +289,92 @@
   display: inline-block;
   width: 100%;
   padding-left: 24px;
-}
-.right-content {
-  float: left;
-  width: 30%;
-  @media (max-width: 992px) {
-    width: 100%;
-  }
-}
-.rating-star {
-  float: left;
-}
-.orders-queue {
-  margin-left: 15px;
-}
-.real-estate-img {
-  img {
-    width: 100%;
-  }
-}
-.brand-img {
-  display: inline-block;
-  padding: 0;
-}
-.degignation-title {
-  float: right;
-  .right-graphic-design {
+  .degignation-title {
     float: right;
-    display: inline-block;
   }
 }
-.title-space {
-  width: 100%;
-  margin-bottom: 26px;
+
+/*.rating-star {
+  float: left;
+}*/
+/*.orders-queue {
+  margin-left: 15px;
+}*/
+.caption-img {
+  .real-estate-img {
+    img {
+      width: 100%;
+    }
+  }
+  .brand-img {
+    display: inline-block;
+    padding: 0;
+  }
 }
 .prerequisites-doc {
-  display: inline-block;
-  width: 100%;
-}
-.doc-img {
-  position: relative;
-  padding: 12px 0 0 50px;
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    height: 38px;
-    width: 38px;
-    background-image: url('../images/file-upload.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    content: '';
+  .doc-img {
+    padding: 12px 0 0 50px;
+    &::before {
+      height: 40px;
+      width: 40px;
+      background-image: url('../images/file-upload.png');
+    }
   }
 }
 .portfolio {
   display: inline-block;
   width: 100%;
+  margin-bottom: 42px;
   h2 {
     margin-bottom: 23px;
   }
-}
-.portfolio-img {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 42px;
+  .portfolio-img {
+    display: inline-block;
+    width: 100%;
+  }
+  .view-caption {
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
 }
 .order-now {
   margin-bottom: 33px;
-  font-size: 14px;
   span {
     display: inline-block;
     width: 100%;
     margin-bottom: 8px;
     color: $black-42;
+    font-size: 14px;
     font-weight: 600;
   }
   a {
     color: $black-88;
+    font-size: 14px;
   }
 }
 .more-reviews {
   display: inline-block;
   width: 100%;
   padding: 30px;
+  .left-review {
+    float: left;
+    display: inline-block;
+    width: 40%;
+    padding: 0 15px;
+  }
+  .right-review {
+    display: inline-block;
+    width: 60%;
+  }
 }
-.review {
-  float: left;
-  display: inline-block;
-}
-.left-review {
-  width: 40%;
-  padding: 0 15px;
-}
-.right-review {
-  width: 60%;
-}
-.left-review,
+/*.left-review,
 .right-review {
   @media (max-width: 767px) {
     width: 100%;
     padding: 0;
   }
-}
+}*/
 .sub-review {
   float: left;
   width: 33.33%;
@@ -466,24 +445,12 @@
   margin-bottom: 8  0px;
   padding: 0 30px;
 }
-ul.plan-list {
-  li {
-    &:last-child {
-      border-bottom: 1px dashed #586176;
-    }
-  }
-}
 .plan-block-section {
   .hide-img {
     &::after {
       display: none;
       content: '';
     }
-  }
-}
-.view-caption {
-  @media (max-width: 767px) {
-    margin-bottom: 20px;
   }
 }
 /** button **/
@@ -638,9 +605,9 @@ ul.plan-list {
   @media (max-width: 640px) {
     width: 100%;
   }
-}
-.payment-card-tab {
-  margin-top: 20px;
+  .payment-card-tab {
+    margin-top: 20px;
+  }
 }
 .cards-details {
   ul {
@@ -680,6 +647,8 @@ ul.plan-list {
   display: inline-block;
   h2 {
     margin: 0 0 30px;
+    font-size: 26px;
+    font-weight: 600;
   }
   span {
     font-size: 15px;
@@ -715,14 +684,15 @@ ul.plan-list {
     background-image: url('../images/star-icon-line.png');
   }
 }
-.payment-history-form {
-  float: left;
-  display: inline-block;
-}
 .main-payment-history-content {
   display: inline-block;
   width: 100%;
   padding: 20px 0;
+  .top-payment-content {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 36px;
+  }
 }
 .form-calender-pic {
   margin-right: 12px;
@@ -737,11 +707,6 @@ ul.plan-list {
     vertical-align: middle;
     content: '';
   }
-}
-.top-payment-content {
-  display: inline-block;
-  width: 100%;
-  margin: 10px 0 36px;
 }
 .view-pagination {
   display: inline-block;
@@ -799,10 +764,10 @@ ul.plan-list {
         height: 35px;
         width: 35px;
         padding: 7px;
-        color: $white;
         background-image: none;
-        text-align: center;
+        color: $white;
         font-size: 22px;
+        text-align: center;
         font-style: normal;
         font-family: 'FontAwesome';
         content: '';
@@ -835,3 +800,29 @@ ul.plan-list {
     }
   }
 }
+/* Top add task list */
+.add-task-steps {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 6px;
+}
+.add-task-list {
+  display: inline-block;
+  li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      margin-right: 62px;
+      color: $black-33;
+      font-size: 14px;
+      font-weight: 600;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+}
+/* End Top add task list */

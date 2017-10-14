@@ -140,13 +140,13 @@ select {
   width: 100%;
   .input-file {
     display: inline-block;
-    max-width: 280px;
+    max-width: 300px;
     margin-right: 8px;
     .input-file-name {
       position: relative;
       float: left;
       height: 40px;
-      width: 185px;
+      width: 200px;
       padding: 10px 12px;
       border: 1px solid $grey-b6;
       color: $grey-b6;
@@ -191,7 +191,7 @@ select {
 .input-group-btn {
   display: inline-block;
   &:last-child > .btn {
-    padding: 10px 21px;
+    padding: 10px 25px;
     font-size: $font-size-14;
     font-weight: 700;
     text-transform: lowercase;

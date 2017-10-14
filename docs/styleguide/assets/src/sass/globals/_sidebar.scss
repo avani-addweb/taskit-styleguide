@@ -40,7 +40,16 @@
 }
 .rating-image {
   img {
-    max-width: 15px;
     max-height: 15px;
+    max-width: 15px;
   }
 }
+/* Side bar 30 */
+.side-bar-30 {
+  float: left;
+  width: 30%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+/* End bar 30 */

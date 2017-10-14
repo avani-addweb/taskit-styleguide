@@ -39,7 +39,7 @@
 }
 /* END */
 
-/*Border design of page header section*/
+/* Border design of page header section */
 .title-border-bottom {
   position: relative;
   display: inline-block;
@@ -59,7 +59,7 @@
 }
 /* END */
 
-/*Right-dropdrown section design*/
+/* Right-dropdrown section design */
 .dropdown-filter {
   float: right;
   display: inline-block;
@@ -79,7 +79,7 @@
   }
 }
 /* End */
-/*Order section design*/
+/* Order section design */
 .order-status {
   display: inline-block;
   width: 100%;
@@ -111,7 +111,7 @@
             @media (max-width: $small-desktop) {
               min-width: 600px;
             }
-/*            @media (max-width: $ipad-portrait) {
+            /*@media (max-width: $ipad-portrait) {
               @include calc('width','100% - 360px');
             }*/
             img {

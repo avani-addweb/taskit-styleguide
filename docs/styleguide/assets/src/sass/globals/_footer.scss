@@ -4,7 +4,6 @@
  *
  * Footer SCSS.
  */
-
 ul {
   padding-left: 0;
   li {
@@ -13,9 +12,9 @@ ul {
 }
 .footer-content {
   margin: 40px 0;
-  @include flexbox();
   color: $grey-6b;
   font-size: 14px;
+  @include flexbox();
   a {
     color: $grey-6b;
   }
@@ -64,6 +63,43 @@ ul {
 }
 .footer-link {
   li {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+  }
+}
+.bottom-space {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.social-media {
+  li {
+    .social-icon {
+      &::before {
+        float: left;
+        display: inline-block;
+        height: 40px;
+        width: 41px;
+        margin-right: 13px;
+        background-image: url(../images/social-icons.png);
+        background-position: center right 0;
+        /*background-repeat: no-repeat;*/
+        /*background-size: contain;*/
+        content: '';
+      }
+      &.facebook {
+        &::before {
+          background-position: 0 center;
+        }
+      }
+      &.twitter {
+        &::before {
+          background-position: 148px center;
+        }
+      }
+      &.instagram {
+        &::before {
+          background-position: 94px center;
+        }
+      }
+    }
   }
 }
