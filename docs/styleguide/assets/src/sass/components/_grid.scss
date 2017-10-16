@@ -56,10 +56,11 @@
       content: '';
     }
   }
-  .title-small {
-    display: inline-block;
+  h3 {
     width: 100%;
+    padding: 12px 0;
     text-align: center;
+    text-transform: uppercase;
   }
   .task-price-wrap {
     display: inline-block;

@@ -24,27 +24,44 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="path-login">
     <header class="header bg-grey ">
       <nav class="navbar bg-grey">
         <div class="container">
-          <div class="row vertical-align-bottom">
+          <div class="row vertical-align-bottom navbar-static-top">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="col-sm-3">
+            <div class="col-sm-6">
               <div class="navbar-header">
                 <a class="navbar-brand brand-logo" href="#">
                   <img src="../assets/images/logo.png" alt="Taskit" />
                 </a>
               </div>
+              <div class="search-bar">
+                <input type="text" name="search" placeholder="what are you looking for..">
+              </div>
             </div>
 
-            <div class="col-sm-9">
+            <div class="header-menu col-sm-6">
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="right-header">
-                <ul class="menu nav navbar-nav">
+                <ul class="menu nav navbar-nav header-menu-1">
                   <li><a href="#" class="active">How it works</a></li>
                   <li><a href="#">buy/sell</a></li>
                   <li><a href="#">login/register</a></li>
+                </ul>
+                <ul class="menu nav navbar-nav header-menu-2">
+                  <li><a href="#"><img src="../assets/images/promotion.png"></a></li>
+                  <li><a href="#"><img src="../assets/images/conversation.png"></a></li>
+                  <li><a href="#"><img src="../assets/images/commerce.png"></a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
+                    <ul class="dropdown-menu account-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another</a></li>
+                      <li><a href="#">Something</a></li>
+                      <li><a href="#">Separated</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div><!-- /.navbar-collapse -->
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
@@ -93,7 +110,7 @@
         <div class="form-action">
           <button class="btn btn-green">Register</button>
         </div>
-        <div class="not-member">Not a member yet? <a href="javascript:void(0);">Register now >></a></div>
+        <div class="not-member">Already member? <a href="javascript:void(0);">Sign in >></a></div>
       </form>
     </div>
   </body>

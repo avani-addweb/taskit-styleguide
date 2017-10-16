@@ -26,45 +26,59 @@
   </head>
   <body>
     <header class="header bg-grey ">
-        <nav class="navbar bg-grey">
-          <div class="container">
-            <div class="row vertical-align-bottom">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="col-sm-3">
-                <div class="navbar-header">
-                  <a class="navbar-brand brand-logo" href="#">
-                    <img src="../assets/images/logo.png" alt="Taskit" />
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-sm-9">
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="right-header">
-                  <ul class="menu nav navbar-nav">
-                    <li><a href="#" class="active">How it works</a></li>
-                    <li><a href="#">buy/sell</a></li>
-                    <li><a href="#">login/register</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="menu-navbar-collapse">
-                <ul class="menu nav navbar-nav">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                </ul>
+      <nav class="navbar bg-grey">
+        <div class="container">
+          <div class="row vertical-align-bottom navbar-static-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="col-sm-6">
+              <div class="navbar-header">
+                <a class="navbar-brand brand-logo" href="#">
+                  <img src="../assets/images/logo.png" alt="Taskit" />
+                </a>
               </div>
             </div>
-          </div><!-- /.container-fluid -->
-        </nav>
+
+            <div class="col-sm-6">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="right-header">
+                <ul class="menu nav navbar-nav header-menu-1">
+                  <li><a href="#" class="active">How it works</a></li>
+                  <li><a href="#">buy/sell</a></li>
+                  <li><a href="#">login/register</a></li>
+                </ul>
+                <ul class="menu nav navbar-nav header-menu-2">
+                  <li><a href="#"><img src="../assets/images/promotion.png"></a></li>
+                  <li><a href="#"><img src="../assets/images/conversation.png"></a></li>
+                  <li><a href="#"><img src="../assets/images/commerce.png"></a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
+                    <ul class="dropdown-menu account-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another</a></li>
+                      <li><a href="#">Something</a></li>
+                      <li><a href="#">Separated</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+              <ul class="menu nav navbar-nav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
     </header>
     <div class="user-menu">
       <div class="container">
@@ -98,10 +112,10 @@
     </div>
     <div class="container">
       <div class="user-detail-wrap">
-        <div class="user-image">
+        <div class="user-profile user-image">
           <img src="../assets/images/user-img.png">
         </div>
-        <div class="user-detail">
+        <div class="user-profile user-detail">
           <div class="user-title">
             <h3 class="title-small">Hello Johney Harper !</h3>
             <span class="user-type btn btn-sm btn-gradient-lightblue">Buyer</span>

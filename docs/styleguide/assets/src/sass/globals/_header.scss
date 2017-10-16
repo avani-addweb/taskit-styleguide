@@ -7,18 +7,24 @@
 
 .header {
   position: relative;
+  .navbar-static-top {
+    padding: 18px 0;
+  }
   .navbar {
     margin-bottom: 0;
   }
 }
 .navbar-brand {
   float: none;
+  display: inline-block;
+  padding: 0;
   img {
     max-height: 45px;
   }
 }
 .navbar-toggle {
-  margin-right: 0;
+  margin: 0;
+  padding: 17px 15px;
   background-color: $green;
   @include border-radius(2px);
   @media (min-width: 768px) {
@@ -36,6 +42,7 @@
   width: 100%;
   background-color: $grey;
   text-align: left;
+  z-index: 99;
   &.collapse {
     @media (min-width: 768px) {
       display: none !important;
@@ -60,25 +67,107 @@
 }
 .right-header {
   display: inline-block;
-  @include calc('width', '100% - 44px');
+  @include calc('width', '100% - 54px');
   text-align: right;
   .navbar-nav {
     float: none;
     display: inline-block;
+    .account-dropdown {
+      margin-top: 5px;
+      padding: 15px;
+      background-color: $black;
+      li {
+        margin: 0 0 5px;
+        a {
+          &:hover {
+            color: $white;
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+  .header-menu-1 {
+    display: none;
+    li {
+      a {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $green;
+          color: $white;
+        }
+      }
+    }
+  }
+  .header-menu-2 {
+    margin-top: 15px;
+    li {
+      margin-right: 15px;
+      a {
+        padding: 0;
+        text-transform: capitalize;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+        }
+      }
+    }
+    .account-item {
+      padding-left: 35px;
+      &::before {
+        height: 25px;
+        width: 25px;
+        background-image: url('../images/account-img.png');
+      }
+    }
+  }
+}
+.header-menu-2 {
+  margin-top: 15px;
+  li {
+    margin-right: 15px;
+    a {
+      padding: 0;
+      text-transform: capitalize;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+      }
+    }
+  }
+  .account-item {
+    padding-left: 35px;
+    &::before {
+      height: 25px;
+      width: 25px;
+      background-image: url('../images/account-img.png');
+    }
   }
 }
 .menu {
   li {
+    margin-right: 10px;
     a {
       color: $white;
       font-size: 14px;
       text-transform: uppercase;
       @include border-radius(3px);
-      a {
-        &:hover {
-          background-color: $green;
-        }
-      }
+    }
+    .login-btn {
+      border: none;
+    }
+  }
+}
+.path-login { 
+  .right-header {
+    .header-menu-1 {
+      display: inline-block;
+    }
+    .header-menu-2 {
+      display: none;
     }
   }
 }
@@ -88,7 +177,7 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 50px;
-  padding: 12px 0 0;
+  padding: 12px 0;
   border-bottom: 1px solid $grey-b6;
   ul {
     float: left;
@@ -101,7 +190,9 @@
       float: left;
       display: inline-block;
       margin-right: 40px;
-      margin-bottom: 12px;
+      &:last-child {
+        margin-right: 0;
+      }
       a {
         float: left;
         display: inline-block;
