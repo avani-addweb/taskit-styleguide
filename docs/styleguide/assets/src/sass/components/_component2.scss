@@ -32,19 +32,13 @@
 }
 /*End*/
 
-/* page-heading tag design */
-.page-heading {
-  display: inline-block;
-  font-weight: 600;
-}
-/* END */
-
 /* Border design of page header section */
 .title-border-bottom {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  font-weight: 600;
   &::after {
     position: absolute;
     top: auto;

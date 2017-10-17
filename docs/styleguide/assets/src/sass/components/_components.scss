@@ -422,15 +422,7 @@
     font-size: 15px;
   }
 }
-.more-comments {
-  margin-left: 60px;
-  @media (max-width: 992px) {
-    margin-left: 0;
-  }
-  p {
-    border: none;
-  }
-}
+
 .task-seller {
   display: inline-block;
   width: 100%;
@@ -458,7 +450,7 @@
 .contact-btn {
   display: inline-block;
   width: 100%;
-  a {
+  .btn {
     width: 100%;
     background-color: $sky-66;
   }
@@ -520,9 +512,6 @@
 .mayment-btn {
   float: right;
   display: inline-block;
-  .btn {
-    float: none;
-  }
   .make-payment-btn {
     margin-right: 25px;
   }
@@ -566,6 +555,11 @@
     width: 100%;
     margin: 0 0 25px;
   }
+  .payment-title {
+    h2 {
+      padding: 15px 30px;
+    }
+  }
 }
 .payment-img {
   position: absolute;
@@ -578,9 +572,6 @@
     position: relative;
     width: 100%;
   }
-}
-.payment-title {
-  padding: 15px 15px 15px 30px;
 }
 .payment-detail {
   display: inline-block;
@@ -680,11 +671,11 @@
     }
   }
 }
-.top-payment-title {
+/*.top-payment-title {
   &::before {
     background-image: url('../images/star-icon-line.png');
   }
-}
+}*/
 .main-payment-history-content {
   display: inline-block;
   width: 100%;
@@ -713,22 +704,31 @@
   display: inline-block;
   width: 100%;
   text-align: center;
-}
-.pagination {
-  li {
-    a {
-      color: $black-42;
+  ul.pagination {
+    li {
+      a {
+        color: $black-42;
+      }
+    }
+    .active {
+      a {
+        color: $white;
+      }
     }
   }
 }
-.payment-history-title {
+
+/*.payment-history-title {
   width: auto;
   margin-top: 6px;
   padding: 0 0 0 50px;
+}*/
+.payment-history-content {
+  .payments-user-detail {
+    margin-bottom: 48px;
+  }
 }
-.payments-user-detail {
-  margin-bottom: 47px;
-}
+
 /** Table **/
 .recent-payment {
   tbody>tr>td,

@@ -139,5 +139,15 @@
     float: right;
     width: 50%;
     text-align: right;
+    .btn {
+      float: right;
+    }
+    .back-link {
+      display: inline-block;
+      width: 100%;
+      margin-top: 10px;
+      color: $grey-71;
+      font-size: 15px;
+    }
   }
 }

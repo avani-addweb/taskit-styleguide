@@ -4,23 +4,22 @@
  *
  * Sidebar content SCSS
  */
-.range,
-.rating,
-.timing-filter,
-.categories {
+.tasl-list-view {
   display: inline-block;
   width: 100%;
   margin-bottom: 15px;
 }
-.range {
+/*.range {
   .scroller {
     input {
       width: 100%;
     }
   }
-}
-.sidebar-body {
-  padding: 10px 20px;
+}*/
+.sidebar-box {
+  .sidebar-body {
+    padding: 10px 20px;
+  }
 }
 
 .star-each {

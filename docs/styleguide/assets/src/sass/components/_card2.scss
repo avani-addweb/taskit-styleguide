@@ -52,11 +52,9 @@
   position: relative;
   display: inline-block;
   width: 50%;
-  /*margin-right: 15px;*/
   padding-left: 32px;
   margin-bottom: 40px;
   font-size: 13px;
-  /*@include calc(width, '50% - 15px');*/
   &::before {
     height: 25px;
     width: 25px;
@@ -92,8 +90,10 @@
   margin-bottom: 15px;
   padding: 20px 15px 0;
 }
-.project-list {
-  padding: 30px;
+.task-profile-list {
+  .project-list {
+    padding: 30px;
+  } 
 }
 .project-wrap {
   float: left;

@@ -69,10 +69,13 @@
 }
 /* Upload button design */
 .upload-btn {
+  float: none;
+  display: inline-block;
+  width: 150px;
   margin-left: 10px;
   text-transform: capitalize;
   &::before {
-    display: none;
+    width: 150px;
   }
   &::after {
     display: inline-block;
