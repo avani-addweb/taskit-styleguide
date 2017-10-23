@@ -11,16 +11,32 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-size: $font-size-18;
   font-family: sans-serif;
 }
 
 a {
+  color: $black-42;
   text-decoration: none;
   &:hover,
   &:focus {
+    color: $black-88;
     outline: none;
   }
+}
+
+p {
+  /*display: block;*/
+  /*margin: 0;*/
+  color: $black-88;
+  font-size: 14px;
+}
+
+strong {
+  color: $black-42;
+  vertical-align: middle;
 }
 
 img {
