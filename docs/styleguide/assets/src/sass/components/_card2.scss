@@ -60,6 +60,13 @@
     width: 25px;
     content: '';
   }
+  /*span {
+    display: block;
+    margin: 5px 0;
+    color: $black-48;
+    font-size: 12px;
+    font-weight: 600;
+  }*/
   /*&:nth-child(2n) {
     margin-right: 0;
   }*/
@@ -90,11 +97,7 @@
   margin-bottom: 15px;
   padding: 20px 15px 0;
 }
-.task-profile-list {
-  .project-list {
-    padding: 30px;
-  } 
-}
+
 .project-wrap {
   float: left;
   margin-right: 15px;

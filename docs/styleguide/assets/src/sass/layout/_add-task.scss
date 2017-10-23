@@ -70,9 +70,10 @@
   display: inline-block;
   height: 60px;
   width: 60px;
-  margin-right: 72px;
+  margin: 0 70px 20px 0;
   padding: 12px 0 0 7px;
   background-color: $pink;
+  cursor: pointer;
   @include border-radius(100px);
 }
 

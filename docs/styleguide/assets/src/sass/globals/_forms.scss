@@ -118,6 +118,8 @@ select {
     input[type="text"],
     input[type="Password"] {
       width: 100%;
+      color: $black;
+      font-size: 14px;
     }
   }
   .remeber-me,

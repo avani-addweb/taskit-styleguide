@@ -78,13 +78,8 @@
 
 /* Star rating design */
 .task-star-rating {
-  display: inline-block;
+  display: block;
   font-size: $font-size-10;
-  p {
-    display: inline-block;
-    margin-bottom: 0;
-    font-size: $font-size-10;
-  }
   .dark-gray-star {
     display: inline-block;
     &::before {
@@ -106,6 +101,12 @@
   &.task-detail-reting {
     display: inline-block;
     margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+.task-profile-list {
+  .project-list {
+    padding: 30px;
   }
 }
 /* End Star rating design */
@@ -193,20 +194,17 @@
   }
 }
 
-/** Taypography **/
+/* Taypography */
 .card-top-heading {
   margin: 9px 0 15px;
   font-size: 18px;
   font-weight: 600;
 }
-.small-tilte {
-  display: inline-block;
-  margin: 0;
+.small-title {
   color: $black-88;
   font-size: 14px;
-  strong {
-    color: $black-42;
-  }
+  /*font-size: 16px;
+  line-height: 30px;*/
 }
 .small-bold-title {
   display: block;
@@ -216,14 +214,19 @@
   font-weight: 600;
 }
 .medium-title {
-  margin: 0;
   font-size: 16px;
   font-weight: 600;
+}
+.paragraph-detail {
+  color: $black-88;
+  font-size: 16px;
+  line-height: 30px;
 }
 /*.content-font {
   font-size: 16px;
   line-height: 30px;
 }*/
+/* End */
 
 /* Tab view */
 .nav-tabs {
@@ -295,9 +298,13 @@
   }
 }
 
-/*.rating-star {
-  float: left;
-}*/
+.rating-star {
+  p {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
+}
 /*.orders-queue {
   margin-left: 15px;
 }*/
@@ -414,12 +421,14 @@
     width: 100%;
   }
   p {
-    display: inline-block;
     width: 100%;
     max-width: 765px;
     margin: 16px 0 0;
     padding-bottom: 30px;
-    font-size: 15px;
+    color: $black-42;
+  }
+  &.more-comments {
+    margin: 0 0 0 65px;
   }
 }
 
