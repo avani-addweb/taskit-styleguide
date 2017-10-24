@@ -46,6 +46,9 @@
     font-size: $font-size-10;
     .task-by {
       display: inline-block;
+      a {
+        font-size: 10px;
+      }
       @media (max-width: $small-desktop) {
         width: 100%;
         margin-bottom: 10px;

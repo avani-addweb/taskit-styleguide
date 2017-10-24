@@ -13,17 +13,19 @@
 body {
   margin: 0;
   padding: 0;
+  color: $grey-72;
   font-size: $font-size-18;
   font-family: sans-serif;
 }
 
 a {
-  color: $black-42;
-  text-decoration: none;
+  color: $grey-72;
+  font-size: $font-size-15;
   &:hover,
   &:focus {
-    color: $black-88;
+    color: $grey-99;
     outline: none;
+    text-decoration: none;
   }
 }
 
