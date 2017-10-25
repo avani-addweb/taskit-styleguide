@@ -29,12 +29,15 @@
   }
   .task-title {
     display: inline-block;
+    height: 40px;
     width: 100%;
     margin: 10px 0;
     padding: 0 2px;
-    font-style: italic;
     font-size: $font-size-14;
+    font-style: italic;
     font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
     a {
       line-height: 20px;
     }
@@ -46,6 +49,11 @@
     font-size: $font-size-10;
     .task-by {
       display: inline-block;
+      max-width: 75px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      overflow: hidden;
       a {
         font-size: 10px;
       }

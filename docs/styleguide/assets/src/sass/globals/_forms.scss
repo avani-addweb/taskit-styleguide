@@ -5,7 +5,6 @@
  * Form SCSS
  */
 
-
 input[type='text'],
 input[type='email'],
 input[type='password'],
@@ -33,7 +32,7 @@ select {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid $grey-b6;
-  color: $grey-b6;
+  color: $black-88;
   font-size: 14px;
   resize: none;
   @include border-radius(4px);
@@ -41,7 +40,7 @@ select {
   &:hover {
     border-color: $grey-b6;
     outline: none;
-    box-shadow: none;
+    box-shadow: onne;
   }
 }
 
@@ -53,10 +52,10 @@ select {
     width: 250px;
     padding: 4px 35px 4px 20px;
     background-color: $white;
-    background-image: url(../images/search-icon-th.png);
+    background-image: url('../images/search-icon-th.png');
+    background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 18px;
-    background-position: right 10px center;
     color: $black;
     font-size: 13px;
   }
@@ -222,10 +221,33 @@ select {
   label {
     display: inline-block;
     width: 100%;
-    margin-bottom: 10px;
     color: $grey-99;
     font-size: $font-size-15;
     font-weight: 100;
+  }
+}
+.custom-checkbox {
+  margin-bottom: 10px;
+  input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+    + .input-rc-span {
+      height: 15px;
+      width: 15px;
+      margin-top: 2px;
+      background-image: url('../images/radio.png');
+      background-position: center right -18px;
+    }
+    &:checked {
+      + .input-rc-span {
+        background-position: center right;
+      }
+    }
+  }
+}
+.form-group {
+  label {
+    color: $black-3a;
   }
 }
 /* End */

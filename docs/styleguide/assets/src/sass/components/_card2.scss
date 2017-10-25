@@ -15,9 +15,9 @@
     display: inline-block;
     margin-right: 10px;
     text-align: center;
-    @include calc('width','40% - 5px');
     /*width: 40%;*/
     /*padding-left: 25px;*/
+    @include calc('width' , '40% - 5px');
     @media (max-width: 992px) {
       width: 20%;
       margin-right: 5%;
@@ -31,9 +31,9 @@
   }
   .profile-detail {
     display: inline-block;
-    margin-right: 0;
     width: 60%;
-    @include calc('width','60% - 5px');
+    margin-right: 0;
+    @include calc('width' , '60% - 5px');
     text-align: center;
     @media (max-width: 992px) {
       width: 73%;
@@ -48,12 +48,12 @@
   }
 }
 .card-item {
-  float: left;
   position: relative;
+  float: left;
   display: inline-block;
   width: 50%;
-  padding-left: 32px;
   margin-bottom: 40px;
+  padding-left: 32px;
   font-size: 13px;
   &::before {
     height: 25px;
@@ -103,8 +103,8 @@
   margin-right: 15px;
   color: $black-43;
   font-size: 40px;
-  text-align: center;
   font-weight: 600;
+  text-align: center;
   @include calc(width, '50% - 8px');
   &:last-child {
     margin-right: 0;

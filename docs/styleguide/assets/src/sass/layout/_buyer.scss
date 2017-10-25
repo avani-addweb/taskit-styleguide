@@ -53,7 +53,7 @@
   .comment-section {
     display: inline-block;
     width: 100%;
-    margin:10px 0 25px;
+    margin: 10px 0 25px;
     @media (max-width: $mobile-portrait) {
       margin-top: 10px;
     }
@@ -81,18 +81,18 @@
     .user-message-detail {
       float: left;
       display: inline-block;
-      @include calc('width','100% - 370px');
+      @include calc('width' , '100% - 370px');
       @media (max-width: $mobile) {
-        @include calc('width','100% - 290px');
+        @include calc('width' , '100% - 290px');
       }
       @media (max-width: 640px) {
-         @include calc('width','100% - 100px');
         clear: left;
+        @include calc('width' , '100% - 100px');
       }
       @media (max-width: 480px) {
+        clear: left;
         width: 100%;
         margin-bottom: 10px;
-        clear: left;
       }
       .title-small {
         width: 100%;
@@ -103,9 +103,9 @@
         max-width: 300px;
         width: 100%;
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
         word-break: break-all;
+        white-space: nowrap;
       }
     }
     .user-message-button {

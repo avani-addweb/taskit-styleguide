@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Order page </title>
-
+    <link rel="stylesheet" type="text/css" href="../assets/font-awesome\css\font-awesome.min.css">
     <!-- Bootstrap -->
     <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
@@ -40,9 +40,21 @@
                   <li><a href="#">login/register</a></li>
                 </ul>
                 <ul class="menu nav navbar-nav header-menu-2">
-                  <li><a href="#"><img src="../assets/images/promotion.png"></a></li>
-                  <li><a href="#"><img src="../assets/images/conversation.png"></a></li>
-                  <li><a href="#"><img src="../assets/images/commerce.png"></a></li>
+                  <li>
+                    <a href="#"><img src="../assets/images/promotion.png">
+                      <div class="notification-count">1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/images/conversation.png">
+                    <div class="notification-count">4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/images/commerce.png">
+                    <div class="notification-count">8</div>
+                    </a>
+                  </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
                     <ul class="dropdown-menu account-dropdown">
@@ -75,9 +87,15 @@
     </header>
     <div class="user-menu">
       <div class="container">
-        <ul>
-          <li>
-            <a href="javascript:void(0);" class="icon icon-dashboard">Dashboard</a>
+        <ul class="menu-list">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle icon account-item icon icon-dashboard" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
+            <ul class="dropdown-menu dashboard-dropdown">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another</a></li>
+              <li><a href="#">Something</a></li>
+              <li><a href="#">Separated</a></li>
+            </ul>
           </li>
           <li>
             <a href="javascript:void(0);" class="icon icon-activity">Activity</a>
@@ -86,7 +104,7 @@
             <a href="javascript:void(0);" class="icon icon-contact">Contact</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-inbox">Inbox</a>
+            <a href="javascript:void(0);" class="icon icon-inbox">Inbox <span class="notification-inbox">(3)</span></a>
           </li>
           <li>
             <a href="javascript:void(0);" class="icon icon-setting">Setting</a>
@@ -105,7 +123,7 @@
     </div>
     <div class="container">
       <div class="order-status">
-        <div class="page-heading title-border-bottom">Order Complete</div>
+        <div class="page-heading title-border-bottom color-black-3">Order Complete</div>
         <div class="order-complete table-responsive">
           <table>
             <tr class="border-grey">
@@ -126,10 +144,10 @@
         </div>
       </div>
       <div class="task-list">
-        <div class="page-heading title-border-bottom">All Task List</div>
+        <div class="page-heading title-border-bottom color-black-"3>All Task List</div>
         <div class="dropdown-filter">
           <p>Sort by:</p>
-          <select>
+          <select class="short-selection">
             <option>Relevance</option>
             <option>Low to High</option>
             <option>High to low</option>
@@ -204,30 +222,56 @@
               <h2 class="side-heading bg-blue">TURN AROUND TIME</h2>
               <div class="timing-radio sidebar-body">
                 <form>
-                  <div class="radio">
+                  <label>
+                    <div class="input-rc custom-checkbox">
+                      <input type="checkbox">Up to 24
+                      <span class="input-rc-span"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <div class="input-rc custom-checkbox">
+                      <input type="checkbox">Up to 3 days
+                      <span class="input-rc-span custom-checkbox"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <div class="input-rc custom-checkbox">
+                      <input type="checkbox">Up to 5 days
+                      <span class="input-rc-span custom-checkbox"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <div class="input-rc custom-checkbox">
+                      <input type="checkbox">Up to 7 days
+                      <span class="input-rc-span custom-checkbox"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <div class="input-rc custom-checkbox">
+                      <input type="checkbox">Any
+                      <span class="input-rc-span custom-checkbox"></span>
+                    </div>
+                  </label>
+                  <!-- <div class="radio custom-radio input-rc">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Up to 24</label>
-                  </div>
-                  <div class="radio">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>Up to 3 days<span class="input-rc-span"></span>
+                    </label>
+                  </div> -->
+                  <!-- <div class="radio custom-radio input-rc">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>Up to 3 days
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>Up to 5 days<span class="input-rc-span"></span>
                     </label>
                   </div>
-                  <div class="radio">
+                  <div class="radio custom-radio input-rc">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>Up to 5 days
+                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked>Up to 7 days<span class="input-rc-span"></span>
                     </label>
                   </div>
-                  <div class="radio">
+                  <div class="radio custom-radio input-rc">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked>Up to 7 days
+                      <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked>Any<span class="input-rc-span"></span>
                     </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked>Any
-                    </label>
-                  </div>
+                  </div> -->
                 </form>
               </div>
             </div>

@@ -47,9 +47,21 @@
                   <li><a href="#">login/register</a></li>
                 </ul>
                 <ul class="menu nav navbar-nav header-menu-2">
-                  <li><a href="#"><img src="../assets/images/promotion.png"></a></li>
-                  <li><a href="#"><img src="../assets/images/conversation.png"></a></li>
-                  <li><a href="#"><img src="../assets/images/commerce.png"></a></li>
+                  <li>
+                    <a href="#"><img src="../assets/images/promotion.png">
+                      <div class="notification-count">1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/images/conversation.png">
+                    <div class="notification-count">4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/images/commerce.png">
+                    <div class="notification-count">8</div>
+                    </a>
+                  </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
                     <ul class="dropdown-menu account-dropdown">
@@ -82,30 +94,37 @@
     </header>
     <div class="user-menu">
       <div class="container">
-        <ul>
-          <li>
-            <a href="javascript:void(0);" class="icon icon-dashboard">Dashboard</a>
+        <ul class="menu-list">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle icon account-item icon icon-dashboard" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
+            <ul class="dropdown-menu dashboard-dropdown">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another</a></li>
+              <li><a href="#">Something</a></li>
+              <li><a href="#">Separated</a></li>
+            </ul>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-activity">Activity</a>
+            <a href="javascript:void(0)" class="icon icon-activity">Activity</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-contact">Contact</a>
+            <a href="javascript:void(0)" class="icon icon-contact">Contact</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-inbox">Inbox</a>
+            <a href="javascript:void(0)" class="icon icon-inbox">Inbox <span class="notification-inbox">(3)</span>
+            </a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-setting">Setting</a>
+            <a href="javascript:void(0)" class="icon icon-setting">Setting</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-payment">Payment Receipts</a>
+            <a href="javascript:void(0)" class="icon icon-payment">Payment Receipts</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-recommended">Recommended Task</a>
+            <a href="javascript:void(0)" class="icon icon-recommended">Recommended Task</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-logout">Logout</a>
+            <a href="javascript:void(0)" class="icon icon-logout">Logout</a>
           </li>
         </ul>
       </div>
@@ -169,17 +188,11 @@
                     <input name="myFile" type="file">
                   </div>
                 </div>
-                <div class="note-mesagge title-small-grey">
-                  Max.3MB size & Dimension min. 300px x 300px
-                </div>
+                <div class="note-mesagge title-small-grey">Max.3MB size & Dimension min. 300px x 300px</div>
               </div>
               <div class="Member-info">
-                <div class="title-smaller">
-                  Member Since
-                </div>
-                <div class="bold-text color-gray-99">
-                  13th of August 2015
-                </div>
+                <div class="title-smaller">Member Since</div>
+                <div class="bold-text color-gray-99">13th of August 2015</div>
               </div>
             </div>
           </div>
@@ -211,20 +224,16 @@
           </div>
           
           <div class="form-group">
-            <label class="title-smaller" >Portfolio</label>
+            <label class="title-smaller">Portfolio</label>
             <div class="portfolio-btn">
               <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add New Item</button>
             </div>
             <div class="each-portfolio">
               <div class="portfolio-heading bg-grey-f9">
-                <div class="portfolio-title">
-                  Portfolio 1
-                </div>
+                <div class="portfolio-title">Portfolio 1</div>
                 <div class="options">
                   <div class="edit icon">Edit</div>
-                  <div class="delete icon">
-                    Delete
-                  </div>
+                  <div class="delete icon">Delete</div>
                 </div>
               </div>
               <div class="portfolio-detail">
@@ -237,14 +246,10 @@
             </div>
             <div class="each-portfolio">
               <div class="portfolio-heading bg-grey-f9">
-                <div class="portfolio-title">
-                  Portfolio 2
-                </div>
+                <div class="portfolio-title">Portfolio 2</div>
                 <div class="options">
                   <div class="edit icon">Edit</div>
-                  <div class="delete icon">
-                    Delete
-                  </div>
+                  <div class="delete icon">Delete</div>
                 </div>
               </div>
               <div class="portfolio-detail">
