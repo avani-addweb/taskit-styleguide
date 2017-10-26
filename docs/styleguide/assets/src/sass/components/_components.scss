@@ -141,19 +141,20 @@
   text-align: center;
   &::before {
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: 0;
     z-index: -1;
     display: inline-block;
     height: 1px;
     width: 100%;
-    background-color: $grey-b6;
+    background-color: $grey-e7;
     content: '';
   }
   span {
     display: inline-block;
-    width: 45px;
+    width: 40px;
     background-color: $white;
+    font-size: 12px;
   }
 }
 /* End -OR- text design for login/register page*/

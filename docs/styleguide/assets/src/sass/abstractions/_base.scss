@@ -14,8 +14,8 @@ body {
   margin: 0;
   padding: 0;
   color: $grey-72;
-  font-size: $font-size-18;
-  font-family: sans-serif;
+  font-size: $font-size-16;
+  font-family: $opensans-regular;
 }
 
 a {
@@ -26,6 +26,12 @@ a {
     color: $grey-99;
     text-decoration: none;
     outline: none;
+  }
+}
+ul {
+  margin: 0;
+  li {
+    list-style: none;
   }
 }
 

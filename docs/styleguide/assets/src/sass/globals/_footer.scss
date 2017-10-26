@@ -4,10 +4,17 @@
  *
  * Footer SCSS.
  */
-ul {
+/*ul {
   padding-left: 0;
   li {
     list-style: none;
+  }
+}*/
+.footer-link {
+  padding-left: 0;
+  li {
+    list-style: none;
+    margin-bottom: 16px;
   }
 }
 .footer-content {
@@ -60,11 +67,6 @@ ul {
   color: $black-2a;
   font-size: 20px;
   text-transform: uppercase;
-}
-.footer-link {
-  li {
-    margin-bottom: 16px;
-  }
 }
 .bottom-space {
   display: inline-block;

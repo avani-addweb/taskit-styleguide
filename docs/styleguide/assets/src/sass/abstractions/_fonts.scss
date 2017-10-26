@@ -7,8 +7,62 @@
 
 
 /* OpenSans fonts */
-/*@font-face {
+/* OpenSans fonts */
+@font-face {
   font-family: $opensans-regular;
   src: $url-opensans-regular;
-}*/
+}
+@font-face {
+  font-family: $opensans-extrabold;
+  src: $url-opensans-extrabold;
+}
+@font-face {
+  font-family: $opensans-bold;
+  src: $url-opensans-bold;
+}
+@font-face {
+  font-family: $opensans-semibold;
+  src: $url-opensans-semibold;
+}
+@font-face {
+  font-family: $opensans-bolditalic;
+  src: $url-opensans-bolditalic;
+}
+@font-face {
+  font-family: $opensans-semibolditalic;
+  src: $url-opensans-semibolditalic;
+}
+@font-face {
+  font-family: $opensans-italic;
+  src: $url-opensans-italic;
+}
+@font-face {
+  font-family: $opensans-light;
+  src: $url-opensans-light;
+}
 
+/* Revalomordern */
+@font-face {
+  font-family: $revalomordern-regular;
+  src: $url-revalomordern;
+}
+
+/* Oswald */
+@font-face {
+  font-family: $oswald-bold;
+  src: $url-oswald-bold;
+}
+@font-face {
+  font-family: $oswald-light;
+  src: $url-oswald-light;
+}
+@font-face {
+  font-family: $oswald-regular;
+  src: $url-oswald-regular;
+}
+
+/* avenir lt book */
+@font-face {
+  font-family: $avenir-lt;
+  src: $url-avenir-lt;
+}

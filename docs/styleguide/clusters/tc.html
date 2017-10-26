@@ -46,9 +46,21 @@
                   <li><a href="#">login/register</a></li>
                 </ul>
                 <ul class="menu nav navbar-nav header-menu-2">
-                  <li><a href="#"><img src="../assets/images/promotion.png"></a></li>
-                  <li><a href="#"><img src="../assets/images/conversation.png"></a></li>
-                  <li><a href="#"><img src="../assets/images/commerce.png"></a></li>
+                  <li>
+                    <a href="#"><img src="../assets/images/promotion.png">
+                      <div class="notification-count">1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/images/conversation.png">
+                    <div class="notification-count">4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/images/commerce.png">
+                    <div class="notification-count">8</div>
+                    </a>
+                  </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
                     <ul class="dropdown-menu account-dropdown">
@@ -81,9 +93,15 @@
     </header>
     <div class="user-menu">
       <div class="container">
-        <ul>
-          <li>
-            <a href="javascript:void(0);" class="icon icon-dashboard">Dashboard</a>
+        <ul class="menu-list">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle icon account-item icon icon-dashboard" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
+            <ul class="dropdown-menu dashboard-dropdown">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another</a></li>
+              <li><a href="#">Something</a></li>
+              <li><a href="#">Separated</a></li>
+            </ul>
           </li>
           <li>
             <a href="javascript:void(0);" class="icon icon-activity">Activity</a>
@@ -92,7 +110,7 @@
             <a href="javascript:void(0);" class="icon icon-contact">Contact</a>
           </li>
           <li>
-            <a href="javascript:void(0);" class="icon icon-inbox">Inbox</a>
+            <a href="javascript:void(0);" class="icon icon-inbox">Inbox <span class="notification-inbox">(3)</span></a>
           </li>
           <li>
             <a href="javascript:void(0);" class="icon icon-setting">Setting</a>

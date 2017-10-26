@@ -9,10 +9,40 @@
 /**
  * Font face
  */
-/*$opensans-extrabold: 'OpenSans Extrabold';*/
+$opensans-extrabold: 'OpenSans Extrabold';
+$opensans-bold: 'OpenSans Bold';
+$opensans-semibold: 'OpenSans SemiBold';
+$opensans-bolditalic: 'OpenSans BoldItalic';
+$opensans-semibolditalic: 'OpenSans SemiboldItalic';
+$opensans-italic: 'OpenSans Italic';
+$opensans-regular: 'OpenSans Regular';
+$opensans-light: 'OpenSans light';
+
+$revalomordern-regular: 'revalomodern-regula';
+
+$oswald-bold: 'Oswald-Bold';
+$oswald-light: 'Oswald-light';
+$oswald-regular: 'Oswald-regular';
+
+$avenir-lt: ' avenir-lt';
 
 /* URLs */
-/*$url-opensans-extrabold: url('../fonts/OpenSans/OpenSans-ExtraBold.woff');*/
+$url-opensans-extrabold: url('../css/fonts/OpenSans/OpenSans-ExtraBold.woff');
+$url-opensans-bold: url('../css/fonts/OpenSans/OpenSans-Bold.woff');
+$url-opensans-semibold: url('../css/fonts/OpenSans/OpenSans-Semibold.woff');
+$url-opensans-bolditalic: url('../css/fonts/OpenSans/OpenSans-BoldItalic.woff');
+$url-opensans-semibolditalic: url('../css/fonts/OpenSans/OpenSans-SemiboldItalic.woff');
+$url-opensans-italic: url('../css/fonts/OpenSans/OpenSans-Italic.woff');
+$url-opensans-regular: url('../css/fonts/OpenSans/OpenSans-Regular.woff');
+$url-opensans-light: url('../css/fonts/OpenSans/OpenSans-Light.woff');
+
+$url-revalomordern: url('../css/fonts/revalo-mordern/revalomodern-regular.ttf');
+
+$url-oswald-bold: url('../css/fonts/oswald/Oswald-Bold_0.ttf');
+$url-oswald-light: url('../css/fonts/oswald/Oswald-Light_0.ttf');
+$url-oswald-regular: url('../css/fonts/oswald/Oswald-Regular_0.ttf');
+
+$url-avenir-lt: url('../css/fonts/avenir/avenir-lt-45-book-593011e608637.ttf');
 
 
 /* Color code */
@@ -55,6 +85,7 @@ $green-90:    #90C54D;
 $red:         #FF0049;
 $red-ff:      #FF285F;
 $red-ff5:     #FF5952;
+$red-f1:      #FF4261;
 
 $blue:        #3F4C99;
 $blue-53:     #53C4F9;
@@ -64,6 +95,7 @@ $blue-7f:     #7F9CE9;
 $blue-37:     #375695;
 $blue-44:     #44AAEC;
 $blue-00:     #0076B6;
+$blue-38:     #385C97;
 
 $sky-66:      #669CFE;
 $skyblue:     #00CFE5;
