@@ -186,6 +186,7 @@ select {
   float: left;
   height: 40px;
   width: 95px;
+  font-family: $opensans-bold;
   cursor: pointer;
   &::before {
     position: absolute;

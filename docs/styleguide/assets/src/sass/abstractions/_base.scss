@@ -17,7 +17,14 @@ body {
   font-size: $font-size-16;
   font-family: $opensans-regular;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $opensans-bold;
+}
 a {
   color: $grey-72;
   font-size: $font-size-15;
@@ -30,6 +37,7 @@ a {
 }
 ul {
   margin: 0;
+  padding-left: 0;
   li {
     list-style: none;
   }

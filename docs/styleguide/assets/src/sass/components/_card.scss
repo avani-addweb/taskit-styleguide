@@ -241,4 +241,119 @@ ul.task-list {
   }
 }
 /* End */
+/* Right content of task detail page*/
+.profile-view {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 20px 15px 15px;
+  .user-profile-img {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    /*width: 40%;*/
+    /*padding-left: 25px;*/
+    @include calc('width' , '40% - 5px');
+    @media (max-width: 992px) {
+      width: 20%;
+      margin-right: 5%;
+    }
+    @media (max-width: 480px) {
+      width: 25%;
+    }
+    img {
+      width: 100px;
+    }
+  }
+  .profile-detail {
+    display: inline-block;
+    width: 60%;
+    margin-right: 0;
+    @include calc('width' , '60% - 5px');
+    text-align: center;
+    @media (max-width: 992px) {
+      width: 73%;
+      text-align: left;
+    }
+    @media (max-width: 480px) {
+      width: 70%;
+    }
+  }
+  h2 {
+    margin: 5px 0;
+  }
+}
+.card-item {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 40px;
+  padding-left: 32px;
+  font-size: 13px;
+  &::before {
+    height: 25px;
+    width: 25px;
+    content: '';
+  }
+  /*span {
+    display: block;
+    margin: 5px 0;
+    color: $black-48;
+    font-size: 12px;
+    font-weight: 600;
+  }*/
+  /*&:nth-child(2n) {
+    margin-right: 0;
+  }*/
+}
+.location {
+  &::before {
+    background-image: url('../images/location.png');
+  }
+}
+.positive-rating {
+  &::before {
+    background-image: url('../images/star-icon-line.png');
+  }
+}
+.speak {
+  &::before {
+    background-image: url('../images/chat.png');
+  }
+}
+.response-time {
+  &::before {
+    background-image: url('../images/clock.png');
+  }
+}
+.card-list {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 20px 15px 0;
+}
+.project-wrap {
+  float: left;
+  margin-right: 15px;
+  color: $black-43;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  @include calc(width, '50% - 8px');
+  &:last-child {
+    margin-right: 0;
+  }
+}
+/* End */
 
+.card-view {
+  float: left;
+  display: inline-block;
+  margin-right: 45px;
+  @include calc(width, '23% - 24px');
+  &:last-child {
+    margin-right: 0;
+  }
+}
