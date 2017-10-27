@@ -111,6 +111,7 @@
   }
 }
 .card-view {
+  float: left;
   display: inline-block;
   margin-right: 45px;
   @include calc(width, '23% - 24px');
@@ -118,20 +119,4 @@
     margin-right: 0;
   }
 }
-.plan-card-section {
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $red-f5;
-    h3 {
-      color: $white;
-    }
-    .plan-list {
-      li {
-        span {
-          color: $white;
-        }
-      }
-    }
-  }
-}
+

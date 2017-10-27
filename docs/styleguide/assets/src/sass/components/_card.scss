@@ -33,11 +33,11 @@
     width: 100%;
     margin: 10px 0;
     padding: 0 2px;
+    overflow: hidden;
     font-size: $font-size-14;
     font-style: italic;
     font-weight: 600;
     text-overflow: ellipsis;
-    overflow: hidden;
     a {
       line-height: 20px;
     }
@@ -50,10 +50,10 @@
     .task-by {
       display: inline-block;
       max-width: 75px;
-      white-space: nowrap;
+      overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all;
-      overflow: hidden;
+      white-space: nowrap;
       a {
         font-size: 10px;
       }
@@ -211,3 +211,34 @@ ul.task-list {
   }
 }
 /* End Add task list design */
+
+/*Card price design*/
+.task-price {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+/*End*/
+/* Plan-block-sectio design */
+.plan-card-section {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $red-f5;
+    h3 {
+      color: $white;
+    }
+    .plan-list {
+      li {
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+/* End */
+
