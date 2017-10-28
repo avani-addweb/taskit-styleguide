@@ -19,6 +19,42 @@
 .sidebar-box {
   .sidebar-body {
     padding: 10px 20px;
+    .user-list {
+      li {
+        &::before {
+          height: 15px;
+          width: 15px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+      .icon-star {
+        &::before {
+          background-image: url('../images/star.png');
+        }
+      }
+      .icon-profile-setting {
+        &::before {
+          background-image: url('../images/wedding-invitation.png');
+        }
+      }
+      .icon-user {
+        &::before {
+          background-image: url('../images/user.png');
+        }
+      }
+      .icon-lock {
+        &::before {
+          background-image: url('../images/locked.png');
+        }
+      }
+      .icon-paypal {
+        &::before {
+          background-image: url('../images/paypal-outlined-logo.png');
+        }
+      }
+    }
   }
 }
 

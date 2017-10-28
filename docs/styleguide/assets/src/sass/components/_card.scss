@@ -15,7 +15,7 @@
 .card-task {
   display: block;
   max-width: 215px;
-  margin: 0 auto 40px;
+  margin: 0 auto 25px;
   padding-bottom: 20px;
   .task-header {
     position: relative;
@@ -231,7 +231,8 @@ ul.task-list {
 .plan-card-section {
   &:hover,
   &:focus,
-  &:active {
+  &:active,
+  &:active:focus {
     background-color: $red-f5;
     h3 {
       color: $white;
@@ -241,6 +242,11 @@ ul.task-list {
         span {
           color: $white;
         }
+      }
+    }
+    .bg-black {
+      a {
+        color: $white;
       }
     }
   }

@@ -339,7 +339,7 @@ select {
     @include box-shadow(1px 1px 2px 0 $black-48);
     &:hover,
     &:focus,
-    &:active {
+    &:active:focus {
       color: $black-48;
       opacity: 1;
     }

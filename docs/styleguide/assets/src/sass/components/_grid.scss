@@ -121,12 +121,34 @@
   display: inline-block;
   width: 100%;
   .pubilsh-inner-wrap {
+    position: relative;
     float: left;
     max-width: 385px;
     width: 50%;
     padding: 20px 0;
     text-align: center;
+    font-style: italic;
     @include border-radius(4px);
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: auto;
+      right: 0;
+      display: inline-block;
+      height: 40px;
+      width: 10px;
+      margin-right: -11px;
+      background-image: url('../images/shape.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      @include transform(translateY(-20px));
+    }
+    h2 {
+      margin: 0;
+      color: $orange;
+      font-size: 33px;
+    }
     .title-wrap {
       display: inline-block;
       max-width: 270px;
@@ -136,7 +158,7 @@
       line-height: 24px;
     }
   }
-  .btn-group {
+  .publish-btn-group {
     float: right;
     width: 50%;
     text-align: right;

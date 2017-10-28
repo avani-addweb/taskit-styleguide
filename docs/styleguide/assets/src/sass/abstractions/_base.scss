@@ -23,7 +23,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $opensans-bold;
+  color: $grey-72;
+  font-family: $oswald-regular;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 15px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
 }
 a {
   color: $grey-72;

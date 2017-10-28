@@ -17,6 +17,7 @@
   @include flex-wrap(wrap);
 }*/
 
+
 .green-title {
   display: inline-block;
   margin-top: 0;
@@ -61,7 +62,7 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 18px 0;
-  border-bottom: 2px solid $gray-d8;
+  border-bottom: 2px solid $grey-d8;
   color: $grey-6b;
   font-size: 14px;
   text-transform: uppercase;
@@ -76,7 +77,10 @@
     content: '';
   }
 }
-
+.large-bold-title {
+  margin: 5px 0;
+  font-size: 30px;
+}
 .block-title {
   display: inline-block;
   width: 100%;
@@ -174,7 +178,7 @@
       display: inline-block;
       height: 20px;
       width: 20px;
-      font-style: 14px;
+      font-size: 14px;
       font-family: 'Fontawesome';
       content: '\f00c';
     }

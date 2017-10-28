@@ -12,7 +12,6 @@
   background-color: $green;
   color: $white;
   font-size: $font-size-14;
-  font-weight: 700;
   font-family: $opensans-bold;
   text-align: center;
   text-transform: uppercase;
@@ -23,7 +22,9 @@
   }
   &:hover,
   &:focus,
+  &:active,
   &:active:focus {
+    background-color: $green;
     color: $white;
     text-decoration: none;
     opacity: .9;
