@@ -123,7 +123,7 @@
     </div>
     <div class="container">
       <div class="order-status">
-        <div class="page-heading title-border-bottom color-black-3">Order Complete</div>
+      <h1 class="page-title title-border-bottom">Order Complete</h1>
         <div class="order-complete table-responsive">
           <table>
             <tr class="border-grey">
@@ -156,13 +156,13 @@
         <div class="row">
           <div class="left-filter col-xs-12 col-sm-3 col-md-3">
             <div class="sidebar-box tasl-list-view range border-grey">
-              <h2 class="side-heading bg-blue">SHOW TASKS FROM</h2>
+              <h3 class="side-heading bg-blue title-smaller">SHOW TASKS FROM</h3>
               <div class="scroller sidebar-body">
                 <input type="range" name="points" min="500" max="100000">
               </div>
             </div>
             <div class="sidebar-box tasl-list-view rating border-grey">
-              <h2 class="side-heading bg-black-42">SHOW TASKS BY RATING</h2>
+              <h3 class="side-heading bg-black-42 title-smaller">SHOW TASKS BY RATING</h3>
               <div class="star-rating sidebar-body">
                 <form>
                   <div class="star-each">
@@ -184,9 +184,14 @@
                       <img src="../assets/images/star-black.png">
                       <img src="../assets/images/star-black.png">
                     </div>
-                    <div class="rating-checkbox">
-                      <input type="checkbox" name="" value="4star">
+                    <div class="input-rc custom-checkbox checkbox">
+                      <label>
+                        <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox1" value="option1"><span class="input-rc-span"></span>
+                      </label>
                     </div>
+                    <!-- <div class="rating-checkbox">
+                      <input type="checkbox" name="" value="4star">
+                    </div> -->
                   </div>
                   <div class="star-each">
                     <div class="rating-image">
@@ -220,39 +225,39 @@
               </div>
             </div>
             <div class="sidebar-box tasl-list-view timing-filter border-grey">
-              <h2 class="side-heading bg-blue">TURN AROUND TIME</h2>
+              <h3 class="side-heading bg-blue title-smaller">TURN AROUND TIME</h3>
               <div class="timing-radio sidebar-body">
                 <form>
-                  <label>
-                    <div class="input-rc custom-checkbox">
-                      <input type="checkbox">Up to 24
+                  <div class="input-rc custom-radio radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Up to 24
                       <span class="input-rc-span"></span>
-                    </div>
-                  </label>
-                  <label>
-                    <div class="input-rc custom-checkbox">
-                      <input type="checkbox">Up to 3 days
+                    </label>
+                  </div>
+                  <div class="input-rc custom-radio radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Up to 3 days
                       <span class="input-rc-span"></span>
-                    </div>
-                  </label>
-                  <label>
-                    <div class="input-rc custom-checkbox">
-                      <input type="checkbox">Up to 5 days
+                    </label>
+                  </div>
+                  <div class="input-rc custom-radio radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Up to 5 days
                       <span class="input-rc-span"></span>
-                    </div>
-                  </label>
-                  <label>
-                    <div class="input-rc custom-checkbox">
-                      <input type="checkbox">Up to 7 days
+                    </label>
+                  </div>
+                  <div class="input-rc custom-radio radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Up to 7 days
                       <span class="input-rc-span"></span>
-                    </div>
-                  </label>
-                  <label>
-                    <div class="input-rc custom-checkbox">
-                      <input type="checkbox">Any
+                    </label>
+                  </div>
+                  <div class="input-rc custom-radio radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">Any
                       <span class="input-rc-span"></span>
-                    </div>
-                  </label>
+                    </label>
+                  </div>
                   <!-- <div class="radio custom-radio input-rc">
                     <label>
                       <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>Up to 3 days<span class="input-rc-span"></span>
@@ -277,7 +282,7 @@
               </div>
             </div>
             <div class="sidebar-box sidebar-box tasl-list-view categories border-grey">
-              <h2 class="side-heading bg-blue">ALL CATEGORIES</h2>
+              <h3 class="side-heading bg-blue title-smaller">ALL CATEGORIES</h3>
               <div class="category-filter sidebar-body">
                 <ul class="list-spacing">
                   <li><a href="javascript:void(0);">Logo Design</a></li>
@@ -422,7 +427,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-col about-link">
-            <h2 class="footer-title">About</h2>
+            <h2 class="page-title">About</h2>
             <ul class="footer-link">
               <li><a href="#">About us</a></li>
               <li><a href="#">How it Works</a></li>
@@ -431,7 +436,7 @@
             </ul>
           </div>
           <div class="footer-col category">
-            <h2 class="footer-title">Popular category</h2>
+            <h2 class="page-title">Popular category</h2>
             <ul class="footer-link">
               <li><a href="#">Gadgets</a></li>
               <li><a href="#">Architecture</a></li>
@@ -441,13 +446,13 @@
             </ul>
           </div>
           <div class="footer-col testimonial">
-            <h2 class="footer-title">Recent testimonial</h2>
+            <h2 class="page-title">Recent testimonial</h2>
             <p class="color-gray-99">"Contrary to popular belief, Lorem Ipsum is not simply random text.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years"</p>
             <a href="">Kristi Loilo</a>
             <span>18 hours ago</span>
           </div>
           <div class="footer-col support">
-            <h2 class="footer-title">support</h2>
+            <h2 class="page-title">support</h2>
             <ul class="footer-link">
               <li><a href="">Contact us</a></li>
               <li><a href="">FAQ</a></li>

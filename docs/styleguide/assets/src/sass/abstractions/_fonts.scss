@@ -41,11 +41,6 @@
   src: $url-opensans-light;
 }
 
-/* Revalomordern */
-@font-face {
-  font-family: $revalomordern-regular;
-  src: $url-revalomordern;
-}
 
 /* Oswald */
 @font-face {
@@ -59,10 +54,4 @@
 @font-face {
   font-family: $oswald-regular;
   src: $url-oswald-regular;
-}
-
-/* avenir lt book */
-@font-face {
-  font-family: $avenir-lt;
-  src: $url-avenir-lt;
 }

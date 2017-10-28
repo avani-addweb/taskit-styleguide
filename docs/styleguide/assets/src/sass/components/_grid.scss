@@ -13,6 +13,7 @@
 }
 .content-area {
   float: left;
+  margin-bottom: 80px;
   @include calc('width', '100% - 280px');
 }
 /* End */

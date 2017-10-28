@@ -18,13 +18,9 @@ $opensans-italic: 'OpenSans Italic';
 $opensans-regular: 'OpenSans Regular';
 $opensans-light: 'OpenSans light';
 
-$revalomordern-regular: 'revalomodern-regula';
-
 $oswald-bold: 'Oswald-Bold';
 $oswald-light: 'Oswald-light';
 $oswald-regular: 'Oswald-regular';
-
-$avenir-lt: ' avenir-lt';
 
 /* URLs */
 $url-opensans-extrabold: url('../css/fonts/OpenSans/OpenSans-ExtraBold.woff');
@@ -36,13 +32,9 @@ $url-opensans-italic: url('../css/fonts/OpenSans/OpenSans-Italic.woff');
 $url-opensans-regular: url('../css/fonts/OpenSans/OpenSans-Regular.woff');
 $url-opensans-light: url('../css/fonts/OpenSans/OpenSans-Light.woff');
 
-$url-revalomordern: url('../css/fonts/revalo-mordern/revalomodern-regular.ttf');
-
-$url-oswald-bold: url('../css/fonts/oswald/Oswald-Bold_0.ttf');
-$url-oswald-light: url('../css/fonts/oswald/Oswald-Light_0.ttf');
-$url-oswald-regular: url('../css/fonts/oswald/Oswald-Regular_0.ttf');
-
-$url-avenir-lt: url('../css/fonts/avenir/avenir-lt-45-book-593011e608637.ttf');
+$url-oswald-bold: url('../css/fonts/oswald/Oswald-Bold.woff');
+$url-oswald-light: url('../css/fonts/oswald/Oswald-Light.woff');
+$url-oswald-regular: url('../css/fonts/oswald/Oswald-Regular.woff');
 
 
 /* Color code */
@@ -56,6 +48,7 @@ $black-48:    #484848;
 $black-88:    #888;
 $black-43:    #434343;
 $black-3a:    #3A3A3A;
+$black-3c:    #3C3C3C;
 
 
 $grey:        #303135;
@@ -97,14 +90,15 @@ $blue-44:     #44AAEC;
 $blue-00:     #0076B6;
 $blue-38:     #385C97;
 
-$sky-66:      #669CFE;
 $skyblue:     #00CFE5;
+$sky-66:      #669CFE;
 $sky-blue-a6: #A6C4FE;
 $sky-blue-90: #90B1FF;
 $sky-00:      #00D6BE;
 
 $red:         #E64443;
 $red-f5:      #FF4D55;
+
 $purple:      #C400E9;
 
 $yellow:      #FF9E00;

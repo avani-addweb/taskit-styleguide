@@ -103,7 +103,7 @@
   .header-menu-2 {
     margin-top: 15px;
     li {
-      margin-right: 15px;
+      margin-right: 25px;
       a {
         padding: 0;
         text-transform: capitalize;
@@ -141,11 +141,11 @@
         position: absolute;
         float: left;
         top: 0;
-        left: 3px;
+        left: 14px;
         height: auto;
         width: auto;
-        margin-top: -10px;
-        padding: 1px 8px;
+        margin-top: -12px;
+        padding: 3px 8px;
         background: $green;
         color: $white;
         font-size: 12px;

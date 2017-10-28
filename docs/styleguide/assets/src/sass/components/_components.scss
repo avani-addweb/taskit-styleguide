@@ -4,15 +4,14 @@
  *
  * Components design.
  */
-
 /* Container width */
-.container-460 {
-  max-width: 460px;
+.container-495 {
+  max-width: 495px;
   width: 100%;
   margin: 100px auto;
   padding: 0 15px;
 }
-/*Color */
+/* Color */
 .color-black-42 {
   color: $black-42;
   a {
@@ -20,6 +19,7 @@
   }
 }
 /* End */
+
 /* Background color */
 .bg-white {
   background-color: $white;
@@ -72,7 +72,6 @@
 .border-bottom {
   border-bottom: 1px solid $grey-dd;
 }
-
 /* End Border design */
 
 /* Border radius */
@@ -117,7 +116,7 @@
 }
 .task-profile-list {
   .project-list {
-    padding: 30px;
+    padding: 20px 30px;
   }
 }
 /* End Star rating design */
@@ -126,7 +125,9 @@
   button {
     float: left;
     margin-right: 20px;
+    padding: 10px;
     font-size: $font-size-14;
+    font-family: $opensans-regular;
     text-transform: none;
     @include calc('width', '50% - 10px');
     &:last-child {
@@ -141,6 +142,23 @@
       margin-bottom: 10px;
     }
   }
+  .social-btn-icon {
+    &::before {
+      float: left;
+      display: inline-block;
+      background-image: none;
+      font-size: 20px;
+      line-height: normal;
+      font-family: 'FontAwesome';
+      vertical-align: middle;
+      content: '\f0d5';
+    }
+  }
+  .facebook-btn-icon {
+    &::before {
+      content: '\f09a';
+    }
+  }
 }
 
 /* -OR- text design for login/register page*/
@@ -152,7 +170,7 @@
   text-align: center;
   &::before {
     position: absolute;
-    top: 6px;
+    top: 9px;
     left: 0;
     z-index: -1;
     display: inline-block;
@@ -165,7 +183,7 @@
     display: inline-block;
     width: 40px;
     background-color: $white;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 /* End -OR- text design for login/register page*/
@@ -204,36 +222,6 @@
   img {
     width: 100%;
   }
-}
-
-/* Taypography */
-.card-top-heading {
-  margin: 9px 0 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-.small-title {
-  color: $black-88;
-  font-size: 14px;
-  /*font-size: 16px;
-  line-height: 30px;*/
-}
-.small-bold-title {
-  display: block;
-  margin: 5px 0;
-  color: $black-48;
-  font-size: 12px;
-  font-weight: 600;
-}
-.medium-title {
-  color: $black-3a;
-  font-size: 16px;
-  font-weight: 600;
-}
-.paragraph-detail {
-  color: $black-88;
-  font-size: 16px;
-  line-height: 30px;
 }
 /*.content-font {
   font-size: 16px;
@@ -310,7 +298,6 @@
     float: right;
   }
 }
-
 .rating-star {
   p {
     display: inline-block;
@@ -332,6 +319,11 @@
     padding: 0;
   }
 }
+.product-heading {
+  h2 {
+    margin-bottom: 28px;
+  }
+}
 .prerequisites-doc {
   .doc-img {
     padding: 12px 0 0 50px;
@@ -346,9 +338,9 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 42px;
-  h2 {
+  /*h2 {
     margin-bottom: 23px;
-  }
+  }*/
   .portfolio-img {
     display: inline-block;
     width: 100%;
@@ -468,91 +460,7 @@
     }
   }
 }
-/** button **/
-.contact-btn {
-  display: inline-block;
-  width: 100%;
-  .btn {
-    width: 100%;
-    background-color: $sky-66;
-  }
-}
-.show-me-btn {
-  display: inline-block;
-  a {
-    padding: 4px 10px;
-    border: 1px solid $grey-dd;
-    background-color: $white;
-    color: $black-88;
-    text-transform: capitalize;
-    @include box-shadow(1px 1px 2px 0 $black-48);
-    &:hover,
-    &:focus,
-    &:active {
-      color: $black-48;
-      opacity: 1;
-    }
-  }
-}
-.payment-form {
-  display: inline-block;
-  width: 100%;
-  margin: 15px 0 45px;
-  .form-group {
-    margin-bottom: 18px;
-    label {
-      margin-bottom: 10px;
-    }
-    input {
-      max-width: 100%;
-      background-color: transparent;
-    }
-  }
-  .sub-form {
-    float: left;
-    display: block;
-    width: 100%;
-    margin-right: 15px;
-    @include calc(width, '50% - 8px');
-    @media (max-width: 1200px) {
-      max-width: 100%;
-      @include calc(width, '50% - 8px');
-    }
-    @media (max-width: 640px) {
-      max-width: 100%;
-      @include calc(width, '50% - 8px');
-    }
-    @media (max-width: 480px) {
-      width: 100%;
-      margin: 0 0 20px;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-.mayment-btn {
-  float: right;
-  display: inline-block;
-  .make-payment-btn {
-    margin-right: 25px;
-  }
-}
-.date-form {
-  float: right;
-  display: inline-block;
-  label {
-    margin: 0 5px 0 0;
-    font-size: 12px;
-    font-weight: normal;
-    vertical-align: middle;
-  }
-  .form-control {
-    height: 38px;
-    background-color: transparent;
-    font-size: 12px;
-  }
-}
+
 .apply-btn-class {
   display: inline-block;
   margin-left: 15px;
@@ -561,7 +469,7 @@
   }
 }
 
-/** Checkout Payment info page **/
+/* Checkout Payment info page */
 .main-payment-content {
   position: relative;
   display: inline-block;
@@ -579,6 +487,7 @@
   }
   .payment-title {
     h2 {
+      margin: 0;
       padding: 15px 30px;
     }
   }
@@ -672,7 +581,7 @@
   }
 }
 
-/** Payment history page **/
+/* Payment history page */
 .filter-tab {
   display: inline-block;
   margin-bottom: 0;
@@ -752,7 +661,7 @@
   }
 }
 
-/** Table **/
+/* Table */
 .recent-payment {
   tbody>tr>td,
   tbody>tr>th {
@@ -857,7 +766,6 @@
   display: inline-block;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  font-weight: 600;
   &::after {
     position: absolute;
     top: auto;
