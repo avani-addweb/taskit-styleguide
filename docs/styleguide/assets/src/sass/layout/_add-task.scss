@@ -113,7 +113,14 @@
   .content-half {
     display: inline-block;
     width: 100%;
-    padding: 50px 15px 30px;
+    padding: 60px 15px 56px;
+    font-style: italic;
+    h3 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 0;
+    }
     .add-task-caption {
       display: inline-block;
       width: 100%;

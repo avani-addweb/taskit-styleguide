@@ -17,7 +17,7 @@ select,
   padding: 4px 12px;
   border: 1px solid $grey-b6;
   background-color: $grey-e7;
-  color: $grey-b6;
+  color: $black-42;
   @include border-radius(4px);
   @include box-shadow(none);
   &:focus,
@@ -33,7 +33,7 @@ select {
   padding: 10px 12px;
   border: 1px solid $grey-b6;
   color: $black-88;
-  font-size: 14px;
+  font-size: $font-size-14;
   resize: none;
   @include border-radius(4px);
   &:focus,
@@ -57,7 +57,7 @@ select {
     background-repeat: no-repeat;
     background-size: 18px;
     color: $black;
-    font-size: 13px;
+    font-size: $font-size-13;
   }
 }
 /* Custom Checkbox and Radio button design */
@@ -81,7 +81,6 @@ select {
       display: inline-block;
       height: 21px;
       width: 21px;
-      /*margin-top: -2px;*/
       margin-right: 8px;
       background-image: url('../images/checkbox.png');
       background-position: center right -1px;
@@ -121,7 +120,7 @@ select {
     input[type="Password"] {
       width: 100%;
       color: $black;
-      font-size: 14px;
+      font-size: $font-size-14;
     }
   }
   .remeber-me,
@@ -134,7 +133,7 @@ select {
   }
   .remeber-me {
     label {
-      font-size: 14px;
+      font-size: $font-size-14;
       font-family: $opensans-semibolditalic;
     }
   }
@@ -230,17 +229,18 @@ select {
 }
 
 /* Left content turn around time */
-.timing-radio {
+/*.timing-radio {
   padding-top: 15px;
   label {
     display: inline-block;
     width: 100%;
     margin: 0;
+    padding-left: 0;
     color: $grey-99;
     font-size: $font-size-15;
     font-weight: 100;
   }
-}
+}*/
 .custom-checkbox {
   float: right;
   margin: 0;
@@ -256,9 +256,30 @@ select {
     }
   }
 }
+.green-checkbox {
+  input[type=checkbox] {
+    height: 24px;
+    width: 24px;
+    + .input-rc-span {
+      height: 24px;
+      width: 24px;
+      background-image: url('../images/Rectangle-checkbox.png');
+      background-position: center right 1px;
+    }
+  }
+}
 .custom-radio {
   display: block;
   margin-bottom: 15px;
+  label {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    color: $grey-99;
+    font-size: $font-size-15;
+    font-weight: 100;
+  }
   input[type=radio] {
     height: 15px;
     width: 15px;
@@ -325,7 +346,7 @@ select {
   .btn {
     width: 100%;
     background-color: $sky-66;
-    font-size: 18px;
+    font-size: $font-size-18;
   }
 }
 .show-me-btn {
@@ -348,7 +369,7 @@ select {
 .payment-form {
   display: inline-block;
   width: 100%;
-  margin: 15px 0 45px;
+  margin: 15px 0 30px;
   .form-group {
     margin-bottom: 18px;
     label {
@@ -363,8 +384,8 @@ select {
     float: left;
     display: block;
     width: 100%;
-    margin-right: 15px;
-    @include calc(width, '50% - 8px');
+    margin-right: 10px;
+    @include calc(width, '50% - 5px');
     @media (max-width: 1200px) {
       max-width: 100%;
       @include calc(width, '50% - 8px');
@@ -395,14 +416,14 @@ select {
   display: inline-block;
   label {
     margin: 0 5px 0 0;
-    font-size: 12px;
+    font-size: $font-size-12;
     font-weight: normal;
     vertical-align: middle;
   }
   .form-control {
     height: 38px;
     background-color: transparent;
-    font-size: 12px;
+    font-size: $font-size-12;
   }
 }
 /* End date form */

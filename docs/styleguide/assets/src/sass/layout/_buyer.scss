@@ -4,23 +4,10 @@
  *
  * Buyer page SCSS
  */
-.user-detail-wrap {
-  .user-title {
-    .title-small {
-      padding: 0;
-    }
-    .user-type {
-      text-transform: capitalize;
-    }
-  }
-  .user-desc {
-    margin-bottom: 10px;
-  }
-}
+
 .section-title {
   display: inline-block;
   width: 100%;
-  /*padding-left: 50px;*/
   .section-main-heading {
     display: inline-block;
     width: 100%;
@@ -34,14 +21,24 @@
     &::before {
       height: 35px;
       width: 35px;
-      background-image: url('../images/message.png');
-      background-size: cover;
+      background-image: url('../images/currencies.png');
+      background-size: contain;
+    }
+  }
+  &.message-icon {
+    &::before {
+      background-image: url('../images/mail.png');
     }
   }
   &.recommended-title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     &::before {
-      background-image: url('../images/gray-star.png');
+      background-image: url('../images/star.png');
+    }
+  }
+  &.service-icon {
+    &::before {
+      background-image: url('../images/settings.png');
     }
   }
 }
@@ -49,7 +46,7 @@
   display: inline-block;
   max-width: 760px;
   width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   .comment-section {
     display: inline-block;
     width: 100%;
@@ -118,10 +115,10 @@
   }
 }
 .order-status-wrap {
-  display: flex;
-  /*flex-wrap: wrap;*/
+  /*display: flex;*/
   margin-bottom: 80px;
   justify-content: space-between;
+  @include flexbox();
   @media (max-width: $mobile-portrait) {
     margin-bottom: 30px;
   }

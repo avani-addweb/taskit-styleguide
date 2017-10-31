@@ -24,7 +24,7 @@ var sass       = require('gulp-sass');
 // Path
 var scssSrc    = '../docs/styleguide/assets/src/sass/**/*',
     cssDst     = '../docs/styleguide/assets/css';
-    // cssDst2    = '../drupal-site-chokoru/themes/custom/chocoru/css';
+
 // Lint SCSS (For Ordering CSS property)
 gulp.task('scss-lint', function() {
   return gulp.src(scssSrc)
@@ -38,7 +38,6 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest(cssDst))
-    // .pipe(gulp.dest(cssDst2))
     .pipe(notify({message: 'SCSS compiled'}));
 });
 /* End */
@@ -47,34 +46,17 @@ gulp.task('sass', function () {
 /**
  * jQuery & Coffee scripts
  */
-var coffee = require('gulp-coffee');
 var uglify = require('gulp-uglify');
 // Path
-var coffeeSrc    = '../docs/styleguide/assets/src/coffee-scripts/**/*.coffee.js',
-    coffeeDst     = '../docs/styleguide/assets/coffee-scripts';
 var jsSrc    = '../docs/styleguide/assets/src/js/**/*.js',
     jsDst     = '../docs/styleguide/assets/js';
-    // jsDst2     = '../drupal-site-chokoru/themes/custom/chocoru/js';
-gulp.task('coffeescripts', ['clean'], function() {
-  // Minify and copy all JavaScript (except vendor scripts) 
-  // with sourcemaps all the way down 
-  return gulp.src(coffeeSrc)
-    .pipe(sourcemaps.init())
-      .pipe(coffee())
-      .pipe(uglify())
-      .pipe(concat('all.min.coffee.js'))
-    // .pipe(sourcemaps.write())
-    .pipe(gulp.dest(coffeeDst))
-    .pipe(notify({message: 'Coffee Scripts compiled'}));
-});
+
 gulp.task('scripts', ['clean'], function() {
   return gulp.src(jsSrc)
     .pipe(sourcemaps.init())
-      .pipe(uglify())
-      .pipe(concat('all.min.js'))
-    // .pipe(sourcemaps.write())
-    .pipe(gulp.dest(jsDst))
-    // .pipe(gulp.dest(jsDst2))
+    .pipe(uglify())
+    .pipe(concat('all.min.js'))
+    .pipe(gulp.dest(jsDst))    
     .pipe(notify({message: 'JS compiled'}));
 });
 /* End */
@@ -102,7 +84,6 @@ gulp.task('images', ['clean'], function() {
  * Rerun the task when a file changes
  */
 gulp.task('watch', function() {
-  gulp.watch(coffeeSrc, ['coffeescripts']);
   gulp.watch(jsSrc, ['scripts']);
   gulp.watch(imgSrc, ['images']);
   gulp.watch(scssSrc, ['sass']);
@@ -112,4 +93,4 @@ gulp.task('watch', function() {
 
 
 // The default task (called when you run `gulp` from cli) 
-gulp.task('default', ['watch', 'coffeescripts', 'scripts', 'sass']); // 'images', , 'scss-lint'
+gulp.task('default', ['watch', 'scripts', 'sass', 'images', , 'scss-lint']); 

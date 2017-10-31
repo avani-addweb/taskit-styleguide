@@ -4,6 +4,7 @@
  *
  * Components design.
  */
+
 /* Container width */
 .container-495 {
   max-width: 495px;
@@ -11,14 +12,10 @@
   margin: 100px auto;
   padding: 0 15px;
 }
-/* Color */
-.color-black-42 {
-  color: $black-42;
-  a {
-    color: $black-42;
-  }
-}
 /* End */
+.card-waper {
+  margin: 0 0 40px;
+}
 
 /* Background color */
 .bg-white {
@@ -85,6 +82,72 @@
   @include border-radius(0 5px 5px 0);
 }
 /* End Border radius */
+.list-view-item {
+  .side-icon {
+    display: block;
+    &::before {
+      height: 12px;
+      width: 16px;
+    }
+  }
+  .list-style-arrow {
+    margin-bottom: 8px;
+    &::before {
+      margin-top: 6px;
+      background-image: url('../images/right-arrow.png');
+    }
+  }
+  .list-style-que {
+    &::before {
+      margin-top: 4px;
+      background-image: url('../images/question.png');
+      opacity: .5;
+    }
+    &.active {
+      &::before {
+        opacity: 1;
+      }
+      a {
+        color: $black-2a;
+      }
+    }
+  }
+}
+/* Order page */
+.task-list {
+  position: relative;
+  /*margin-bottom: 26px;*/
+  .dropdown-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    display: inline-block;
+    max-width: 240px;
+    width: 100%;
+    p {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    .short-selection {
+      position: relative;
+      display: inline-block;
+      max-width: 186px;
+      padding-right: 28px;
+      border-color: $grey-dd;
+      background-color: $white;
+      background-image: url('../images/down-arrow.png');
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      background-size: 15px;
+      vertical-align: middle;
+      @include appearance(none);
+      @include border-radius(0);
+    }
+  }
+}
+/* End */
 
 /* Star rating design */
 .task-star-rating {
@@ -92,6 +155,7 @@
   font-size: $font-size-10;
   .dark-gray-star {
     display: inline-block;
+    vertical-align: middle;
     &::before {
       float: left;
       display: inline-block;
@@ -101,6 +165,9 @@
       background-position: right;
       content: '';
     }
+  }
+  span {
+    vertical-align: middle;
   }
   .light-gray-star {
     display: inline-block;
@@ -147,7 +214,7 @@
       float: left;
       display: inline-block;
       background-image: none;
-      font-size: 20px;
+      font-size: $font-size-20;
       line-height: normal;
       font-family: 'FontAwesome';
       vertical-align: middle;
@@ -161,7 +228,7 @@
   }
 }
 
-/* -OR- text design for login/register page*/
+/* -OR- text design for login/register page */
 .or-text {
   position: relative;
   display: inline-block;
@@ -183,15 +250,15 @@
     display: inline-block;
     width: 40px;
     background-color: $white;
-    font-size: 13px;
+    font-size: $font-size-13;
   }
 }
-/* End -OR- text design for login/register page*/
+/* End -OR- text design for login/register page */
 
 .user-detail-wrap {
   display: inline-block;
   width: 100%;
-  margin-bottom: 30px;
+  margin: 30px 0;
   .user-image {
     width: 50px;
     margin-right: 20px;
@@ -200,13 +267,16 @@
     float: left;
   }
   .user-detail {
-    /*@include calc('width', '100% - 70px');*/
     .user-title {
       display: inline-block;
       width: 100%;
       margin-bottom: 8px;
+      .title-small {
+        padding: 0;
+      }
     }
     .user-desc {
+      margin-bottom: 10px;
       color: $grey-79;
       font-size: $font-size-14;
     }
@@ -223,10 +293,6 @@
     width: 100%;
   }
 }
-/*.content-font {
-  font-size: 16px;
-  line-height: 30px;
-}*/
 /* End */
 
 /* Tab view */
@@ -241,7 +307,7 @@
       padding: 13px 24px;
       border: none;
       color: $black-48;
-      font-size: 14px;
+      font-size: $font-size-14;
       @media (max-width: 640px) {
         padding: 13px;
       }
@@ -273,7 +339,11 @@
 .card-main-content {
   display: inline-block;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 0 22px;
+  h2,
+    p {
+    margin-bottom: 16px;
+  }
 }
 .top-side-view {
   float: left;
@@ -305,9 +375,6 @@
     vertical-align: middle;
   }
 }
-/*.orders-queue {
-  margin-left: 15px;
-}*/
 .caption-img {
   .real-estate-img {
     img {
@@ -320,6 +387,7 @@
   }
 }
 .product-heading {
+  margin-bottom: 35px;
   h2 {
     margin-bottom: 28px;
   }
@@ -338,9 +406,6 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 42px;
-  /*h2 {
-    margin-bottom: 23px;
-  }*/
   .portfolio-img {
     display: inline-block;
     width: 100%;
@@ -352,18 +417,18 @@
   }
 }
 .order-now {
-  margin-bottom: 33px;
+  margin-bottom: 50px;
   span {
     display: inline-block;
     width: 100%;
     margin-bottom: 8px;
     color: $black-42;
-    font-size: 14px;
+    font-size: $font-size-14;
     font-weight: 600;
   }
   a {
     color: $black-88;
-    font-size: 14px;
+    font-size: $font-size-14;
   }
 }
 .more-reviews {
@@ -381,13 +446,6 @@
     width: 60%;
   }
 }
-/*.left-review,
-.right-review {
-  @media (max-width: 767px) {
-    width: 100%;
-    padding: 0;
-  }
-}*/
 .sub-review {
   float: left;
   width: 33.33%;
@@ -420,7 +478,7 @@
   }
   h2 {
     margin: 5px 0;
-    font-size: 16px;
+    font-size: $font-size-16;
   }
   span {
     width: 100%;
@@ -553,7 +611,7 @@
         width: 100%;
         padding: 20px 25px;
         color: $black-42;
-        font-size: 16px;
+        font-size: $font-size-16;
         text-decoration: none;
       }
     }
@@ -568,14 +626,17 @@
 }
 .amount-payabel {
   display: inline-block;
-  h2 {
-    margin: 0 0 30px;
+  width: 100%;
+  margin-bottom: 15px;
+  .amount-title {
+    display: inline-block;
+    margin-right: 5px;
     color: $black-3a;
-    font-size: 26px;
-    font-weight: 600;
+    vertical-align: middle;
   }
   span {
-    font-size: 15px;
+    font-size: $font-size-16;
+    font-family: $opensans-bold;
     text-transform: capitalize;
     vertical-align: middle;
   }
@@ -590,9 +651,14 @@
   li {
     display: inline-block;
     margin-right: 22px;
+    &:first-child {
+      a {
+        font-family: $opensans-semibold;
+      }
+    }
     a {
       color: $black-48;
-      font-size: 13px;
+      font-size: $font-size-13;
       text-decoration: none;
       vertical-align: middle;
       &:hover,
@@ -603,11 +669,6 @@
     }
   }
 }
-/*.top-payment-title {
-  &::before {
-    background-image: url('../images/star-icon-line.png');
-  }
-}*/
 .main-payment-history-content {
   display: inline-block;
   width: 100%;
@@ -625,7 +686,7 @@
     height: 35px;
     width: 35px;
     margin-left: 4px;
-    background-image: url('../images/Calendar-icon.png');
+    background-image: url('../images/time.png');
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: middle;
@@ -649,12 +710,6 @@
     }
   }
 }
-
-/*.payment-history-title {
-  width: auto;
-  margin-top: 6px;
-  padding: 0 0 0 50px;
-}*/
 .payment-history-content {
   .payments-user-detail {
     margin-bottom: 48px;
@@ -667,7 +722,11 @@
   tbody>tr>th {
     padding: 15px 50px;
     border: none;
-    font-size: 15px;
+    font-size: $font-size-15;
+  }
+  tbody>tr>th {
+    color: $black-48;
+    font-family: $opensans-bold;
   }
 }
 .recent-payment {
@@ -699,7 +758,7 @@
         padding: 7px;
         background-image: none;
         color: $white;
-        font-size: 22px;
+        font-size: $font-size-22;
         font-style: normal;
         font-family: 'FontAwesome';
         text-align: center;
@@ -733,6 +792,8 @@
     }
   }
 }
+/* End */
+
 /* Top add task list */
 .add-task-steps {
   display: inline-block;
@@ -748,7 +809,7 @@
       display: inline-block;
       margin-right: 62px;
       color: $black-33;
-      font-size: 14px;
+      font-size: $font-size-14;
       font-weight: 600;
       &:hover,
       &:focus,
@@ -778,48 +839,6 @@
     content: '';
   }
 }
-/* END */
-
-/* Right-dropdrown section design */
-.dropdown-filter {
-  position: relative;
-  float: right;
-  display: inline-block;
-  max-width: 240px;
-  width: 100%;
-  /*&::after {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0;
-    display: inline-block;
-    margin: 5px 10px;
-    background-image: none;
-    font-size: $font-size-20;
-    font-family: 'FontAwesome';
-    content: '\f0d7';
-  }*/
-  p {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .short-selection {
-    position: relative;
-    display: inline-block;
-    max-width: 170px;
-    padding-right: 28px;
-    border-color: $grey-dd;
-    background-color: $white;
-    background-image: url('../images/down-arrow.png');
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    background-size: 15px;
-    vertical-align: middle;
-    @include appearance(none);
-    @include border-radius(0);
-  }
-}
 /* End */
 
 /* Order section design */
@@ -835,7 +854,7 @@
           padding: 15px;
           background-color: $grey-f9;
           color: $black-3a;
-          font-size: 16px;
+          font-size: $font-size-16;
         }
         td {
           padding: 25px 20px;
@@ -844,22 +863,13 @@
       .table-detail {
         td {
           width: 220px;
-          font-size: 14px;
+          font-size: $font-size-14;
           vertical-align: middle;
-          /*@media (max-width: $small-desktop) {
-            width: 150px;
-          }
-          @media (max-width: $ipad-portrait) {
-            width: 120px;
-          }*/
           &.table-img {
             @include calc('width' , '100% - 660px');
             @media (max-width: $small-desktop) {
               min-width: 600px;
             }
-            /*@media (max-width: $ipad-portrait) {
-              @include calc('width','100% - 360px');
-            }*/
             img {
               float: left;
               width: 110px;
@@ -869,7 +879,7 @@
               margin-top: 20px;
               padding: 0 20px;
               color: $black-3a;
-              font-size: 16px;
+              font-size: $font-size-16;
               line-height: 25px;
               font-weight: 600;
               @include calc('width' , '100% - 110px');
@@ -879,5 +889,24 @@
       }
     }
   }
+}
+/* End */
+/* Thumbnail */
+.slider-two {
+  margin-bottom: 25px;
+  .slick-arrow {
+    display: none;
+  }
+}
+.thumbnails-slider {
+  .slick-slide {
+    margin-right: 15px;
+  }
+  .slick-dots {
+    display: none;
+  }
+}
+.content {
+  display: inline-block;
 }
 /* End */

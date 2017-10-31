@@ -24,7 +24,6 @@
   &:focus,
   &:active,
   &:active:focus {
-    background-color: $green;
     color: $white;
     text-decoration: none;
     opacity: .9;
@@ -55,16 +54,40 @@
 
 .btn-gradient-blue {
   @include background-75-angle(rgba(105, 153, 251, 1), rgba(105, 153, 251, 1), rgba(93, 134, 220, 1), rgba(93, 134, 220, 1));
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    @include background-75-angle(rgba(105, 153, 251, 1), rgba(105, 153, 251, 1), rgba(93, 134, 220, 1), rgba(93, 134, 220, 1));
+  }
 }
 .btn-gradient-lightblue {
   @include background-75-angle(#5EBAFF, #5EBAFF, #56A7E5, #56A7E5);
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    @include background-75-angle(#5EBAFF, #5EBAFF, #56A7E5, #56A7E5);
+  }
 }
 .btn-gradient-grey {
   @include background-75-angle(#586176, #586176, #4D5668, #4D5668);
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    @include background-75-angle(#586176, #586176, #4D5668, #4D5668);
+  }
 }
 
 .btn-gradient-green {
   @include background-75-angle(#009928, #009928, #008624, #008624);
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    @include background-75-angle(#009928, #009928, #008624, #008624);
+  }
 }
 .btn-capitalize {
   text-transform: capitalize;
@@ -120,7 +143,8 @@
   }
 }
 /* End */
-
-/*.service-btn {
-  margin-left: 25px;
-}*/
+.close-btn-group {
+  .save-btn {
+    float: right;
+  }
+}

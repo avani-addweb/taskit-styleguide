@@ -27,19 +27,19 @@ h6 {
   font-family: $oswald-regular;
 }
 h2 {
-  font-size: 18px;
+  font-size: $font-size-18;
 }
 h3 {
-  font-size: 16px;
+  font-size: $font-size-16;
 }
 h4 {
-  font-size: 15px;
+  font-size: $font-size-15;
 }
 h5 {
-  font-size: 14px;
+  font-size: $font-size-14;
 }
 h6 {
-  font-size: 12px;
+  font-size: $font-size-12;
 }
 a {
   color: $grey-72;
@@ -60,10 +60,8 @@ ul {
 }
 
 p {
-  /*display: block;*/
-  /*margin: 0;*/
   color: $black-88;
-  font-size: 14px;
+  font-size: $font-size-14;
 }
 
 strong {

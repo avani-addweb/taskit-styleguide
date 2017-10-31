@@ -40,11 +40,6 @@
     text-overflow: ellipsis;
     a {
       line-height: 20px;
-      &:hover,
-      &:focus,
-      &:active {
-        color: $grey-72;
-      }
     }
   }
   .task-by-rate {
@@ -60,7 +55,7 @@
       word-break: break-all;
       white-space: nowrap;
       a {
-        font-size: 10px;
+        font-size: $font-size-10;
       }
       @media (max-width: $small-desktop) {
         width: 100%;
@@ -74,6 +69,9 @@
         display: inline-block;
       }
     }
+  }
+  &.buyer-card {
+    max-width: 262px;
   }
 }
 .card-progress {
@@ -120,10 +118,10 @@
     display: inline-block;
     height: 8px;
     width: 100%;
-    margin-bottom: -8px;
+    margin: 0 0 -4px -1px;
     background-color: $sky-00;
     content: '';
-    @include border-radius(2px);
+    @include border-radius(0 0 5px 5px);
   }
   &.card-bottom-border-yellow {
     &::before {
@@ -170,7 +168,7 @@ ul.task-list {
     span {
       float: left;
       color: $grey-59;
-      font-size: 12px;
+      font-size: $font-size-12;
     }
     .task-edit-section {
       float: right;
@@ -189,7 +187,7 @@ ul.task-list {
   .add-list {
     position: relative;
     color: $black;
-    font-size: 13px;
+    font-size: $font-size-13;
     font-weight: 700;
     text-transform: none;
     &::before {
@@ -227,6 +225,7 @@ ul.task-list {
   padding: 5px 10px;
 }
 /*End*/
+
 /* Plan-block-sectio design */
 .plan-card-section {
   &:hover,
@@ -252,12 +251,12 @@ ul.task-list {
   }
 }
 /* End */
-/* Right content of task detail page*/
+
+/* Right content of task detail page */
 .profile-view {
   display: inline-block;
   width: 100%;
   margin-bottom: 15px;
-  padding: 7px 15px;
   .dashboard-title {
     display: block;
     h4 {
@@ -269,8 +268,6 @@ ul.task-list {
     display: inline-block;
     margin-right: 10px;
     text-align: center;
-    /*width: 40%;*/
-    /*padding-left: 25px;*/
     @include calc('width' , '40% - 5px');
     img {
       width: auto;
@@ -300,7 +297,7 @@ ul.task-list {
       text-align: left;
       p {
         margin-bottom: 5px;
-        font-size: 12px;
+        font-size: $font-size-12;
       }
     }
   }
@@ -312,10 +309,9 @@ ul.task-list {
   position: relative;
   float: left;
   display: inline-block;
-  /*width: 50%;*/
   margin-bottom: 30px;
   padding-left: 32px;
-  font-size: 13px;
+  font-size: $font-size-13;
   font-family: $opensans-semibold;
   @include calc('width' , '50% - 15px');
   &:nth-child(2n) {
@@ -326,16 +322,6 @@ ul.task-list {
     width: 25px;
     content: '';
   }
-  /*span {
-    display: block;
-    margin: 5px 0;
-    color: $black-48;
-    font-size: 12px;
-    font-weight: 600;
-  }*/
-  /*&:nth-child(2n) {
-    margin-right: 0;
-  }*/
 }
 .location {
   &::before {
@@ -361,13 +347,13 @@ ul.task-list {
   display: inline-block;
   width: 100%;
   margin-bottom: 15px;
-  padding: 20px 15px 0;
+  padding: 30px 15px 0;
 }
 .project-wrap {
   float: left;
   margin-right: 15px;
   color: $black-43;
-  font-size: 40px;
+  font-size: $font-size-40;
   font-weight: 600;
   text-align: center;
   @include calc(width, '50% - 8px');

@@ -43,14 +43,12 @@
         &::before {
           display: inline-block;
           margin-top: 3px;
-          background-image: none;
-          font-family: 'FontAwesome';
-          content: '\f044';
+          background-image: url('../images/edit.png');
         }
       }
       .delete {
         &::before {
-          content: '\f014';
+          background-image: url('../images/rubbish-bin.png');
         }
       }
     }

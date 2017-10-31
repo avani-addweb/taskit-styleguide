@@ -137,21 +137,21 @@
       &:active {
         background-color: transparent;
       }
-      .notification-count {
-        position: absolute;
-        float: left;
-        top: 0;
-        left: 14px;
-        height: auto;
-        width: auto;
-        margin-top: -12px;
-        padding: 3px 8px;
-        background: $green;
-        color: $white;
-        font-size: 12px;
-        text-align: center;
-        @include border-radius(100%);
-      }
+    }
+    .notification-count {
+      position: absolute;
+      float: left;
+      top: 0;
+      left: 14px;
+      height: auto;
+      width: auto;
+      margin-top: -12px;
+      padding: 3px 8px;
+      background: $green;
+      color: $white;
+      font-size: $font-size-12;
+      text-align: center;
+      @include border-radius(100%);
     }
   }
   .account-item {
@@ -168,7 +168,7 @@
     margin-right: 10px;
     a {
       color: $white;
-      font-size: 14px;
+      font-size: $font-size-14;
       text-transform: uppercase;
       @include border-radius(3px);
     }

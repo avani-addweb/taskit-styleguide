@@ -20,7 +20,7 @@
 .footer-content {
   margin: 40px 0;
   color: $grey-6b;
-  font-size: 14px;
+  font-size: $font-size-14;
   @include flexbox();
   a {
     color: $grey-6b;
@@ -45,7 +45,7 @@
 .testimonial {
   width: 25%;
   p {
-    font-size: 14px;
+    font-size: $font-size-14;
     font-style: italic;
   }
   a {
