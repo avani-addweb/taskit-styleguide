@@ -64,6 +64,9 @@ select {
     @media (max-width: 992px) {
       width: 195px;
     }
+    @media (max-width: 767px) {
+      width: 250px;
+    }
   }
 }
 /* Custom Checkbox and Radio button design */
@@ -136,6 +139,10 @@ select {
     width: 50%;
     color: $grey-79;
     font-size: $font-size-14;
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: left;
+    }
   }
   .remeber-me {
     label {
@@ -146,6 +153,9 @@ select {
   .forgot-link {
     color: $grey-79;
     text-align: right;
+    @media (max-width: 480px) {
+      text-align: left;
+    }
   }
   .form-action {
     .btn {

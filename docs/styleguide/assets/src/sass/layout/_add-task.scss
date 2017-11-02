@@ -17,7 +17,7 @@
 .form-wrap {
   float: left;
   margin-right: 90px;
-  @include calc('width', '42% - 65px');
+  @include calc('width', '45% - 45px');
   @media (max-width: 767px) {
     width: 100%;
     margin-right: 0;
@@ -56,8 +56,9 @@
 }
 .detail-wrapper {
   float: right;
-  width: 55%;
+  /*width: 55%;*/
   margin-top: 22px;
+  @include calc('width','55% - 45px');
   @media (max-width: 767px) {
     width: 100%;
   }
@@ -72,7 +73,7 @@
   display: inline-block;
   height: 60px;
   width: 60px;
-  margin: 0 70px 20px 0;
+  margin: 0 70px 15px 0;
   padding: 12px 0 0 7px;
   background-color: $pink;
   cursor: pointer;
@@ -126,9 +127,9 @@
     display: inline-block;
     margin: 0;
     color: $grey-71;
-    vertical-align: middle;
     font-style: normal;
     font-family: $opensans-regular;
+    vertical-align: middle;
   }
 }
 .share-media {
@@ -137,7 +138,7 @@
   margin: 50px auto 85px;
   @media (max-width: 767px) {
     margin: 50px auto;
-  } 
+  }
   .content-half {
     display: inline-block;
     width: 100%;
