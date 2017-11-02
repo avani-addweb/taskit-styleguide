@@ -170,6 +170,11 @@ select {
     display: inline-block;
     max-width: 300px;
     margin-right: 8px;
+    @media (max-width: 480px) {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 15px;
+    }
     .input-file-name {
       position: relative;
       float: left;
@@ -181,6 +186,32 @@ select {
       font-size: $font-size-14;
       cursor: pointer;
       @include border-radius(3px 0 0 3px);
+      @media (max-width: 480px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.choose-file {
+  .file-browser-text {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    &::before {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      font-size: $font-size-14;
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+      content: 'Choose Files';
+    }
+    input {
+      display: inline-block;
+      width: 100%;
+      opacity: 0;
     }
   }
 }
@@ -243,7 +274,7 @@ select {
 }*/
 .custom-checkbox {
   float: right;
-  margin: 0;
+  margin: 7px 0 0;
   input[type=checkbox] {
     height: 13px;
     width: 13px;
@@ -292,7 +323,7 @@ select {
     }
     &:checked {
       + .input-rc-span {
-        background-position: center right;
+        background-position: center right 1px;
       }
     }
   }

@@ -97,12 +97,24 @@
   width: 100%;
   margin-bottom: 30px;
   justify-content: space-between;
+  @media (max-width: 480px) {
+    text-align: center;
+  }
   .box {
     display: inline-block;
+    min-height: 156px;
     max-width: 200px;
     width: 100%;
     margin: 0 35px 20px 0;
+    padding: 15px;
     @include border-radius(4px);
+    /*@media (max-width: 767px) {
+      max-width: 175px;
+    }*/
+    @media (max-width: 480px) {
+      max-width: 100%;
+      margin: 15px auto;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -110,10 +122,20 @@
   .box-img {
     display: inline-block;
     width: 100%;
-    padding: 20px 0;
+    margin: 15px 0;
     text-align: center;
     img {
+      max-width: 50px;
       width: 100%;
+    }
+  }
+  .choose-file {
+    display: inline-block;
+    width: 100%;
+    word-break: break-all;
+    text-align: center;
+    span {
+      font-size: 12px;
     }
   }
 }
@@ -125,10 +147,15 @@
     float: left;
     max-width: 385px;
     width: 50%;
-    padding: 20px 0;
+    padding: 20px 15px;
     font-style: italic;
     text-align: center;
     @include border-radius(4px);
+    @media (max-width: 480px) {
+      float: none;
+      max-width: 100%;
+      width: 100%;
+    }
     &::before {
       position: absolute;
       top: 50%;
@@ -143,6 +170,9 @@
       background-size: contain;
       content: '';
       @include transform(translateY(-20px));
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
     h2 {
       margin: 0;
@@ -161,7 +191,12 @@
   .publish-btn-group {
     float: right;
     width: 50%;
+    margin-top: 25px;
     text-align: right;
+    @media (max-width: 480px) {
+      float: none;
+      width: 100%;
+    }
     .btn {
       float: right;
     }

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Add task page 2</title>
+    <title>Add task page 3</title>
 
+    <link rel="stylesheet" type="text/css" href="../assets/font-awesome\css\font-awesome.min.css">
     <!-- Bootstrap -->
     <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
@@ -30,7 +31,7 @@
         <div class="container">
           <div class="row vertical-align-bottom navbar-static-top">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="col-sm-6">
+            <div class="col-sm-2 col-md-2">
               <div class="navbar-header">
                 <a class="navbar-brand brand-logo" href="#">
                   <img src="../assets/images/logo.png" alt="Taskit" />
@@ -38,7 +39,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-10 col-md-10">
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="right-header">
                 <ul class="menu nav navbar-nav header-menu-1">
@@ -130,39 +131,57 @@
       <div class="title-border">TASK GALLERY</div>
       <div class="add-task-wrapper">
         <div class="task-gallery-wrap">
-          <div class="block-heading">Portfoilo photos:<p>Upload photos that describe or relate to your task.</p></div>
+          <div class="block-heading">Portfoilo photos: <p>Upload photos that describe or relate to your task.</p></div>
           <div class="gallery-inner-wrap">
-            <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
+            <div class="box border-dotted">
+              <div class="box-img"><img src="../assets/images/picture.png"></div>
+              <div class="choose-file">
+                <span>Drag a Photo or Brower</span>
+                <div class="file-browser-text">
+                  <input name="myFile" type="file" placeholder="Choose File">
+                </div>
+              </div>
             </div>
             <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
+              <div class="box-img"><img src="../assets/images/"></div>
             </div>
             <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
+              <div class="box-img"><img src="../assets/images/"></div>
+            </div>
+            <div class="box border-grey">
+              <div class="box-img"><img src="../assets/images/"></div>
+            </div>
+          </div>
+
+          <div class="block-heading">Task video<span>(Optional): </span><p>Adding a video of you presenting your Task is guaranteed to boost your sales.</p></div>
+          <div class="gallery-inner-wrap">
+            <div class="box border-dotted">
+              <div class="box-img"><img src="../assets/images/video-camera.png"></div>
+              <div class="choose-file">
+                <span>Drag a Video or Brower</span>
+                <div class="file-browser-text">
+                  <input name="myFile" type="file" placeholder="Choose File">
+                </div>
+              </div>
             </div>
             <div class="box border-grey">
               <div class="box-img"><img src="../images/"></div>
             </div>
           </div>
 
-          <div class="block-heading">Task video<span>(Optional):</span><p>Adding a video of you presenting your Task is guaranteed to boost your sales.</p></div>
+          <div class="block-heading">PDF Files<span>(Optional): </span><p>You may add up to 2 PDF files</p></div>
           <div class="gallery-inner-wrap">
-            <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
+            <div class="box border-dotted">
+              <div class="box-img"><img src="../assets/images/pdf-file-outlined-interface-symbol.png"></div>
+              <div class="choose-file">
+                <span>Drag a PDF or Brower</span>
+                <div class="file-browser-text">
+                  <input name="myFile" type="file" placeholder="Choose File">
+                </div>
+              </div>
             </div>
             <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
-            </div>
-          </div>
-
-          <div class="block-heading">PDF Files<span>(Optional):</span><p>You may add up to 2 PDF files</p></div>
-          <div class="gallery-inner-wrap">
-            <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
-            </div>
-            <div class="box border-grey">
-              <div class="box-img"><img src="../images/"></div>
+              <div class="box-img"><img src="../assets/images/"></div>
             </div>
           </div>
 

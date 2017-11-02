@@ -28,19 +28,21 @@
   .footer-col {
     float: left;
     display: inline-block;
+    margin-right: 5%;
     padding-right: 10px;
     vertical-align: top;
     &:last-child {
+      margin-right: 0;
       padding-right: 0;
     }
   }
 }
 .about-link,
 .support {
-  width: 15%;
+  width: 10%;
 }
 .category {
-  width: 22%;
+  width: 15%;
 }
 .testimonial {
   width: 25%;
@@ -60,7 +62,7 @@
   }
 }
 .social-wrap {
-  width: 30%;
+  width: 20%;
 }
 /*.footer-title {
   margin: 0 0 20px;

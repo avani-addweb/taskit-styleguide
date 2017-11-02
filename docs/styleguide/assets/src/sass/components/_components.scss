@@ -54,6 +54,9 @@
 /* End Background color */
 
 /* Border design */
+.border-dotted {
+  border: 2px dotted $grey-b6;
+}
 .border-grey {
   border: 1px solid $grey-b6;
 }
@@ -95,6 +98,12 @@
     &::before {
       margin-top: 6px;
       background-image: url('../images/right-arrow.png');
+    }
+  }
+  .right-sign-icon {
+    &::before {
+      width: 12px;
+      background-image: url('../images/basic-tick-copy.png');
     }
   }
   .list-style-que {
@@ -339,9 +348,9 @@
 .card-main-content {
   display: inline-block;
   width: 100%;
-  padding: 40px 0 22px;
+  padding: 40px 0;
   h2,
-    p {
+  p {
     margin-bottom: 16px;
   }
 }
@@ -740,55 +749,53 @@
   }
 }
 .connected-socially {
-  ul {
-    li {
+  .social-icon-connect {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 0 35px 55px;
+    .right-form {
+      float: right;
       display: inline-block;
-      margin: 10px 0;
-      padding: 8px 0 35px 55px;
-      .right-form {
-        float: right;
-        display: inline-block;
-        .title-smaller {
-          margin-right: 20px;
-        }
-      }
-      &::before {
-        height: 35px;
-        width: 35px;
-        padding: 7px;
-        background-image: none;
-        color: $white;
-        font-size: $font-size-22;
-        font-style: normal;
-        font-family: 'FontAwesome';
-        text-align: center;
-        content: '';
-        @include border-radius(50%);
+      .title-smaller {
+        margin-right: 20px;
       }
     }
-    .facebook {
-      &::before {
-        background-color: $blue-37;
-        content: '\f09a';
-      }
+    &::before {
+      height: 40px;
+      width: 40px;
+      padding: 10px 8px;
+      background-image: none;
+      color: $white;
+      font-size: $font-size-22;
+      font-style: normal;
+      font-family: 'FontAwesome';
+      text-align: center;
+      content: '';
+      @include border-radius(50%);
     }
-    .twitter {
-      &::before {
-        background-color: $blue-44;
-        content: '\f099';
-      }
+  }
+  .facebook {
+    &::before {
+      background-color: $blue-37;
+      content: '\f09a';
     }
-    .googleplus {
-      &::before {
-        background-color: $red;
-        content: '\f0d5';
-      }
+  }
+  .twitter {
+    &::before {
+      background-color: $blue-44;
+      content: '\f099';
     }
-    .linkedin {
-      &::before {
-        background-color: $blue-00;
-        content: '\f0e1';
-      }
+  }
+  .googleplus {
+    &::before {
+      background-color: $red;
+      content: '\f0d5';
+    }
+  }
+  .linkedin {
+    &::before {
+      background-color: $blue-00;
+      content: '\f0e1';
     }
   }
 }
@@ -892,21 +899,34 @@
 }
 /* End */
 /* Thumbnail */
-.slider-two {
-  margin-bottom: 25px;
-  .slick-arrow {
-    display: none;
+.thumbnails-slider-main {
+  .img-caption-slider {
+    img {
+      height: auto;
+      max-height: 300px;
+      width: 100%;
+    }
+  }
+  /*.view-filed-slider {
+    display: inline-block;
+  }*/
+  .sub-thumbline-img {
+    outline: none;
+    img {
+      min-height: 145px;
+    }
   }
 }
-.thumbnails-slider {
-  .slick-slide {
-    margin-right: 15px;
+.slider-two {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
   }
+}
+/*.thumbnails-slider {
   .slick-dots {
     display: none;
   }
-}
-.content {
-  display: inline-block;
-}
+}*/
+
 /* End */
