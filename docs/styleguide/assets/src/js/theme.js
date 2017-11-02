@@ -1,15 +1,8 @@
 jQuery(document).ready(function() {
   // Custom input type file design 
-  jQuery('input[type="file"]').once().wrap('<div class="input-file"><div class="input-file-sub"></div></div>');
-  jQuery('.input-file').once().prepend('<span class="input-file-name">111File name here</span>');
+  // jQuery('input[type="file"]').once().wrap('<div class="input-file"><div class="input-file-sub"></div></div>');
+  // jQuery('.input-file').once().prepend('<span class="input-file-name">111File name here</span>');
 
-  // alert('hi');
-
-  // jQuery('.show-me-btn').click(function () {
-	  alert("show-me-btn");
-	});
-  // alert('show-me-btn');
-  // Thumbnail slider view
 	jQuery('.slider-two').slick({
 	 	slidesToShow: 1,
 	 	slidesToScroll: 1,
@@ -18,7 +11,7 @@ jQuery(document).ready(function() {
 	});
 
 	jQuery('.thumbnails-slider').slick({
-	 	slidesToShow: 5,
+	 	slidesToShow: 4,
 	 	slidesToScroll: 1,
 	 	asNavFor: '.slider-two',
 	 	arrows: false,

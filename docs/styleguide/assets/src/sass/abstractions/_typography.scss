@@ -78,6 +78,9 @@
   margin: 5px 0;
   font-size: $font-size-30;
   font-family: $opensans-bold;
+  @media (max-width: 480px) {
+    font-size: $font-size-25;
+  }
 }
 .block-title {
   display: inline-block;
@@ -150,7 +153,7 @@
 }
 
 /* List style add task design */
-.info-wrap {
+/*.info-wrap {
   display: inline-block;
   width: 100%;
   li {
@@ -168,7 +171,7 @@
       content: '\f00c';
     }
   }
-}
+}*/
 /* End List style add task design */
 
 /* List spacing */
