@@ -8,7 +8,7 @@
 .add-task-wrapper {
   display: inline-block;
   width: 100%;
-  padding: 25px 0 100px;
+  padding: 0 0 100px;
   @media (max-width: 767px) {
     padding-bottom: 30px;
   }
@@ -58,7 +58,7 @@
   float: right;
   /*width: 55%;*/
   margin-top: 22px;
-  @include calc('width','55% - 45px');
+  @include calc('width' , '55% - 45px');
   @media (max-width: 767px) {
     width: 100%;
   }
@@ -84,6 +84,9 @@
   width: 100%;
   margin-bottom: 40px;
   justify-content: space-between;
+  @media (max-width: 992px) {
+    margin-bottom: 15px;
+  }
   .plan-wrap {
     display: inline-block;
     margin-right: 130px;
@@ -115,7 +118,7 @@
 .block-heading {
   display: inline-block;
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-style: italic;
   font-family: $opensans-semibold;
   span {
@@ -135,9 +138,9 @@
 .share-media {
   display: block;
   max-width: 530px;
-  margin: 50px auto 85px;
+  margin: 68px auto 85px;
   @media (max-width: 767px) {
-    margin: 50px auto;
+    margin: 30px auto;
   }
   .content-half {
     display: inline-block;

@@ -75,13 +75,18 @@
   }
 }
 .card-progress {
-  display: inline-flex;
+  /*display: inline-flex;*/
   margin-right: 50px;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: space-between;
+  @include inline-flex;
+  @include flex-wrap(wrap);
+  @media (max-width: 1200px) {
+    margin-right: 25px;
+  }
   @media (max-width: $ipad-portrait) {
-    @include calc('width', '33.33% - 34px');
-    &:nth-child(3n) {
+    @include calc('width', '50% - 15px');
+    &:nth-child(2n) {
       margin-right: 0;
     }
   }
@@ -101,12 +106,13 @@
   .status {
     display: inline-block;
     width: 100%;
-    font-size: $font-size-14;
+    margin-bottom: 10px;
+    font-size: $font-size-13;
   }
 }
 .card-bottom-border {
   position: relative;
-  border-right: none;
+  /*border-right: none;*/
   border-bottom: none;
   background-color: $white;
   @include border-radius(3px);
@@ -118,7 +124,7 @@
     display: inline-block;
     height: 8px;
     width: 100%;
-    margin: 0 0 -4px -1px;
+    margin: 0 0 -4px;
     background-color: $sky-00;
     content: '';
     @include border-radius(0 0 5px 5px);
@@ -146,6 +152,18 @@
   &.card-bottom-border-grey {
     &::before {
       background-color: $grey-b6;
+    }
+  }
+}
+.my-service-card {
+  .listing {
+    @media (max-width: 992px) {
+      margin-bottom: 25px;
+    }
+  }
+  .list-view-item {
+    @media (max-width: 992px) {
+      margin-bottom: 15px;
     }
   }
 }
@@ -315,6 +333,13 @@ ul.task-list {
   font-size: $font-size-13;
   font-family: $opensans-semibold;
   @include calc('width' , '50% - 15px');
+  @media (max-width: 992px) {
+    @include calc('width' , '50% - 28px');
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   &:nth-child(2n) {
     width: 54%;
   }
@@ -357,7 +382,15 @@ ul.task-list {
   font-size: $font-size-40;
   font-weight: 600;
   text-align: center;
-  @include calc(width, '50% - 8px');
+  @include calc('width' , '50% - 8px');
+  @media (max-width: 1200px) {
+    margin-right: 10px;
+    @include calc('width' , '50% - 5px');
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin: 0 0 15px;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -368,7 +401,7 @@ ul.task-list {
   float: left;
   display: inline-block;
   margin-right: 45px;
-  @include calc(width, '23% - 24px');
+  @include calc('width' , '23% - 24px');
   &:last-child {
     margin-right: 0;
   }

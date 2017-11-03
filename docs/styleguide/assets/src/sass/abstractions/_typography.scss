@@ -120,6 +120,7 @@
 
 .bold-text {
   font-family: $opensans-bold;
+  word-break: break-all;
   a {
     font-family: $opensans-bold;
   }

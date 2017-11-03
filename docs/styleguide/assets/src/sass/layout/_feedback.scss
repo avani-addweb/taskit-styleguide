@@ -13,11 +13,23 @@
 .getting-start-wrap {
   .list-items {
     margin-bottom: 100px;
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
   }
 }
 .feedback-wrap {
   .radio-group {
     margin: 10px 0 80px;
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
     /*label {
       margin-bottom: 15px;
       color: $grey-79;
@@ -30,6 +42,12 @@
   }
   .feedback-form {
     margin-top: 25px;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {
+      margin-top: 10px;
+    }
     > label {
       margin-bottom: 20px;
     }
