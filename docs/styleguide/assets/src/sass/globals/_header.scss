@@ -319,9 +319,12 @@
     li {
       display: inline-block;
       margin: 15px 10px 0 0;
+      @media (max-width: 640px) {
+        margin-top: 10px;
+      }
       a {
         padding: 10px;
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
           padding: 5px;
         }
       } 
