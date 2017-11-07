@@ -4,12 +4,7 @@
  *
  * Footer SCSS.
  */
-/*ul {
-  padding-left: 0;
-  li {
-    list-style: none;
-  }
-}*/
+
 .footer-link {
   padding-left: 0;
   li {
@@ -31,7 +26,7 @@
     margin-right: 5%;
     padding-right: 10px;
     vertical-align: top;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       margin: 0 0 25px;
       padding: 0;
     }
@@ -67,7 +62,7 @@
       }
       .copy-right-wrap {
         margin-bottom: 0;
-        @media (max-width: 480px) {
+        @media (max-width: $mobile-portrait) {
           width: 100%;
         }
       }
@@ -77,46 +72,46 @@
       padding-right: 0;
     }
     &.about-link {
-      @media (max-width: 992px) {
+      @media (max-width: $ipad-portrait) {
         width: 25%;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         width: 100%;
       }
     }
     &.category {
-      @media (max-width: 992px) {
+      @media (max-width: $ipad-portrait) {
         width: 25%;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         width: 100%;
       }
     }
     &.testimonial {
-      @media (max-width: 992px) {
+      @media (max-width: $ipad-portrait) {
         width: 40%;
         margin-right: 0;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         width: 100%;
       }
     }
     &.support {
-      @media (max-width: 992px) {
+      @media (max-width: $ipad-portrait) {
         width: 45%;
         margin-top: 20px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         width: 100%;
       }
     }
     &.social-wrap {
-      @media (max-width: 992px) {
+      @media (max-width: $ipad-portrait) {
         width: 50%;
         margin-top: 20px;
         margin-right: 0;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         width: 100%;
       }
     }
@@ -130,12 +125,12 @@
         float: left;
         display: inline-block;
         height: 40px;
-        width: 41px;
+        width: 40px;
         margin-right: 13px;
         background-image: url('../images/social-icons.png');
         background-position: center right 0;
         content: '';
-        @media (max-width: 1200px) {
+        @media (max-width: $small-desktop) {
           margin-right: 6px;
         }
       }

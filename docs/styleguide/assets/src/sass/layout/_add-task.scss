@@ -9,7 +9,7 @@
   display: inline-block;
   width: 100%;
   padding: 0 0 100px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     padding-bottom: 30px;
   }
 }
@@ -17,8 +17,8 @@
 .form-wrap {
   float: left;
   margin-right: 90px;
-  @include calc('width', '45% - 45px');
-  @media (max-width: 767px) {
+  @include calc('width' , '45% - 45px');
+  @media (max-width: $mobile) {
     width: 100%;
     margin-right: 0;
   }
@@ -59,7 +59,7 @@
   /*width: 55%;*/
   margin-top: 22px;
   @include calc('width' , '55% - 45px');
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     width: 100%;
   }
 }
@@ -84,22 +84,22 @@
   width: 100%;
   margin-bottom: 40px;
   justify-content: space-between;
-  @media (max-width: 992px) {
+  @media (max-width: $ipad-portrait) {
     margin-bottom: 15px;
   }
   .plan-wrap {
     display: inline-block;
     margin-right: 130px;
-    @include calc('width', '25% - 45px');
-    @media (max-width: 1200px) {
+    @include calc('width' , '25% - 45px');
+    @media (max-width: $small-desktop) {
       margin-right: 110px;
-      @include calc('width', '30% - 45px');
+      @include calc('width' , '30% - 45px');
     }
-    @media (max-width: 992px) {
+    @media (max-width: $ipad-portrait) {
       margin-right: 20px;
-      @include calc('width', '38% - 50px');
+      @include calc('width' , '38% - 50px');
     }
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       display: block;
       /*max-width: 315px;*/
       width: 100%;
@@ -107,7 +107,7 @@
     }
     &:last-child {
       margin-right: 0;
-      @media (max-width: 767px) {
+      @media (max-width: $mobile) {
         margin: 0 auto;
       }
     }
@@ -139,7 +139,7 @@
   display: block;
   max-width: 530px;
   margin: 68px auto 85px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin: 30px auto;
   }
   .content-half {
@@ -147,7 +147,7 @@
     width: 100%;
     padding: 60px 15px 56px;
     font-style: italic;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       padding: 30px 15px;
     }
     h3 {
@@ -159,8 +159,18 @@
     .add-task-caption {
       display: inline-block;
       width: 100%;
-      /*margin-top: 50px;*/
       color: $grey-66;
+    }
+  }
+}
+.connected-socially {
+  .task-social-icon {
+    li {
+      display: inline-block;
+      margin-right: 50px;
+      a {
+        padding: 0;
+      }
     }
   }
 }

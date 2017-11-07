@@ -8,16 +8,17 @@
     <title>Add task page 1</title>
 
     <!-- Bootstrap -->
-
-    <link rel="stylesheet" type="text/css" href="../assets/font-awesome\css\font-awesome.min.css">
     <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../assets/font-awesome\css\font-awesome.min.css">
 
     <!-- jQuery library -->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/site.min.js"></script>
+    <script src="../assets/src/js/theme.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,26 +29,24 @@
   </head>
   <body>
     <header class="header bg-grey ">
-        <nav class="navbar bg-grey">
-          <div class="container">
-            <div class="row vertical-align-bottom navbar-static-top">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="col-xs-4 col-sm-4 col-md-4">
-                <div class="navbar-header">
-                  <a class="navbar-brand brand-logo" href="#">
-                    <img src="../assets/images/logo.png" alt="Taskit"/>
-                  </a>
-                </div>
-              </div>
+      <nav class="navbar bg-grey">
+        <div class="container">
+          <div class="row">
+            <div class="navbar-header col-xs-4 col-sm-2 col-md-2">
+              <a class="navbar-brand brand-logo" href="#">
+                <img src="../assets/images/logo.png" alt="Taskit" class="img-responsive">
+              </a>
+            </div>
 
-              <div class="col-xs-8 col-sm-8 col-md-8">
-                <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-xs-8 col-sm-10 col-md-10">
+              <div class="vertical-align-bottom navbar-static-top">
+              <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="right-header">
-                  <ul class="menu nav navbar-nav header-menu-1">
+                  <!-- <ul class="menu nav navbar-nav header-menu-1">
                     <li><a href="#" class="active">How it works</a></li>
-                    <li><a href="#">buy/sell</a></li>
-                    <li><a href="#">login/register</a></li>
-                  </ul>
+                    <li><a href="#">buy / sell</a></li>
+                    <li><a href="#">login / register</a></li>
+                  </ul> -->
                   <ul class="menu nav navbar-nav header-menu-2">
                     <li class="notifiy-content">
                       <a href="#"><img src="../assets/images/promotion.png"></a>
@@ -79,21 +78,24 @@
                   <span class="icon-bar"></span>
                 </button>
               </div>
-              <div class="collapse navbar-collapse" id="menu-navbar-collapse">
-                <ul class="menu nav navbar-nav">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                </ul>
-              </div>
             </div>
-          </div><!-- /.container-fluid -->
-        </nav>
+            <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+              <ul class="menu nav navbar-nav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
     </header>
     <div class="user-menu">
       <div class="container">
+        <div class="dashboard-menu-dropdown">Dashboard Menu <span class="toggle-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
         <ul class="menu-list">
+          <!-- <li class="menu-dropdown"><a href="#">Dashboard Menu</a></li> -->
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle icon account-item icon icon-dashboard" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
             <ul class="dropdown-menu dashboard-dropdown">
@@ -131,10 +133,10 @@
     <div class="add-task-steps border-bottom">
       <div class="container">
         <ul class="add-task-list">
-          <li class=""><a href="#">Step 1</a></li>
-          <li class=""><a href="#">Step 2</a></li>
-          <li class=""><a href="#">Step 3</a></li>
-          <li class="active"><a href="#">Step 4</a></li>
+          <li class="active"><a href="#">Step 1</a></li>
+          <li><a href="#">Step 2</a></li>
+          <li><a href="#">Step 3</a></li>
+          <li><a href="#">Step 4</a></li>
         </ul>
       </div>
     </div>
@@ -169,18 +171,30 @@
               <textarea name="message" rows="5" cols="30">Message</textarea>
             </div>
             <div class="form-managed-file">
-              <div class="input-file">
+              <div class="upload-btn">
+                <!-- <label for="file" class="sr-only">File</label> -->
+                <div class="upload-input-group">
+                  <input type="text" name="filename" class="form-control" placeholder="Add File Here" readonly>
+                  <span class="input-file-sub">
+                    <div class="btn btn-grey btn-gradient-grey custom-file-uploader">
+                      <input type="file" name="file" onchange="this.form.filename.value = this.files[0].name"/>
+                      Upload
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <span class="input-browser-btn">
+                <button class="btn btn-blue btn-gradient-blue">Browser</button>
+              </span>
+              <!-- <div class="input-file">
                 <span class="input-file-name">Add file here</span>
                 <div class="input-file-sub">
                   <input name="myFile" type="file">
                 </div>
-              </div>
-              <span class="input-group-btn">
-                <button class="btn">Browser</button>
-              </span>
+              </div> -->
             </div>
           </form>
-          <div class="add-btn-class"><a class="btn btn-grey btn-capitalize" href="#">Add More</a></div>
+          <div class="add-btn-class"><a class="btn btn-grey btn-gradient-grey title-capatilize" href="#">Add More</a></div>
           <div class="close-btn-group">
             <a class="btn btn-grey btn-gradient-grey">Close</a>
             <a class="btn btn-green save-btn btn-gradient-green">Save and Continue</a>

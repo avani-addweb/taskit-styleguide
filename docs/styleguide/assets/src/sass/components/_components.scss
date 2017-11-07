@@ -11,14 +11,14 @@
   width: 100%;
   margin: 100px auto;
   padding: 0 15px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin: 50px auto;
   }
 }
 /* End */
 .card-waper {
   margin: 0 0 40px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin-bottom: 20px;
   }
 }
@@ -214,7 +214,7 @@
     @include calc('width', '50% - 10px');
     &:last-child {
       margin-right: 0;
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         margin-bottom: 0;
       }
     }
@@ -222,6 +222,8 @@
       width: 100%;
       margin-right: 0;
       margin-bottom: 10px;
+    }
+    @media (max-width: 480px) {
     }
   }
   .social-btn-icon {
@@ -280,7 +282,7 @@
   }
   .user-profile {
     float: left;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       max-width: 240px;
     }
     @media (max-width: 340px) {
@@ -320,7 +322,7 @@
 .nav-tabs {
   border-top: 1px solid $grey-dd;
   li {
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       width: 50%;
       text-align: center;
     }
@@ -361,7 +363,7 @@
   display: inline-block;
   width: 100%;
   padding: 40px 0;
-  @media (max-width: 992px) {
+  @media (max-width: $ipad-portrait) {
     padding: 20px 0;
   }
   h2,
@@ -375,7 +377,7 @@
   display: inline-block;
   margin-right: 55px;
   @include calc(width, '70% - 56px');
-  @media (max-width: 992px) {
+  @media (max-width: $ipad-portrait) {
     width: 100%;
     margin: 0 0 20px;
   }
@@ -439,7 +441,7 @@
     width: 100%;
   }
   .view-caption {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       margin-bottom: 20px;
     }
   }
@@ -468,7 +470,7 @@
     display: inline-block;
     width: 40%;
     padding: 0 15px;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       width: 100%;
       margin-bottom: 15px;
       padding: 0;
@@ -489,7 +491,7 @@
   .right-review {
     display: inline-block;
     width: 60%;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       width: 100%;
     }
   }
@@ -569,142 +571,8 @@
   width: 100%;
   margin-bottom: 80px;
   padding: 0 30px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin-bottom: 30px;
-  }
-}
-.plan-block-section {
-  .hide-img {
-    &::after {
-      display: none;
-      content: '';
-    }
-  }
-}
-
-.apply-btn-class {
-  display: inline-block;
-  margin-left: 15px;
-  @media (max-width: 992px) {
-    margin-left: 0;
-  }
-  .btn {
-    padding: 8px 20px;
-  }
-}
-
-/* Checkout Payment info page */
-.main-payment-content {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 50px;
-}
-.payment-info {
-  float: left;
-  display: inline-block;
-  margin-right: 50px;
-  @include calc(width, '70% - 50px');
-  @media (max-width: 992px) {
-    width: 100%;
-    margin: 0 0 25px;
-  }
-  .payment-title {
-    h2 {
-      margin: 0;
-      padding: 15px 30px;
-    }
-  }
-}
-.payment-img {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  display: inline-block;
-  width: 30%;
-  text-align: center;
-  @media (max-width: 992px) {
-    position: relative;
-    width: 100%;
-  }
-}
-.payment-detail {
-  display: inline-block;
-  width: 100%;
-  padding: 22px 0 85px;
-  .cards-details {
-    float: left;
-    display: inline-block;
-    margin-right: 30px;
-    @include calc(width, '28% - 32px');
-    @media (max-width: 1200px) {
-      @include calc(width, '34% - 32px');
-    }
-    @media (max-width: 640px) {
-      width: 100%;
-    }
-  }
-}
-.form-details {
-  display: inline-block;
-  padding: 0 15px;
-  @include calc(width, '72% - 82px');
-  @media (max-width: 640px) {
-    width: 100%;
-  }
-  .payment-card-tab {
-    margin-top: 20px;
-  }
-}
-.cards-details {
-  ul {
-    list-style: none;
-    li {
-      width: 100%;
-      border-right: 1px solid $grey-dd;
-      border-bottom: 1px solid $grey-dd;
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: $sky-blue-90;
-        a {
-          color: $white;
-          font-weight: 600;
-        }
-      }
-      a {
-        display: inline-block;
-        width: 100%;
-        padding: 20px 25px;
-        color: $black-42;
-        font-size: $font-size-16;
-        text-decoration: none;
-      }
-    }
-    .active {
-      background-color: $sky-blue-90;
-      a {
-        color: $white;
-        font-weight: 600;
-      }
-    }
-  }
-}
-.amount-payabel {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 15px;
-  .amount-title {
-    display: inline-block;
-    margin: 0 5px 0 0;
-    color: $black-3a;
-    vertical-align: middle;
-  }
-  span {
-    font-size: $font-size-16;
-    font-family: $opensans-bold;
-    text-transform: capitalize;
-    vertical-align: middle;
   }
 }
 
@@ -730,7 +598,7 @@
       &:hover,
       &:focus,
       &:active {
-        color: $black-42;
+        color: $black;
       }
     }
   }
@@ -746,7 +614,7 @@
   }
   .view-pagination {
     margin-bottom: 35px;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       margin-bottom: 0;
     }
   }
@@ -755,7 +623,7 @@
   position: relative;
   margin-right: 12px;
   padding-right: 45px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin-right: 0;
   }
   &::after {
@@ -772,7 +640,7 @@
     background-size: contain;
     vertical-align: middle;
     content: '';
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       top: 22px;
     }
   }
@@ -807,7 +675,7 @@
     padding: 15px 50px;
     border: none;
     font-size: $font-size-15;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       padding: 15px 25px;
     }
   }
@@ -886,23 +754,31 @@
   margin-bottom: 30px;
   padding-bottom: 6px;
 }
-.add-task-list {
-  display: inline-block;
-  li {
+.add-task-steps {
+  ul.add-task-list {
     display: inline-block;
-    margin-right: 62px;
-    @media (max-width: 480px) {
-      margin-right: 26px;
-    }
-    a {
+    li {
       display: inline-block;
+      margin-right: 62px;
       color: $black-33;
-      font-size: $font-size-14;
-      font-family: $opensans-bold;
-      &:hover,
-      &:focus,
-      &:active {
-        text-decoration: none;
+      @media (max-width: $mobile-portrait) {
+        margin-right: 26px;
+      }
+      a {
+        display: inline-block;
+        font-size: $font-size-14;
+        font-family: $opensans-bold;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $red;
+          text-decoration: none;
+        }
+      }
+      &.active {
+        a {
+          color: $red;
+        }
       }
     }
   }
@@ -979,6 +855,7 @@
   }
 }
 /* End */
+
 /* Thumbnail */
 .thumbnails-slider-main {
   .img-caption-slider {
@@ -986,7 +863,7 @@
       max-height: 300px;
       height: auto;
       width: 100%;
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         max-height: 215px;
       }
     }
@@ -998,13 +875,13 @@
     outline: none;
     img {
       min-height: 145px;
-      @media (max-width: 767px) {
+      @media (max-width: $mobile) {
         min-height: 132px;
       }
       @media (max-width: 640px) {
         min-height: 105px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         min-height: 80px;
       }
     }
@@ -1016,10 +893,8 @@
     display: none !important;
   }
 }
-/*.thumbnails-slider {
-  .slick-dots {
-    display: none;
-  }
-}*/
-
 /* End */
+.toggle {
+ @include transform(rotate(180deg));
+ @include transition(all .5s ease-in-out);
+}

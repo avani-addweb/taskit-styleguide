@@ -48,19 +48,21 @@ $url-oswald-regular: url('../css/fonts/oswald/Oswald-Regular.woff');
 
 /* Color code */
 $white:       #FFF;
-$white-f9:    #F9F9F9;
 $black:       #000;
-$black-2a:    #2A2A2A;
 $black-33:    #333;
+$black-88:    #888;
+$white-f9:    #F9F9F9;
+$black-2a:    #2A2A2A;
 $black-42:    #424242;
 $black-48:    #484848;
-$black-88:    #888;
 $black-43:    #434343;
 $black-3a:    #3A3A3A;
 $black-3c:    #3C3C3C;
 $black-32:    #313131;
 
 
+$grey-99:     #999;
+$grey-dd:     #DDD;
 $grey:        #303135;
 $grey-b6:     #B6B6B6;
 $grey-e7:     #E7E7E7;
@@ -68,7 +70,6 @@ $grey-62:     #626262;
 $grey-79:     #797979;
 $grey-6b:     #6B6B6B;
 $grey-87:     #878787;
-$grey-99:     #999;
 $grey-67:     #676767;
 $grey-58:     #586176;
 $grey-59:     #595959;
@@ -77,7 +78,6 @@ $grey-72:     #727272;
 $grey-71:     #717171;
 $grey-b3:     #B3B3B3;
 $grey-f9:     #F9F9F7;
-$grey-dd:     #DDD;
 $grey-d8:     #D8D8D8;
 $grey-66:     #606060;
 $grey-c0:     #C0C0C0;
@@ -90,6 +90,8 @@ $red:         #FF0049;
 $red-ff:      #FF285F;
 $red-ff5:     #FF5952;
 $red-f1:      #FF4261;
+$red-e6:      #E64443;
+$red-f5:      #FF4D55;
 
 $blue:        #3F4C99;
 $blue-53:     #53C4F9;
@@ -107,9 +109,6 @@ $sky-blue-a6: #A6C4FE;
 $sky-blue-90: #90B1FF;
 $sky-00:      #00D6BE;
 
-$red:         #E64443;
-$red-f5:      #FF4D55;
-
 $purple:      #C400E9;
 
 $yellow:      #FF9E00;
@@ -118,7 +117,6 @@ $yellow-ff:   #FFC84B;
 $pink:        #FF443B;
 
 $orange:      #FF3E2B;
-
 
 
 /* Font size*/

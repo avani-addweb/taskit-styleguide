@@ -9,7 +9,7 @@
   width: 100%;
   margin-bottom: 30px;
   .user-form-group {
-    @media (max-width: 992px) {
+    @media (max-width: $ipad-portrait) {
       margin-bottom: 25px;
     }
   }
@@ -18,8 +18,8 @@
   float: left;
   display: inline-block;
   margin-right: 25px;
-  @include calc(width, '60% - 25px');
-  @media (max-width: 480px) {
+  @include calc('width' , '60% - 25px');
+  @media (max-width: $mobile-portrait) {
     width: 100%;
     margin: 0;
   }
@@ -27,7 +27,7 @@
 .right-form-part {
   float: left;
   width: 40%;
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-portrait) {
     width: 100%;
   }
   .profile-photo {

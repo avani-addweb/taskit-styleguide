@@ -25,7 +25,6 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 }
-
 .title-small {
   display: inline-block;
   margin-top: 0;
@@ -78,7 +77,7 @@
   margin: 5px 0;
   font-size: $font-size-30;
   font-family: $opensans-bold;
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-portrait) {
     font-size: $font-size-25;
   }
 }
@@ -88,7 +87,7 @@
   margin-bottom: 8px;
   color: $blue-6e;
   font-size: $font-size-20;
-  font-weight: 700;
+  font-family: $opensans-bold;
 }
 
 .title-small-grey {
@@ -103,14 +102,7 @@
   margin-bottom: 20px;
   color: $blue-6e;
   font-size: $font-size-15;
-  font-weight: 700;
-}
-
-.side-heading {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding: 10px 20px;
+  font-family: $opensans-bold;
 }
 
 .orange-header {
@@ -133,7 +125,7 @@
 }
 .small-title {
   color: $black-88;
-  font-size: 14px;
+  font-size: $font-size-14;
 }
 .small-bold-title {
   display: block;
@@ -144,7 +136,7 @@
 }
 .medium-title {
   color: $black-3a;
-  font-size: 16px;
+  font-size: $font-size-16;
   font-family: $opensans-bold;
 }
 .paragraph-detail {
@@ -152,28 +144,6 @@
   font-size: $font-size-14;
   line-height: 30px;
 }
-
-/* List style add task design */
-/*.info-wrap {
-  display: inline-block;
-  width: 100%;
-  li {
-    display: inline-block;
-    width: 100%;
-    color: $grey-67;
-    font-size: $font-size-16;
-    line-height: 25px;
-    &::before {
-      display: inline-block;
-      height: 20px;
-      width: 20px;
-      font-size: $font-size-14;
-      font-family: 'Fontawesome';
-      content: '\f00c';
-    }
-  }
-}*/
-/* End List style add task design */
 
 /* List spacing */
 .list-spacing {

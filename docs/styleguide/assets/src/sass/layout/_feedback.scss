@@ -13,10 +13,10 @@
 .getting-start-wrap {
   .list-items {
     margin-bottom: 100px;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       margin-bottom: 50px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       margin-bottom: 20px;
     }
   }
@@ -24,28 +24,19 @@
 .feedback-wrap {
   .radio-group {
     margin: 10px 0 80px;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       margin-bottom: 40px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       margin-bottom: 20px;
     }
-    /*label {
-      margin-bottom: 15px;
-      color: $grey-79;
-      font-size: $font-size-14;
-      font-weight: normal;
-    }*/
-    /*input {
-      margin: 0 20px 0 0;
-    }*/
   }
   .feedback-form {
     margin-top: 25px;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       margin-bottom: 30px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       margin-top: 10px;
     }
     > label {

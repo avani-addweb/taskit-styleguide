@@ -18,7 +18,7 @@
   cursor: pointer;
   @include border-radius(4px);
   @media (max-width: $mobile) {
-    padding: 5px 15px;
+    padding: 7px 15px;
   }
   &:hover,
   &:focus,
@@ -89,9 +89,6 @@
     @include background-75-angle(#009928, #009928, #008624, #008624);
   }
 }
-.btn-capitalize {
-  text-transform: capitalize;
-}
 /* Upload button design */
 .choose-btn {
   float: none;
@@ -100,7 +97,7 @@
   width: 100%;
   margin-left: 10px;
   text-transform: capitalize;
-  @media (max-width: 992px) {
+  @media (max-width: $ipad-portrait) {
     max-width: 115px;
   }
   &::before {
@@ -110,13 +107,6 @@
     content: 'choose photo';
     @include border-radius(3px);
   }
-  /*&::after {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: $font-size-12;
-    font-family: 'FontAwesome';
-    content: '\f139';
-  }*/
 }
 /* End */
 
@@ -131,7 +121,7 @@
     font-size: $font-size-20;
     font-family: 'FontAwesome';
     content: '\f067';
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       font-size: $font-size-15;
     }
   }
@@ -157,5 +147,34 @@
 .close-btn-group {
   .save-btn {
     float: right;
+  }
+}
+
+.apply-btn-class {
+  display: inline-block;
+  margin-left: 15px;
+  @media (max-width: $ipad-portrait) {
+    margin-left: 0;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
+}
+.login-reg-btn {
+  display: inline-block;
+  margin-top: 4px;
+  background-color: transparent;
+  border: none;
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
+  @media (max-width: 480px) {
+    position: absolute;
+    top: 60px;
+    left: auto;
+    right: 10px;
+  }
+  .btn {
+    border: none;
   }
 }

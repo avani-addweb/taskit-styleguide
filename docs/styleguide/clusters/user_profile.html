@@ -28,54 +28,53 @@
     <header class="header bg-grey ">
       <nav class="navbar bg-grey">
         <div class="container">
-          <div class="row vertical-align-bottom navbar-static-top">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <div class="navbar-header">
-                <a class="navbar-brand brand-logo" href="#">
-                  <img src="../assets/images/logo.png" alt="Taskit" />
-                </a>
-              </div>
+          <div class="row">
+            <div class="navbar-header col-xs-4 col-sm-2 col-md-2">
+              <a class="navbar-brand brand-logo" href="#">
+                <img src="../assets/images/logo.png" alt="Taskit" class="img-responsive">
+              </a>
             </div>
 
-            <div class="col-xs-8 col-sm-8 col-md-8">
+            <div class="col-xs-8 col-sm-10 col-md-10">
+              <div class="vertical-align-bottom navbar-static-top">
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="right-header">
-                <ul class="menu nav navbar-nav header-menu-1">
-                  <li><a href="#" class="active">How it works</a></li>
-                  <li><a href="#">buy/sell</a></li>
-                  <li><a href="#">login/register</a></li>
-                </ul>
-                <ul class="menu nav navbar-nav header-menu-2">
-                  <li class="notifiy-content">
-                    <a href="#"><img src="../assets/images/promotion.png"></a>
-                    <div class="notification-count">1</div>
-                  </li>
-                  <li class="notifiy-content">
-                    <a href="#"><img src="../assets/images/conversation.png"></a>
-                    <div class="notification-count">4</div>
-                  </li>
-                  <li class="notifiy-content">
-                    <a href="#"><img src="../assets/images/commerce.png"></a>
-                    <div class="notification-count">8</div>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
-                    <ul class="dropdown-menu account-dropdown">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another</a></li>
-                      <li><a href="#">Something</a></li>
-                      <li><a href="#">Separated</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+                <div class="right-header">
+                  <!-- <ul class="menu nav navbar-nav header-menu-1">
+                    <li><a href="#" class="active">How it works</a></li>
+                    <li><a href="#">buy / sell</a></li>
+                    <li><a href="#">login / register</a></li>
+                  </ul> -->
+                  <ul class="menu nav navbar-nav header-menu-2">
+                    <li class="notifiy-content">
+                      <a href="#"><img src="../assets/images/promotion.png"></a>
+                      <div class="notification-count">1</div>
+                    </li class="notifiy-content">
+                    <li class="notifiy-content">
+                      <a href="#"><img src="../assets/images/conversation.png"></a>
+                      <div class="notification-count">4</div>
+                    </li>
+                    <li class="notifiy-content">
+                      <a href="#"><img src="../assets/images/commerce.png"></a>
+                      <div class="notification-count">8</div>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle icon account-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Johnny Harper <span class="caret"></span></a>
+                      <ul class="dropdown-menu account-dropdown">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another</a></li>
+                        <li><a href="#">Something</a></li>
+                        <li><a href="#">Separated</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
             </div>
             <div class="collapse navbar-collapse" id="menu-navbar-collapse">
               <ul class="menu nav navbar-nav">
@@ -91,6 +90,7 @@
     </header>
     <div class="user-menu">
       <div class="container">
+        <div class="dashboard-menu-dropdown">Dashboard Menu <span class="toggle-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
         <ul class="menu-list">
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle icon account-item icon icon-dashboard" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard <span class="caret"></span></a>
@@ -178,12 +178,16 @@
             <div class="right-form-part">
               <div class="profile-photo">
                 <div class="title-smaller">Profile photo</div>
-                <div class="set-profile">
-                  <img src="../assets/images/Layer-profile.png">
-                  <!-- <button class="icon upload-btn btn btn-gradient-grey btn-capitalize">Choose photo</button> -->
-                </div>
-                <div class="input-file-sub choose-btn">
-                  <input name="myFile" type="file">
+                <div class="set-profile"><img src="../assets/images/Layer-profile.png"></div>
+                <!-- <div class="input-file-sub choose-btn"><input name="myFile" type="file"></div> -->
+                <div class="upload-input-group user-input-group">
+                  <span class="input-file-sub">
+                    <div class="btn btn-grey btn-gradient-grey custom-file-uploader">
+                      <input type="file" name="file" onchange="this.form.filename.value = this.files[0].name"/>
+                      Upload
+                    </div>
+                  </span>
+                  <input type="text" name="filename" class="form-control" readonly>
                 </div>
                 <div class="note-mesagge title-small-grey">Max.3MB size & Dimension min. 300px x 300px</div>
               </div>
@@ -198,14 +202,14 @@
             <div class="form-group user-form-group">
               <div class="title-smaller">Education</div>
               <input type="text" class="form-control">
-              <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add more</button>
+              <button class="icon add-btn btn btn-gradient-blue title-capatilize">Add more</button>
             </div>
             <div class="form-group user-form-group">
               <div class="title-smaller">Certification</div>
               <input type="text" class="form-control">
               <input type="text" class="form-control">
               <input type="text" class="form-control">
-              <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add more</button>
+              <button class="icon add-btn btn btn-gradient-blue title-capatilize">Add more</button>
             </div>
           </div>
           <div class="form-section">
@@ -215,7 +219,7 @@
               <input type="text" name="">
               <div class="skills">
                 <input type="text" class="form-control">
-                <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add more Skill</button>
+                <button class="icon add-btn btn btn-gradient-blue title-capatilize">Add more Skill</button>
               </div>
             </div>
           </div>
@@ -223,7 +227,7 @@
           <div class="form-group user-form-group">
             <div class="title-smaller">Portfolio</div>
             <div class="portfolio-btn">
-              <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add New Item</button>
+              <button class="icon add-btn btn btn-gradient-blue title-capatilize">Add New Item</button>
             </div>
             <div class="each-portfolio">
               <div class="portfolio-heading bg-grey-f9">
@@ -298,7 +302,7 @@
                 </div>
               </div>
             </div>
-            <button class="icon add-btn btn btn-gradient-blue btn-capitalize">Add Account</button>
+            <button class="icon add-btn btn btn-gradient-blue title-capatilize">Add Account</button>
           </div>
           <div class="form-button">
             <button class="submit btn btn-gradient-blue">Save</button>
@@ -338,9 +342,9 @@
           <div class="footer-col support">
             <h2 class="page-title">support</h2>
             <ul class="footer-link">
-              <li><a href="">Contact us</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Sitemap</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
           <div class="footer-col social-wrap">

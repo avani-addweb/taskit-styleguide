@@ -2,7 +2,10 @@ jQuery(document).ready(function() {
   // Custom input type file design 
   // jQuery('input[type="file"]').once().wrap('<div class="input-file"><div class="input-file-sub"></div></div>');
   // jQuery('.input-file').once().prepend('<span class="input-file-name">111File name here</span>');
-
+	jQuery('.dashboard-menu-dropdown').click(function() {
+    jQuery('.menu-list').slideToggle('slow');
+    jQuery('.toggle-icon').toggleClass('toggle');
+  });
 	jQuery('.slider-two').slick({
 	 	slidesToShow: 1,
 	 	slidesToScroll: 1,
@@ -34,5 +37,5 @@ jQuery(document).ready(function() {
 	  jQuery('.content').hide();
 	  jQuery('.content[data-id=' + (currentSlide + 1) + ']').show();
 	});
-	// End
+
 });

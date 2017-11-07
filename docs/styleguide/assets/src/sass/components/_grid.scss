@@ -10,7 +10,7 @@
   float: left;
   width: 210px;
   margin-right: 70px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     width: 100%;
     margin: 0 0 35px;
   }
@@ -19,7 +19,7 @@
   float: left;
   margin-bottom: 80px;
   @include calc('width', '100% - 280px');
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -36,7 +36,7 @@
   float: left;
   display: inline-block;
   width: 50%;
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-portrait) {
     width: 100%;
   }
 }
@@ -55,23 +55,16 @@
 
 /* Add task 2 page */
 .plan-block-section {
+  position: relative;
   display: inline-block;
   width: 100%;
-  /*border: 1px solid $grey-b6;*/
   @include border-radius(4px);
-  .title-small,
-  .task-price-wrap {
-    &::after {
-      float: right;
-      display: inline-block;
-      height: 15px;
-      width: 15px;
-      margin: 5px 15px 0 0;
-      background-image: url('../images/edit-2.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: '';
-    }
+  .top-edit-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: 12px;
   }
   h3 {
     width: 100%;
@@ -80,21 +73,30 @@
     text-transform: uppercase;
   }
   .task-price-wrap {
+    position: relative;
     display: inline-block;
     width: 100%;
     padding: 12px 0;
     color: $white;
     font-size: $font-size-24;
-    font-weight: 700;
+    font-family: $opensans-bold;
     text-align: center;
     span {
       padding: 0 8px;
       font-size: $font-size-14;
       vertical-align: middle;
     }
-    a {
+    /*a {
       color: $white;
       text-decoration: none;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $grey-71;
+      }
+    }*/
+    .top-edit-img {
+      margin-top: 20px;
     }
     &::after {
       margin-top: 10px;
@@ -113,10 +115,10 @@
   width: 100%;
   margin-bottom: 60px;
   justify-content: space-between;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin-bottom: 30px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-portrait) {
     text-align: center;
   }
   &.pdf-gallery-wrap {
@@ -130,10 +132,10 @@
     margin: 0 35px 20px 0;
     padding: 15px;
     @include border-radius(4px);
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
       max-width: 188px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       max-width: 100%;
       margin: 15px auto;
     }
@@ -173,7 +175,7 @@
     font-style: italic;
     text-align: center;
     @include border-radius(4px);
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       float: none;
       max-width: 100%;
       width: 100%;
@@ -192,7 +194,7 @@
       background-size: contain;
       content: '';
       @include transform(translateY(-20px));
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         display: none;
       }
     }
@@ -215,7 +217,7 @@
     width: 50%;
     margin-top: 25px;
     text-align: right;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       float: none;
       width: 100%;
     }

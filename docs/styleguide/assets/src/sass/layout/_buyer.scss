@@ -47,7 +47,7 @@
   max-width: 760px;
   width: 100%;
   margin-bottom: 100px;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     margin-bottom: 20px;
   }
   .comment-section {
@@ -89,7 +89,7 @@
         clear: left;
         @include calc('width' , '100% - 100px');
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         clear: left;
         width: 100%;
         margin-bottom: 10px;
@@ -121,19 +121,11 @@
   margin-bottom: 80px;
   justify-content: space-between;
   @include flexbox();
-  @media (max-width: 992px) {
+  @media (max-width: $ipad-portrait) {
     display: inline-block;
     margin-bottom: 30px;
   }
   @media (max-width: $mobile-portrait) {
     margin-bottom: 30px;
   }
-  /*&.wrap-six {
-    .card-progress {
-      margin-right: 15px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }*/
 }

@@ -45,10 +45,27 @@ select {
 }
 
 .search-bar {
-  display: inline-block;
-  margin: 6px 0 0 42px;
-  @media (max-width: 992px) {
+  margin: 6px 10px 0 0;
+  /*@media (max-width: $ipad-portrait) {
     margin-left: 10px;
+  }*/
+  @media (min-width: 993px) {
+    display: inline-block;
+  }
+  @media (max-width: 992px) {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    left: auto;
+    z-index: 999;
+    display: none;
+    margin-right: 0;
+    @media (max-width: 767px) {
+      top: 89px;
+    }
+    @media (max-width: 480px) {
+      top: 160px;
+    }
   }
   input[type=text] {
     height: 38px;
@@ -62,14 +79,20 @@ select {
     color: $black;
     font-size: $font-size-13;
     text-overflow: ellipsis;
-    @media (max-width: 992px) {
+    @media (max-width: $ipad-portrait) {
       width: 195px;
     }
-    @media (max-width: 767px) {
-      width: 250px;
+    @media (max-width: 480px) {
+      width: 220px;
     }
   }
+ /* &.search-navbar {
+    @media (max-width: 992px) {
+
+    }
+  }*/
 }
+
 /* Custom Checkbox and Radio button design */
 .input-rc {
   position: relative;
@@ -117,7 +140,6 @@ select {
     margin-bottom: 15px;
     label {
       display: inline-block;
-      /*width: 100%;*/
       margin-bottom: 10px;
       padding-left: 0;
       color: $grey-62;
@@ -140,7 +162,7 @@ select {
     width: 50%;
     color: $grey-79;
     font-size: $font-size-14;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       width: 100%;
       text-align: left;
     }
@@ -154,7 +176,7 @@ select {
   .forgot-link {
     color: $grey-79;
     text-align: right;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       text-align: left;
     }
   }
@@ -187,12 +209,12 @@ select {
     display: inline-block;
     max-width: 300px;
     margin-right: 8px;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       max-width: 100%;
       width: 100%;
       margin-bottom: 15px;
     }
-    .input-file-name {
+    /*.input-file-name {
       position: relative;
       float: left;
       height: 40px;
@@ -203,11 +225,87 @@ select {
       font-size: $font-size-14;
       cursor: pointer;
       @include border-radius(3px 0 0 3px);
-      @media (max-width: 480px) {
+      @media (max-width: $mobile-portrait) {
         width: 100%;
         margin-bottom: 15px;
       }
+    }*/
+  }
+  .upload-btn {
+    display: inline-block;
+    max-width: 353px;
+    width: 100%;
+    /*margin-right: 20px;*/
+    @media (max-width: 1200px) {
+      max-width: 260px;
     }
+    @media (max-width: 992px) {
+      max-width: 280px;
+      margin: 0 0 15px;
+    }
+  }
+  .input-browser-btn {
+    display: inline-block;
+    .btn {
+      border-color: transparent;
+      text-transform: capitalize;
+    }
+  }
+}
+.upload-input-group {
+  input[type="text"] {
+    float: left;
+    display: inline-block;
+    max-width: 250px;
+    background-color: transparent;
+    @include border-radius(4px 0 0 4px);
+    @media (max-width: 1200px) {
+      max-width: 159px;
+    }
+    @media (max-width: 992px) {
+      max-width: 189px;
+    }
+    @media (max-width: 767px) {
+      height: 35px;
+    }
+  }
+  .input-file-sub {
+    display: inline-block;
+    margin-left: -2px;
+  }
+  &.user-input-group {
+    position: relative;
+    display: inline-block;
+    max-width: 278px;
+    width: 100%;
+    margin: 0 0 50px 15px;
+    .input-file-sub {
+      float: left;
+    }
+    .form-control {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      margin: 0;
+      border: none;
+    }
+  }
+}
+.custom-file-uploader {
+  position: relative;
+  text-transform: capitalize;
+  input[type='file'] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor: default;
+    opacity: 0;
   }
 }
 .choose-file {
@@ -233,7 +331,7 @@ select {
     }
   }
 }
-.input-file-sub {
+/*.input-file-sub {
   position: relative;
   float: left;
   height: 40px;
@@ -247,7 +345,7 @@ select {
     padding: 12px 0;
     color: $white;
     font-size: $font-size-14;
-    font-weight: 700;
+    font-family: $opensans-bold;
     text-align: center;
     text-transform: capitalize;
     cursor: pointer;
@@ -264,13 +362,13 @@ select {
     cursor: pointer;
     opacity: 0;
   }
-}
+}*/
 .input-group-btn {
   display: inline-block;
   &:last-child > .btn {
     padding: 10px 25px;
     font-size: $font-size-14;
-    font-weight: 700;
+    font-family: $opensans-bold;
     text-transform: lowercase;
     @include border-radius(4px);
     @extend .btn-gradient-blue;
@@ -357,7 +455,7 @@ select {
     width: 100%;
     margin: 0 20px 35px 0;
     background-color: $white;
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       max-width: 100%;
       margin-right: 0;
     }
@@ -366,17 +464,20 @@ select {
 /* User profile skill section design */
 .skills {
   max-width: 415px;
+  @media (max-height: 480px) {
+    max-width: 100%;
+  }
   input {
     float: left;
     display: inline-block;
     margin-right: 10px;
-    @include calc('width', '60% - 5px');
+    @include calc('width' , '60% - 5px');
   }
   .btn {
     float: left;
     margin-right: 0;
-    @include calc('width', '40% - 5px');
-    @media (max-width: 480px) {
+    @include calc('width' , '40% - 5px');
+    @media (max-width: $mobile-portrait) {
       width: 160px;
     }
   }
@@ -431,16 +532,16 @@ select {
     display: block;
     width: 100%;
     margin-right: 10px;
-    @include calc(width, '50% - 5px');
-    @media (max-width: 1200px) {
+    @include calc('width' , '50% - 5px');
+    @media (max-width: $small-desktop) {
       max-width: 100%;
-      @include calc(width, '50% - 8px');
+      @include calc('width' , '50% - 8px');
     }
     @media (max-width: 640px) {
       max-width: 100%;
-      @include calc(width, '50% - 8px');
+      @include calc('width' , '50% - 8px');
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile-portrait) {
       width: 100%;
       margin: 0 0 20px;
     }
@@ -460,7 +561,7 @@ select {
 .date-form {
   float: right;
   display: inline-block;
-  @media (max-width: 992px) {
+  @media (max-width: $ipad-portrait) {
     float: none;
     width: 100%;
   }
@@ -469,7 +570,7 @@ select {
     font-size: $font-size-12;
     font-weight: normal;
     vertical-align: middle;
-    @media (max-width: 992px) {
+    @media (max-width: $ipad-portrait) {
       margin-bottom: 5px;
     }
   }
